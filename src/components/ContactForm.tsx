@@ -1,0 +1,118 @@
+'use client';
+
+import { useState } from 'react';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Label } from '@/components/ui/label';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { useToast } from '@/hooks/use-toast';
+import { Loader2 } from 'lucide-react';
+
+export default function ContactForm() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const { toast } = useToast();
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setIsLoading(true);
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        toast({
+          title: 'Success!',
+          description: 'Your message has been sent successfully.',
+        });
+        setName('');
+        setEmail('');
+        setMessage('');
+      } else {
+        throw new Error(result.error || 'Failed to send message.');
+      }
+    } catch (error) {
+      const message = error instanceof Error ? error.message : "An unknown error occurred.";
+      toast({
+        title: 'Error',
+        description: message,
+        variant: 'destructive',
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  return (
+    <Card className="w-full max-w-lg mx-auto shadow-lg bg-card border border-border">
+      <CardHeader className="text-center">
+        <CardTitle className="text-3xl font-headline text-primary">Get in Touch</CardTitle>
+        <CardDescription className="text-muted-foreground pt-2">
+          I aim to respond to all enquiries within 48 hours.
+        </CardDescription>
+      </CardHeader>
+      <form onSubmit={handleSubmit}>
+        <CardContent className="space-y-6">
+          <div className="space-y-2">
+            <Label htmlFor="name" className="text-foreground">Full Name</Label>
+            <Input
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+              className="bg-input text-foreground placeholder:text-muted-foreground"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              disabled={isLoading}
+            />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="email" className="text-foreground">Email Address</Label>
+            <Input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="your@email.com"
+              required
+              className="bg-input text-foreground placeholder:text-muted-foreground"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              disabled={isLoading}
+            />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="message" className="text-foreground">Message</Label>
+            <Textarea
+              id="message"
+              name="message"
+              placeholder="Your message..."
+              rows={5}
+              required
+              className="bg-input text-foreground placeholder:text-muted-foreground"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              disabled={isLoading}
+            />
+          </div>
+        </CardContent>
+        <CardFooter>
+          <Button type="submit" className="w-full bg-accent text-accent-foreground hover:bg-accent/90" disabled={isLoading}>
+            {isLoading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
+            Send Message
+          </Button>
+        </CardFooter>
+      </form>
+    </Card>
+  );
+}
