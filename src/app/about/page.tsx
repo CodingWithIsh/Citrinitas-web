@@ -7,7 +7,7 @@ import { Sparkles, Globe, BookOpen } from 'lucide-react';
 export default function AboutPage() {
   return (
     <div className="bg-background">
-      <section className="py-20 md:py-32">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             <div className="space-y-6">
