@@ -13,9 +13,8 @@ export default function Home() {
       <section id="home" className="relative h-dvh flex items-center justify-center text-center px-4 -mt-16">
         <div className="absolute inset-0 bg-primary/20"></div>
         <Image
-          src="https://placehold.co/1920x1080.png"
+          src="/Home.jpg"
           alt="Soft, abstract shapes with a zen-like feel"
-          data-ai-hint="zen abstract shapes"
           fill
           priority
           className="object-cover -z-10"
