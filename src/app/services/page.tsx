@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Sun, Waves, Wind, Handshake, Route, Compass } from "lucide-react";
+import { Sun, Waves, Wind, Handshake, Route, Compass, Star, Feather, Gem } from "lucide-react";
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
@@ -48,9 +48,9 @@ export default function ServicesPage() {
             Our Therapeutic Journey
           </h2>
           <div className="grid md:grid-cols-3 gap-8 text-left">
-            <ProcessStep icon={<Handshake className="h-8 w-8 text-primary"/>} title="1. Initial Consultation" description="A no-obligation session for us to connect, discuss what brings you to therapy, and determine if we are a good fit." />
-            <ProcessStep icon={<Compass className="h-8 w-8 text-primary"/>} title="2. Charting the Course" description="We'll collaboratively define your therapeutic goals and create a flexible, personalized plan for our work together." />
-            <ProcessStep icon={<Route className="h-8 w-8 text-primary"/>} title="3. The Ongoing Path" description="Regular sessions where we engage in the process of discovery, healing, and accessing your psychic movement." />
+            <ProcessStep icon={<Star className="h-8 w-8 text-accent"/>} title="1. Initial Consultation" description="A no-obligation session for us to connect, discuss what brings you to therapy, and determine if we are a good fit." />
+            <ProcessStep icon={<Feather className="h-8 w-8 text-accent"/>} title="2. Charting the Course" description="We'll collaboratively define your therapeutic goals and create a flexible, personalized plan for our work together." />
+            <ProcessStep icon={<Gem className="h-8 w-8 text-accent"/>} title="3. The Ongoing Path" description="Regular sessions where we engage in the process of discovery, healing, and accessing your psychic movement." />
           </div>
         </div>
       </section>

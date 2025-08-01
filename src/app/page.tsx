@@ -2,7 +2,7 @@ import Image from 'next/image';
 import ContactForm from '@/components/ContactForm';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Sun, Heart, Users, ArrowRight } from 'lucide-react';
+import { Sun, Heart, Users, ArrowRight, Waves, Wind } from 'lucide-react';
 import Link from 'next/link';
 import { Separator } from '@/components/ui/separator';
 
@@ -68,17 +68,17 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-headline text-primary mb-12">Therapeutic Approach</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ServiceCard
-              icon={<Sun className="h-10 w-10 text-accent" />}
+              icon={<Waves className="h-10 w-10 text-accent" />}
               title="Depth Psychology"
               description="Explore the unconscious aspects of the self to bring about profound and lasting change."
             />
             <ServiceCard
-              icon={<Users className="h-10 w-10 text-accent" />}
+              icon={<Wind className="h-10 w-10 text-accent" />}
               title="Mindfulness-Based"
               description="Cultivate present-moment awareness to reduce stress and relate to your experiences with greater compassion."
             />
             <ServiceCard
-              icon={<Heart className="h-10 w-10 text-accent" />}
+              icon={<Sun className="h-10 w-10 text-accent" />}
               title="Integrative Method"
               description="A bespoke blend of therapeutic techniques tailored to your unique individual needs and goals."
             />
@@ -128,11 +128,9 @@ export default function Home() {
 function ServiceCard({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) {
   return (
     <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 bg-card h-full flex flex-col">
-      <CardHeader>
-        <div className="mx-auto bg-accent/10 rounded-full p-4 w-fit mb-4">
-          {icon}
-        </div>
-        <CardTitle className="font-headline text-2xl text-primary">{title}</CardTitle>
+      <CardHeader className="items-center">
+        {icon}
+        <CardTitle className="font-headline text-2xl text-primary pt-4">{title}</CardTitle>
       </CardHeader>
       <CardContent className="flex-grow">
         <p className="text-foreground/80">{description}</p>
