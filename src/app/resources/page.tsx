@@ -23,26 +23,26 @@ export default function ResourcesPage() {
       <section className="py-20 md:py-32 bg-secondary">
         <div className="container">
           <h2 className="text-3xl md:text-4xl font-headline text-primary mb-16 text-center">
-            The Stuff of Life
+            Exploring Life's Tapestry
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ResourceCard
               icon={<Briefcase className="h-10 w-10 text-accent" />}
-              title="Working"
+              title="Our Work"
               description="Stress, anxiety, procrastination, fear of failure... We look at how patterns of thinking can pervade our working life."
               imageUrl="https://placehold.co/600x400.png"
               imageHint="office desk"
             />
             <ResourceCard
               icon={<Heart className="h-10 w-10 text-accent" />}
-              title="Living"
+              title="Our Relationships"
               description="We take a look at the most common reasons why people seek counselling, including for depression, anxiety, and bereavement."
               imageUrl="https://placehold.co/600x400.png"
               imageHint="serene landscape"
             />
             <ResourceCard
               icon={<BookOpen className="h-10 w-10 text-accent" />}
-              title="Getting Older"
+              title="Our Growth"
               description="Our lives are punctuated by a series of milestones that throw up serious challenges to our mental wellbeing."
               imageUrl="https://placehold.co/600x400.png"
               imageHint="aged book"
