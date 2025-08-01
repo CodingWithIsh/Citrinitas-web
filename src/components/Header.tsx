@@ -22,11 +22,11 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-accent text-accent-foreground">
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur-sm">
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Sun className="h-6 w-6 text-primary" />
-          <span className="font-bold font-headline text-lg text-accent-foreground">Citrinitas Therapies</span>
+          <span className="font-bold font-headline text-lg text-primary">Citrinitas Therapies</span>
         </Link>
         <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
           {navLinks.map((link) => (
@@ -34,8 +34,8 @@ export default function Header() {
               key={link.href}
               href={link.href}
               className={cn(
-                "text-accent-foreground/80 transition-colors hover:text-accent-foreground",
-                (pathname === link.href || (link.href !== "/" && pathname.startsWith(link.href))) && "text-accent-foreground font-bold"
+                "text-foreground/80 transition-colors hover:text-primary",
+                (pathname === link.href || (link.href !== "/" && pathname.startsWith(link.href))) && "text-primary font-bold"
               )}
             >
               {link.label}
@@ -45,7 +45,7 @@ export default function Header() {
         <div className="md:hidden">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="hover:bg-accent/90 focus-visible:ring-0">
+              <Button variant="ghost" size="icon" className="hover:bg-accent/10 focus-visible:ring-0">
                 <Menu className="h-6 w-6" />
                 <span className="sr-only">Open menu</span>
               </Button>
