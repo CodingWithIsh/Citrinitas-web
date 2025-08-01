@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from 'next/image';
-import { BookOpen, Briefcase, Heart, ArrowRight } from "lucide-react";
+import { BookOpen, Briefcase, Heart, ArrowRight, Brain, Wind, Hourglass } from "lucide-react";
 
 
 export default function ResourcesPage() {
@@ -50,7 +50,37 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32">
+      <section className="py-20 md:py-32 bg-background">
+        <div className="container">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-headline text-primary">
+              Mindfulness Practices for Daily Life
+            </h2>
+            <p className="max-w-3xl mx-auto text-lg text-foreground/80 mt-4">
+              Cultivate presence and inner calm with these simple yet powerful mindfulness exercises.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <PracticeCard
+              icon={<Brain className="w-10 h-10 text-accent" />}
+              title="The Body Scan"
+              description="Lie down comfortably and bring your attention to your body. Notice physical sensations, from your toes to your head, without judgment. This practice enhances body awareness and releases tension."
+            />
+            <PracticeCard
+              icon={<Wind className="w-10 h-10 text-accent" />}
+              title="Mindful Breathing"
+              description="Find a quiet seat and focus on your breath. Observe the sensation of the air entering and leaving your body. When your mind wanders, gently guide your focus back to your breath. This grounds you in the present moment."
+            />
+            <PracticeCard
+              icon={<Hourglass className="w-10 h-10 text-accent" />}
+              title="Three-Minute Breathing Space"
+              description="Pause your day. For one minute, notice your thoughts and feelings. For the second, focus on your breath. For the third, expand your awareness to your whole body. A quick reset to find calm."
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-32 bg-secondary">
         <div className="container max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-headline text-primary mb-12 text-center">
             From The Blog
@@ -132,6 +162,22 @@ function ResourceCard({ icon, title, description, imageUrl, imageHint }: { icon:
         <CardContent className="flex-grow">
             <p className="text-foreground/80">{description}</p>
         </CardContent>
+    </Card>
+  );
+}
+
+function PracticeCard({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) {
+  return (
+    <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 bg-card h-full flex flex-col p-6">
+      <CardHeader>
+        <div className="mx-auto bg-accent/10 rounded-full p-4 w-fit mb-4">
+          {icon}
+        </div>
+        <CardTitle className="font-headline text-2xl text-primary">{title}</CardTitle>
+      </CardHeader>
+      <CardContent className="flex-grow">
+        <p className="text-foreground/80">{description}</p>
+      </CardContent>
     </Card>
   );
 }
