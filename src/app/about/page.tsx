@@ -12,16 +12,16 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl font-headline text-primary">
-                A Journey Towards Your Inner Sun
+                Finding Your Inner Sun
               </h1>
               <p className="text-lg text-foreground/80">
-                Inspired by the alchemical concept of Citrinitas—the dawning of the 'solar light' of consciousness—my practice is devoted to guiding you toward clarity, joy, and wisdom.
+                Hello, I'm Barnabas Kinge. I named my practice Citrinitas Therapies because it represents a beautiful idea: the dawning of your own inner sun. My purpose is to help you connect with that light within yourself—the clarity, joy, and wisdom that can guide you forward.
               </p>
               <p className="text-foreground/90">
-                My name is Barnabas Kinge. My path to psychotherapy is woven from diverse threads: a background in International Development and Humanitarian Intervention, a passion for linguistics, and rigorous training in integrative psychotherapy. This unique blend allows me to offer a holistic, culturally sensitive, and deeply humanistic approach to healing.
+                My journey here has been unconventional. I've worked in humanitarian aid and studied how language shapes our world, and these experiences enrich my practice. Combined with my training as an integrative psychotherapist, they’ve taught me that every person's story is unique and deserves a culturally sensitive and profoundly human approach to healing.
               </p>
               <p className="text-foreground/90">
-                I believe therapy is a collaborative process of discovery. My role is to create a welcoming, inspired, and hopeful environment—a safe container where you can explore your inner world without judgment. We work together to not only provide relief from acute psychological distress but also to empower you to access your own profound capacities for meaning-making and growth.
+                Therapy with me is a partnership. I'm here to provide a safe, welcoming space where you feel seen and heard without judgment. Our goal is twofold: to bring you relief from what's hurting now, and to empower you to access your own incredible capacity for growth and lasting change.
               </p>
             </div>
             <div>
