@@ -1,9 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from 'next/image';
-import { BookOpen, Briefcase, Heart, BrainCircuit, ShieldCheck, UserCheck, Coffee, Mountain, Users, Hourglass, Baby, Skull } from "lucide-react";
+import { BookOpen, Briefcase, Heart, BrainCircuit, ShieldCheck, UserCheck, Coffee, Mountain, Users, Hourglass, Baby, Skull, ArrowRight } from "lucide-react";
 
 
 export default function ResourcesPage() {
@@ -54,28 +53,46 @@ export default function ResourcesPage() {
       <section className="py-20 md:py-32">
         <div className="container max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-headline text-primary mb-12 text-center">
-            Topics
+            From The Blog
           </h2>
-          <Accordion type="single" collapsible className="w-full">
-            <TopicAccordionItem value="work-stress" title="Work Stress" icon={<Briefcase className="w-5 h-5 text-accent" />}>
+          <div className="space-y-16">
+            <TopicSection
+              title="Navigating the Pressures of Modern Work"
+              link="/blog/work-stress"
+            >
               According to the UK Labour Force Survey (2017-18), some 57% of days lost through ill health were due to stress or anxiety. Work stress is everywhere. Learning to manage it is key to a healthy work-life balance.
-            </TopicAccordionItem>
-            <TopicAccordionItem value="procrastination" title="Procrastination" icon={<Coffee className="w-5 h-5 text-accent" />}>
+            </TopicSection>
+            <TopicSection
+              title="The Gentle Art of Getting Things Done"
+              link="/blog/procrastination"
+            >
               Putting things off is fairly harmless most of the time. But when it becomes a form of paralysis, it can prevent us from achieving our goals and lead to feelings of guilt and inadequacy.
-            </TopicAccordionItem>
-            <TopicAccordionItem value="perfectionism" title="Perfectionism" icon={<Mountain className="w-5 h-5 text-accent" />}>
+            </TopicSection>
+            <TopicSection
+              title="Breaking Free From the Perfection Trap"
+              link="/blog/perfectionism"
+            >
               As the old saying goes, "Don't let the perfect be the enemy of the good." But what happens when 'the best' feels like the only option? This mindset can lead to burnout and dissatisfaction.
-            </TopicAccordionItem>
-            <TopicAccordionItem value="imposter-syndrome" title="Imposter Syndrome" icon={<UserCheck className="w-5 h-5 text-accent" />}>
+            </TopicSection>
+            <TopicSection
+              title="Embracing Your True Self: Overcoming Imposter Syndrome"
+              link="/blog/imposter-syndrome"
+            >
               A whole network of negative beliefs about your ability can make you feel like a fake. The answer is to treat those beliefs as the real imposters.
-            </TopicAccordionItem>
-             <TopicAccordionItem value="anxiety-depression" title="Depression & Anxiety" icon={<BrainCircuit className="w-5 h-5 text-accent" />}>
+            </TopicSection>
+             <TopicSection
+              title="Finding Light in the Shadows of Anxiety & Depression"
+              link="/blog/anxiety-depression"
+            >
               These are the most common mental health issues of our times, and talking therapies are clinically proven to be effective. We explore the symptoms and pathways to support.
-            </TopicAccordionItem>
-            <TopicAccordionItem value="bereavement" title="Bereavement" icon={<Skull className="w-5 h-5 text-accent" />}>
+            </TopicSection>
+            <TopicSection
+                title="The Sacred Path of Grief"
+                link="/blog/bereavement"
+            >
                 Losing someone close is overwhelming, and the effects do not always diminish with time. Grief is a complex process that deserves space and understanding.
-            </TopicAccordionItem>
-          </Accordion>
+            </TopicSection>
+          </div>
         </div>
       </section>
 
@@ -93,7 +110,6 @@ export default function ResourcesPage() {
     </div>
   );
 }
-
 
 function ResourceCard({ icon, title, description, imageUrl, imageHint }: { icon: React.ReactNode, title: string, description: string, imageUrl: string, imageHint: string }) {
   return (
@@ -120,18 +136,14 @@ function ResourceCard({ icon, title, description, imageUrl, imageHint }: { icon:
   );
 }
 
-function TopicAccordionItem({ value, title, icon, children }: { value: string, title: string, icon: React.ReactNode, children: React.ReactNode }) {
+function TopicSection({ title, link, children }: { title: string, link: string, children: React.ReactNode }) {
     return (
-        <AccordionItem value={value}>
-            <AccordionTrigger className="text-lg font-bold">
-                <div className="flex items-center gap-3">
-                    {icon}
-                    {title}
-                </div>
-            </AccordionTrigger>
-            <AccordionContent className="text-base text-foreground/80 pl-11">
-                {children}
-            </AccordionContent>
-        </AccordionItem>
+        <div className="border-b pb-8">
+            <h3 className="text-2xl font-headline text-primary mb-4">{title}</h3>
+            <p className="text-foreground/80 mb-4">{children}</p>
+            <Button asChild variant="link" className="text-accent hover:text-accent/80 p-0">
+                <Link href={link}>Read Blog <ArrowRight className="ml-2 h-4 w-4" /></Link>
+            </Button>
+        </div>
     )
 }

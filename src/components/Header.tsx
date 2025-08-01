@@ -13,6 +13,7 @@ const navLinks = [
   { href: '/services', label: 'Approach' },
   { href: '/fees', label: 'Fees' },
   { href: '/resources', label: 'Resources' },
+  { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact' },
 ];
 
@@ -34,7 +35,7 @@ export default function Header() {
               href={link.href}
               className={cn(
                 "text-foreground/80 transition-colors hover:text-primary",
-                pathname === link.href && "text-primary font-bold"
+                (pathname === link.href || (link.href !== "/" && pathname.startsWith(link.href))) && "text-primary font-bold"
               )}
             >
               {link.label}
@@ -66,7 +67,7 @@ export default function Header() {
                           href={link.href}
                           className={cn(
                             "text-foreground/80 transition-colors hover:text-primary w-full py-2 px-2 rounded-md",
-                            pathname === link.href && "bg-secondary text-primary font-bold"
+                            (pathname === link.href || (link.href !== "/" && pathname.startsWith(link.href))) && "bg-secondary text-primary font-bold"
                           )}
                         >
                           {link.label}
