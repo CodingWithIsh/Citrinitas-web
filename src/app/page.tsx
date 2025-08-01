@@ -2,7 +2,7 @@ import Image from 'next/image';
 import ContactForm from '@/components/ContactForm';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { BrainCircuit, Heart, Users, ArrowRight } from 'lucide-react';
+import { Sun, Heart, Users, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { Separator } from '@/components/ui/separator';
 
@@ -14,18 +14,18 @@ export default function Home() {
         <div className="absolute inset-0 bg-primary/20"></div>
         <Image
           src="https://placehold.co/1920x1080.png"
-          alt="Calm natural landscape"
-          data-ai-hint="calm nature"
+          alt="Soft, abstract shapes with a zen-like feel"
+          data-ai-hint="zen abstract shapes"
           fill
           priority
           className="object-cover -z-10"
         />
         <div className="relative z-10 bg-background/80 backdrop-blur-sm p-8 md:p-12 rounded-xl shadow-2xl max-w-3xl">
           <h1 className="text-4xl md:text-6xl font-headline text-primary mb-4">
-            Welcome to Your Space for Growth
+            Towards Clarity, Joy, and Wisdom
           </h1>
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-foreground/80 mb-8">
-            I'm Joe, a dedicated psychotherapist helping adults and couples in London navigate life's challenges.
+            A welcoming space for inspired growth and healing, guided by Barnabas Kinge.
           </p>
           <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
             <Link href="/contact">Begin Your Journey</Link>
@@ -36,13 +36,13 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-20 md:py-32 bg-background">
         <div className="container max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-headline text-primary mb-12">About Me</h2>
+          <h2 className="text-3xl md:text-4xl font-headline text-primary mb-12">About Barnabas Kinge</h2>
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div className="w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden shadow-lg flex-shrink-0 border-4 border-white">
               <Image
                 src="https://placehold.co/400x400.png"
                 data-ai-hint="therapist portrait"
-                alt="Portrait of Joe, psychotherapist"
+                alt="Portrait of Barnabas Kinge, psychotherapist"
                 width={400}
                 height={400}
                 className="object-cover w-full h-full"
@@ -50,15 +50,15 @@ export default function Home() {
             </div>
             <div className="text-left space-y-4 text-foreground/90">
               <p>
-                My name is Joe, and I am a qualified psychotherapist specializing in anxiety, relationship issues, and trauma. My approach is rooted in empathy and collaboration, creating a safe, non-judgmental space for you to explore your thoughts and feelings.
+                I'm Barnabas, and my practice is dedicated to providing acute relief from psychological distress while empowering you to access your own meaning-making capacities.
               </p>
               <p>
-                I hold a Master's degree in Counselling Psychology and am a registered member of the British Association for Counselling and Psychotherapy (BACP).
+                With a background in International Development and a deep understanding of integrative therapeutic methods, I offer a holistic and culturally sensitive approach to healing.
               </p>
             </div>
           </div>
-          <Button asChild variant="link" className="mt-8 text-lg">
-            <Link href="/about">Learn More About My Approach <ArrowRight className="ml-2" /></Link>
+          <Button asChild variant="link" className="mt-8 text-lg text-primary">
+            <Link href="/about">Learn More About My Philosophy <ArrowRight className="ml-2" /></Link>
           </Button>
         </div>
       </section>
@@ -66,26 +66,26 @@ export default function Home() {
       {/* Services Section */}
       <section id="services" className="py-20 md:py-32 bg-secondary">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-headline text-primary mb-12">My Approach & Specializations</h2>
+          <h2 className="text-3xl md:text-4xl font-headline text-primary mb-12">Therapeutic Approach</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ServiceCard
-              icon={<BrainCircuit className="h-10 w-10 text-accent" />}
-              title="Anxiety"
-              description="Learn to understand and manage anxiety with effective coping strategies, finding calm and control in your life."
+              icon={<Sun className="h-10 w-10 text-accent" />}
+              title="Depth Psychology"
+              description="Explore the unconscious aspects of the self to bring about profound and lasting change."
             />
             <ServiceCard
               icon={<Users className="h-10 w-10 text-accent" />}
-              title="Relationship Issues"
-              description="Navigate communication challenges, conflicts, and intimacy issues to build stronger, healthier connections with others."
+              title="Mindfulness-Based"
+              description="Cultivate present-moment awareness to reduce stress and relate to your experiences with greater compassion."
             />
             <ServiceCard
               icon={<Heart className="h-10 w-10 text-accent" />}
-              title="Trauma"
-              description="Gently process past traumatic experiences in a secure environment, working towards healing and reclaiming your life."
+              title="Integrative Method"
+              description="A bespoke blend of therapeutic techniques tailored to your unique individual needs and goals."
             />
           </div>
           <Button asChild variant="link" className="mt-12 text-lg text-primary">
-            <Link href="/services">Explore All Services <ArrowRight className="ml-2" /></Link>
+            <Link href="/services">Explore My Approach <ArrowRight className="ml-2" /></Link>
           </Button>
         </div>
       </section>
@@ -109,7 +109,7 @@ export default function Home() {
             </CardContent>
           </Card>
           <div className="text-center mt-8">
-            <Button asChild variant="link" className="text-lg">
+            <Button asChild variant="link" className="text-lg text-primary">
               <Link href="/fees">View Detailed Fee Information <ArrowRight className="ml-2" /></Link>
             </Button>
           </div>

@@ -27,12 +27,12 @@ export async function POST(request) {
       return NextResponse.json({ error: "Bad Request: Missing form fields." }, { status: 400 });
     }
 
-    const fromEmail = process.env.EMAIL_FROM_ADDRESS || "no-reply@firststep.digital";
+    const fromEmail = process.env.EMAIL_FROM_ADDRESS || "no-reply@citrinitas.therapies";
 
     const msg = {
       to: toEmail,
       from: {
-        name: "First Step Digital Form",
+        name: "Citrinitas Therapies Form",
         email: fromEmail,
       },
       replyTo: email,

@@ -33,8 +33,8 @@ export default function ContactForm() {
 
       if (response.ok) {
         toast({
-          title: 'Success!',
-          description: 'Your message has been sent successfully.',
+          title: 'Message Sent',
+          description: 'Thank you for reaching out. I will respond shortly.',
         });
         setName('');
         setEmail('');
@@ -57,7 +57,7 @@ export default function ContactForm() {
   return (
     <Card className="w-full max-w-lg mx-auto shadow-lg bg-card border border-border">
       <CardHeader className="text-center">
-        <CardTitle className="text-3xl font-headline text-primary">Get in Touch</CardTitle>
+        <CardTitle className="text-3xl font-headline text-primary">Initial Contact</CardTitle>
         <CardDescription className="text-muted-foreground pt-2">
           I aim to respond to all enquiries within 48 hours.
         </CardDescription>

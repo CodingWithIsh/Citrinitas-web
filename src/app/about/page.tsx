@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { Sparkles, Globe, BookOpen } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -11,26 +12,23 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl font-headline text-primary">
-                My Commitment to Your Growth
+                A Journey Towards Your Inner Sun
               </h1>
               <p className="text-lg text-foreground/80">
-                I believe that therapy is a collaborative journey. My role is to provide a supportive, empathetic, and confidential space where you feel safe to explore your inner world.
+                Inspired by the alchemical concept of Citrinitas—the dawning of the 'solar light' of consciousness—my practice is devoted to guiding you toward clarity, joy, and wisdom.
               </p>
               <p className="text-foreground/90">
-                My name is Joe, and I am a qualified psychotherapist with a Master's degree in Counselling Psychology. As a registered member of the British Association for Counselling and Psychotherapy (BACP), I adhere to their strict ethical framework, ensuring you receive professional and compassionate care. My practice is built on a foundation of trust and respect, honoring your unique experiences and perspectives.
+                My name is Barnabas Kinge. My path to psychotherapy is woven from diverse threads: a background in International Development and Humanitarian Intervention, a passion for linguistics, and rigorous training in integrative psychotherapy. This unique blend allows me to offer a holistic, culturally sensitive, and deeply humanistic approach to healing.
               </p>
               <p className="text-foreground/90">
-                I specialize in helping individuals navigate challenges such as anxiety, relationship difficulties, and the lingering effects of trauma. Through my integrative approach, I draw from various therapeutic modalities, including psychodynamic, person-centered, and cognitive-behavioral therapies (CBT), to tailor a treatment plan that best suits your individual needs and goals.
-              </p>
-              <p className="text-foreground/90">
-                Continuous learning is a cornerstone of my practice. I am dedicated to ongoing professional development, staying current with the latest research and therapeutic techniques to enhance the support I offer my clients.
+                I believe therapy is a collaborative process of discovery. My role is to create a welcoming, inspired, and hopeful environment—a safe container where you can explore your inner world without judgment. We work together to not only provide relief from acute psychological distress but also to empower you to access your own profound capacities for meaning-making and growth.
               </p>
             </div>
             <div>
               <Image
                 src="https://placehold.co/800x1000.png"
-                data-ai-hint="therapist office"
-                alt="A calm and inviting therapy room"
+                data-ai-hint="zen garden"
+                alt="A tranquil and serene Zen garden"
                 width={800}
                 height={1000}
                 className="rounded-lg shadow-2xl object-cover"
@@ -43,31 +41,31 @@ export default function AboutPage() {
       <section className="py-20 md:py-32 bg-secondary">
         <div className="container max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-headline text-primary mb-12">
-            Our Therapeutic Alliance
+            My Unique Perspective
           </h2>
           <div className="grid md:grid-cols-3 gap-8 text-left">
             <Card className="bg-card">
               <CardHeader>
-                <CardTitle className="font-headline text-xl">Empathy</CardTitle>
+                <CardTitle className="font-headline text-xl flex items-center gap-2"><Globe className="text-accent" />Global Experience</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-foreground/80">I strive to understand your world from your perspective, without judgment.</p>
+                <p className="text-foreground/80">My work in humanitarian intervention provides a grounded, real-world perspective on human resilience and suffering.</p>
               </CardContent>
             </Card>
             <Card className="bg-card">
               <CardHeader>
-                <CardTitle className="font-headline text-xl">Collaboration</CardTitle>
+                <CardTitle className="font-headline text-xl flex items-center gap-2"><BookOpen className="text-accent" />Integrative Approach</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-foreground/80">We work together as partners to uncover insights and foster change.</p>
+                <p className="text-foreground/80">I draw from Depth Psychology and Mindfulness to create a therapy that is as unique as you are.</p>
               </CardContent>
             </Card>
             <Card className="bg-card">
               <CardHeader>
-                <CardTitle className="font-headline text-xl">Confidentiality</CardTitle>
+                <CardTitle className="font-headline text-xl flex items-center gap-2"><Sparkles className="text-accent" />Egalitarian Values</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-foreground/80">Your privacy is paramount. Our sessions are a secure and protected space.</p>
+                <p className="text-foreground/80">I welcome all adults, creating bespoke sessions tailored to your individual needs and therapeutic goals.</p>
               </CardContent>
             </Card>
           </div>
@@ -78,7 +76,7 @@ export default function AboutPage() {
         <div className="container">
           <h2 className="text-3xl font-headline text-primary mb-4">Ready to Take the Next Step?</h2>
           <p className="max-w-2xl mx-auto text-lg text-foreground/80 mb-8">
-            If you feel we might be a good fit, I invite you to reach out and schedule an initial consultation.
+            If my approach resonates with you, I invite you to reach out and schedule an initial consultation.
           </p>
           <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
             <Link href="/contact">Book a Session</Link>

@@ -8,10 +8,10 @@ export default function ContactPage() {
                 <div className="container">
                     <div className="text-center mb-16">
                         <h1 className="text-4xl md:text-5xl font-headline text-primary mb-4">
-                            Contact Me
+                            Contact
                         </h1>
                         <p className="max-w-2xl mx-auto text-lg text-foreground/80">
-                            I welcome you to get in touch. Please use the form below for any inquiries or to request an appointment.
+                           I welcome your inquiry. Please use the form below to reach out, and I will respond as soon as possible.
                         </p>
                     </div>
 
@@ -30,7 +30,7 @@ export default function ContactPage() {
                                 <div>
                                     <h3 className="font-bold text-lg text-foreground">Location</h3>
                                     <p className="text-muted-foreground">Central London, UK</p>
-                                    <p className="text-sm text-muted-foreground">(Online sessions also available)</p>
+                                    <p className="text-sm text-muted-foreground">(Online sessions are available)</p>
                                 </div>
                             </div>
                             <div className="flex items-center gap-4">
@@ -48,11 +48,11 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-lg text-foreground">Email</h3>
-                                    <p className="text-muted-foreground">Please use the contact form for initial contact.</p>
+                                    <p className="text-muted-foreground">Please use the contact form for our initial correspondence.</p>
                                 </div>
                             </div>
                             <div>
-                                <h3 className="text-xl font-headline text-primary mt-8 mb-2">Office Hours</h3>
+                                <h3 className="text-xl font-headline text-primary mt-8 mb-2">Practice Hours</h3>
                                 <p className="text-muted-foreground">Monday - Friday: 9:00 AM - 6:00 PM</p>
                                 <p className="text-muted-foreground">Weekends: Closed</p>
                             </div>

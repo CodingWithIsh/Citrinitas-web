@@ -10,7 +10,7 @@ import { cn } from '@/lib/utils';
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: '/services', label: 'Services' },
+  { href: '/services', label: 'Approach' },
   { href: '/fees', label: 'Fees' },
   { href: '/contact', label: 'Contact' },
 ];
@@ -24,7 +24,7 @@ export default function Header() {
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Leaf className="h-6 w-6 text-primary" />
-          <span className="font-bold font-headline text-lg text-primary">Joe, Psychotherapist</span>
+          <span className="font-bold font-headline text-lg text-primary">Citrinitas Therapies</span>
         </Link>
         <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
           {navLinks.map((link) => (
@@ -54,7 +54,7 @@ export default function Header() {
                    <SheetClose asChild>
                     <Link href="/" className="flex items-center gap-2">
                        <Leaf className="h-6 w-6 text-primary" />
-                       <span className="font-bold font-headline text-lg text-primary">Joe</span>
+                       <span className="font-bold font-headline text-lg text-primary">Citrinitas Therapies</span>
                     </Link>
                    </SheetClose>
                 </div>
