@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from 'next/image';
-import { BookOpen, Briefcase, Heart, BrainCircuit, ShieldCheck, UserCheck, Coffee, Mountain, Users, Hourglass, Baby, Skull, ArrowRight } from "lucide-react";
+import { BookOpen, Briefcase, Heart, ArrowRight } from "lucide-react";
 
 
 export default function ResourcesPage() {
@@ -14,7 +14,7 @@ export default function ResourcesPage() {
             The Resources Toolkit
           </h1>
           <p className="max-w-3xl mx-auto text-lg text-foreground/80">
-            We go through life carrying a kind of mental 'backpack' of our past experiences that can sometimes feel heavy. This toolkit offers articles, links, and other resources on mental health topics that may prove helpful on your journey.
+            Our journey through life is shaped by past experiences, which can sometimes feel like a heavy weight. This toolkit offers a curated set of articles and resources designed to support you on your path to greater clarity and well-being.
           </p>
         </div>
       </section>
