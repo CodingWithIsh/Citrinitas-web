@@ -13,20 +13,22 @@ export default function Home() {
       <section id="home" className="relative h-dvh flex items-center justify-center text-center px-4 -mt-16">
         <div className="absolute inset-0 bg-primary/20"></div>
         <Image
-          src="/Home2.jpg"
+          src="/Home1.png"
           alt="Soft, abstract shapes with a zen-like feel"
           fill
           priority
           className="object-cover -z-10"
         />
-        <div className="relative z-10">
-          <Image
-            src="/Therapies.png"
-            alt="Citrinitas Therapies"
-            width={400}
-            height={400}
-            priority
-          />
+        <div className="relative z-10 max-w-2xl text-primary-foreground">
+          <h1 className="text-4xl md:text-6xl font-headline drop-shadow-md">
+            Towards Clarity, Joy, and Wisdom
+          </h1>
+          <p className="mt-4 text-lg md:text-xl font-body drop-shadow-sm">
+             A welcoming space for inspired growth and healing, guided by Barnabas Kinge.
+          </p>
+          <Button asChild size="lg" className="mt-8 bg-accent hover:bg-accent/90 text-accent-foreground">
+            <Link href="/contact">Begin Your Journey</Link>
+          </Button>
         </div>
       </section>
 
