@@ -22,12 +22,8 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur-sm">
-      <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <Sun className="h-6 w-6 text-primary animate-slow-pulse" />
-          <span className="font-bold font-headline text-lg text-primary">Citrinitas Therapies</span>
-        </Link>
+    <header className="sticky top-0 z-50 w-full">
+      <div className="container flex h-16 max-w-screen-2xl items-center justify-center">
         <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
           {navLinks.map((link) => (
             <Link
