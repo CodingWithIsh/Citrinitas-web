@@ -11,7 +11,6 @@ export default function Home() {
     <>
       {/* Home Section */}
       <section id="home" className="relative h-dvh flex items-center justify-center text-center px-4 -mt-16">
-        <div className="absolute inset-0 bg-blue-900/50"></div>
         <Image
           src="/background.jpg"
           alt="Abstract background image"
@@ -19,7 +18,7 @@ export default function Home() {
           priority
           className="object-cover -z-10"
         />
-        <div className="relative z-10 max-w-2xl text-white">
+        <div className="relative z-10 max-w-2xl text-white p-8 bg-blue-900/50 rounded-lg">
           <h1 className="text-4xl md:text-6xl font-headline drop-shadow-md">
             Towards Clarity, Joy, and Wisdom
           </h1>
