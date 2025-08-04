@@ -11,7 +11,7 @@ export default function Home() {
     <>
       {/* Home Section */}
       <section id="home" className="relative h-dvh flex items-center justify-center text-center px-4 -mt-16">
-        <div className="absolute inset-0 bg-primary/20"></div>
+        <div className="absolute inset-0 bg-blue-900/50"></div>
         <Image
           src="/background.jpg"
           alt="Abstract background image"
@@ -19,14 +19,14 @@ export default function Home() {
           priority
           className="object-cover -z-10"
         />
-        <div className="relative z-10 max-w-2xl text-primary-foreground">
+        <div className="relative z-10 max-w-2xl text-white">
           <h1 className="text-4xl md:text-6xl font-headline drop-shadow-md">
             Towards Clarity, Joy, and Wisdom
           </h1>
           <p className="mt-4 text-lg md:text-xl font-body drop-shadow-sm">
              A welcoming space for inspired growth and healing, guided by Barnabas Kinge.
           </p>
-          <Button asChild size="lg" className="mt-8 bg-accent hover:bg-accent/90 text-accent-foreground">
+          <Button asChild size="lg" className="mt-8 bg-white hover:bg-white/90 text-blue-900">
             <Link href="/contact">Begin Your Journey</Link>
           </Button>
         </div>
