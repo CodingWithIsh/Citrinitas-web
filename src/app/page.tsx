@@ -18,7 +18,7 @@ export default function Home() {
           priority
           className="object-cover -z-10"
         />
-        <div className="relative z-10 max-w-2xl text-white p-8 bg-blue-900/50 rounded-lg">
+        <div className="relative z-10 max-w-2xl text-white p-8 bg-sky-200/30 rounded-lg">
           <h1 className="text-4xl md:text-6xl font-headline drop-shadow-md">
             Towards Clarity, Joy, and Wisdom
           </h1>
