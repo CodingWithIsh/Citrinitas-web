@@ -21,8 +21,8 @@ export default function Home() {
         />
         <div className="relative z-10">
           <Image
-            src="/Logo.png"
-            alt="Citrinitas Therapies Logo"
+            src="/Therapies.png"
+            alt="Citrinitas Therapies"
             width={400}
             height={400}
             priority
