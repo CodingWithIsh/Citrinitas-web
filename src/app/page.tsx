@@ -13,7 +13,7 @@ export default function Home() {
       <section id="home" className="relative h-dvh flex items-center justify-center text-center px-4 -mt-16">
         <div className="absolute inset-0 bg-primary/20"></div>
         <Image
-          src="/Home.jpg"
+          src="/Home1.png"
           alt="Soft, abstract shapes with a zen-like feel"
           fill
           priority
