@@ -26,8 +26,7 @@ export default function AboutPage() {
             </div>
             <div>
               <Image
-                src="https://placehold.co/800x1000.png"
-                data-ai-hint="zen garden"
+                src="/Potrait.png"
                 alt="A tranquil and serene Zen garden"
                 width={800}
                 height={1000}
