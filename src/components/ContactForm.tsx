@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -20,18 +21,27 @@ export default function ContactForm() {
     event.preventDefault();
     setIsLoading(true);
 
+    const formData = {
+        access_key: "bfb7dc03-5f60-4058-9799-6ea026d4725a",
+        name,
+        email,
+        message,
+        subject: `New Contact Form Submission from ${name}`
+    };
+
     try {
-      const response = await fetch('/api/send-email', {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json'
         },
-        body: JSON.stringify({ name, email, message }),
+        body: JSON.stringify(formData),
       });
 
       const result = await response.json();
 
-      if (response.ok) {
+      if (result.success) {
         toast({
           title: 'Message Sent',
           description: 'Thank you for reaching out. I will respond shortly.',
@@ -40,7 +50,7 @@ export default function ContactForm() {
         setEmail('');
         setMessage('');
       } else {
-        throw new Error(result.error || 'Failed to send message.');
+        throw new Error(result.message || 'Failed to send message.');
       }
     } catch (error) {
       const message = error instanceof Error ? error.message : "An unknown error occurred.";
