@@ -5,24 +5,24 @@
 @layer base {
   :root {
     --background: 220 7% 95%; /* Light Grey / Off-White */
-    --foreground: 220 15% 31%; /* Slate Blue */
+    --foreground: 25 67% 25%; /* Deep Brown */
     --card: 220 7% 97%;
-    --card-foreground: 220 15% 31%;
+    --card-foreground: 25 67% 25%;
     --popover: 220 7% 97%;
-    --popover-foreground: 220 15% 31%;
-    --primary: 25 67% 25%; /* Deep Brown */
+    --popover-foreground: 25 67% 25%;
+    --primary: 220 15% 31%; /* Slate Blue */
     --primary-foreground: 0 0% 100%;
-    --secondary: 220 7% 90%;
-    --secondary-foreground: 220 15% 31%;
+    --secondary: 220 4% 85%; /* Cool Grey for secondary background */
+    --secondary-foreground: 25 67% 25%;
     --muted: 220 7% 93%;
-    --muted-foreground: 220 15% 45%;
-    --accent: 27 79% 47%; /* Rich Orange / Ochre */
+    --muted-foreground: 25 67% 35%;
+    --accent: 25 78% 39%; /* Burnt Sienna */
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 220 4% 69%; /* Cool Grey */
     --input: 220 4% 80%;
-    --ring: 27 79% 47%;
+    --ring: 25 78% 39%;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
@@ -37,19 +37,19 @@
     --card-foreground: 220 7% 95%;
     --popover: 220 15% 12%;
     --popover-foreground: 220 7% 95%;
-    --primary: 25 67% 75%;
-    --primary-foreground: 25 67% 10%;
+    --primary: 220 7% 80%; /* Lighter Slate Blue for dark mode */
+    --primary-foreground: 220 15% 10%;
     --secondary: 220 15% 20%;
     --secondary-foreground: 220 7% 95%;
     --muted: 220 15% 20%;
     --muted-foreground: 220 7% 63%;
-    --accent: 27 79% 57%;
-    --accent-foreground: 27 79% 10%;
+    --accent: 25 78% 59%; /* Lighter Burnt Sienna for dark mode */
+    --accent-foreground: 25 78% 10%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 220 4% 40%;
     --input: 220 4% 30%;
-    --ring: 27 79% 57%;
+    --ring: 25 78% 59%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
