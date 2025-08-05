@@ -1,24 +1,61 @@
+
+'use client';
+
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import ContactForm from '@/components/ContactForm';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Sun, Heart, Users, ArrowRight, Waves, Wind } from 'lucide-react';
+import { Sun, Waves, Wind, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { Separator } from '@/components/ui/separator';
+import { cn } from '@/lib/utils';
 
 export default function Home() {
+  const [isNavigating, setIsNavigating] = useState(false);
+  const router = useRouter();
+
+  const handleNavigate = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    setIsNavigating(true);
+  };
+
+  useEffect(() => {
+    if (isNavigating) {
+      const timer = setTimeout(() => {
+        router.push('/resources');
+      }, 1200); // Corresponds to the animation duration
+      return () => clearTimeout(timer);
+    }
+  }, [isNavigating, router]);
+
   return (
     <>
       {/* Home Section */}
-      <section id="home" className="relative h-dvh flex items-center justify-center text-center px-4 -mt-16">
+      <section id="home" className="relative h-dvh flex items-center justify-center text-center px-4 -mt-16 overflow-hidden">
         <Image
           src="/Home2.jpg"
           alt="Abstract background image"
           fill
           priority
-          className="object-cover -z-10"
+          className={cn(
+            'object-cover -z-10',
+            isNavigating && 'animate-scene-zoom'
+          )}
         />
-        <div className="relative z-10 max-w-2xl text-white p-8 bg-sky-200/0 rounded-lg">
+        <div
+          className={cn(
+            "fixed inset-0 bg-background/0 transition-all duration-500 z-20",
+            isNavigating ? "bg-background/100" : "pointer-events-none"
+          )}
+        />
+        <div 
+          className={cn(
+            "relative z-10 max-w-2xl text-white p-8 rounded-lg transition-opacity duration-500",
+            isNavigating && "opacity-0"
+          )}
+        >
           <h1 className="text-4xl md:text-6xl font-headline drop-shadow-md">
             Towards Clarity, Joy, and Wisdom
           </h1>
@@ -26,7 +63,7 @@ export default function Home() {
              A welcoming space for inspired growth and healing, guided by Barnabas Kinge.
           </p>
           <Button asChild size="lg" className="mt-8 bg-white hover:bg-white/90 text-blue-900">
-            <Link href="/contact">Begin Your Journey</Link>
+            <a href="/resources" onClick={handleNavigate}>Begin Your Journey</a>
           </Button>
         </div>
       </section>
