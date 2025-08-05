@@ -52,7 +52,7 @@ export default function Home() {
         />
         <div 
           className={cn(
-            "relative z-10 max-w-2xl text-white p-8 rounded-lg transition-opacity duration-500",
+            "relative z-10 max-w-2xl text-foreground p-8 rounded-lg transition-opacity duration-500",
             isNavigating && "opacity-0"
           )}
         >
@@ -60,14 +60,14 @@ export default function Home() {
             Towards Clarity, Joy, and Wisdom
           </h1>
           <p className="mt-4 text-lg md:text-xl font-body drop-shadow-sm flex flex-col items-center gap-y-2">
-            <span className="bg-blue-900/70 text-white border border-blue-400/80 px-3 py-1.5 rounded-md">
+            <span>
               A welcoming space for inspired growth and healing,
             </span>
-            <span className="bg-blue-900/70 text-white border border-blue-400/80 px-3 py-1.5 rounded-md">
+            <span>
               guided by Barnabas Kinge.
             </span>
           </p>
-          <Button asChild size="lg" className="mt-8 bg-white hover:bg-white/90 text-blue-900">
+          <Button asChild size="lg" className="mt-8 bg-accent hover:bg-accent/90 text-accent-foreground">
             <a href="/resources" onClick={handleNavigate}>Begin Your Journey</a>
           </Button>
         </div>
