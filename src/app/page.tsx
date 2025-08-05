@@ -35,7 +35,7 @@ export default function Home() {
       {/* Home Section */}
       <section id="home" className="relative h-dvh flex items-center justify-center text-center px-4 -mt-16 overflow-hidden">
         <Image
-          src="/Home2.jpg"
+          src="/Background2.jpg"
           alt="Abstract background image"
           fill
           priority
