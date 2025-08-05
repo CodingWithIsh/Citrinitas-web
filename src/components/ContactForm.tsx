@@ -26,7 +26,6 @@ export default function ContactForm() {
         name,
         email,
         message,
-        subject: `New Contact Form Submission from ${name}`
     };
 
     try {
