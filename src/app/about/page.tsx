@@ -7,7 +7,7 @@ import { Sparkles, Globe, BookOpen } from 'lucide-react';
 export default function AboutPage() {
   return (
     <div className="bg-background">
-      <section className="py-12 md:py-20">
+      <section className="py-12 md:py-20" data-aos="fade-up">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             <div className="space-y-6">
@@ -38,7 +38,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-secondary">
+      <section className="py-20 md:py-32 bg-secondary" data-aos="fade-up">
         <div className="container max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-headline text-primary mb-12">
             My Unique Perspective
@@ -72,7 +72,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-24 text-center">
+      <section className="py-20 md:py-24 text-center" data-aos="fade-up">
         <div className="container">
           <h2 className="text-3xl font-headline text-primary mb-4">Ready to Take the Next Step?</h2>
           <p className="max-w-2xl mx-auto text-lg text-foreground/80 mb-8">

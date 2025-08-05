@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function ServicesPage() {
   return (
     <div className="bg-background">
-      <section className="py-20 md:py-32 text-center">
+      <section className="py-20 md:py-32 text-center" data-aos="fade-up">
         <div className="container">
           <h1 className="text-4xl md:text-5xl font-headline text-primary mb-4">
             My Therapeutic Approach
@@ -17,7 +17,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-secondary">
+      <section className="py-20 md:py-32 bg-secondary" data-aos="fade-up">
         <div className="container">
           <h2 className="text-3xl md:text-4xl font-headline text-primary mb-16 text-center">
             Core Modalities
@@ -42,7 +42,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32">
+      <section className="py-20 md:py-32" data-aos="fade-up">
         <div className="container max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-headline text-primary mb-12">
             Our Therapeutic Journey
@@ -55,7 +55,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-24 text-center bg-primary/5">
+      <section className="py-20 md:py-24 text-center bg-primary/5" data-aos="fade-up">
         <div className="container">
           <h2 className="text-3xl font-headline text-primary mb-4">Begin Your Path to Healing</h2>
           <p className="max-w-2xl mx-auto text-lg text-foreground/80 mb-8">

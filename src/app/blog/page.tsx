@@ -38,7 +38,7 @@ const blogPosts = [
 export default function BlogIndexPage() {
   return (
     <div className="bg-background">
-      <section className="py-20 md:py-32">
+      <section className="py-20 md:py-32" data-aos="fade-up">
         <div className="container">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-headline text-primary mb-4">

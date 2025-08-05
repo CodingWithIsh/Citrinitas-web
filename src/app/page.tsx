@@ -32,7 +32,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 md:py-32 bg-background">
+      <section id="about" className="py-20 md:py-32 bg-background" data-aos="fade-up">
         <div className="container max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-headline text-primary mb-12">About Barnabas Kinge</h2>
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
@@ -62,7 +62,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 md:py-32 bg-secondary">
+      <section id="services" className="py-20 md:py-32 bg-secondary" data-aos="fade-up">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-headline text-primary mb-12">Therapeutic Approach</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -89,7 +89,7 @@ export default function Home() {
       </section>
 
       {/* Fees Section */}
-      <section id="fees" className="py-20 md:py-32 bg-background">
+      <section id="fees" className="py-20 md:py-32 bg-background" data-aos="fade-up">
         <div className="container max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-headline text-primary mb-8 text-center">Session Fees</h2>
           <Card className="shadow-lg">
@@ -115,7 +115,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 md:py-32 bg-primary/5">
+      <section id="contact" className="py-20 md:py-32 bg-primary/5" data-aos="fade-up">
         <div className="container">
           <ContactForm />
         </div>

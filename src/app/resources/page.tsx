@@ -8,7 +8,7 @@ import { BookOpen, Briefcase, Heart, ArrowRight, Brain, Wind, Hourglass } from "
 export default function ResourcesPage() {
   return (
     <div className="bg-background">
-      <section className="py-20 md:py-32 text-center">
+      <section className="py-20 md:py-32 text-center" data-aos="fade-up">
         <div className="container">
           <h1 className="text-4xl md:text-5xl font-headline text-primary mb-4">
             The Resources Toolkit
@@ -19,7 +19,7 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-secondary">
+      <section className="py-20 md:py-32 bg-secondary" data-aos="fade-up">
         <div className="container">
           <h2 className="text-3xl md:text-4xl font-headline text-primary mb-16 text-center">
             Exploring Life's Tapestry
@@ -50,7 +50,7 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-background">
+      <section className="py-20 md:py-32 bg-background" data-aos="fade-up">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-headline text-primary">
@@ -80,7 +80,7 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-secondary">
+      <section className="py-20 md:py-32 bg-secondary" data-aos="fade-up">
         <div className="container max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-headline text-primary mb-12 text-center">
             From The Blog
@@ -126,7 +126,7 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-       <section className="py-20 md:py-24 text-center bg-primary/5">
+       <section className="py-20 md:py-24 text-center bg-primary/5" data-aos="fade-up">
         <div className="container">
           <h2 className="text-3xl font-headline text-primary mb-4">Ready to Explore Further?</h2>
           <p className="max-w-2xl mx-auto text-lg text-foreground/80 mb-8">
