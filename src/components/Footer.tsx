@@ -12,7 +12,7 @@ export default function Footer() {
           {/* Logo */}
           <div className="flex items-start">
             <Link href="/" className="flex items-center gap-2">
-              <Image src="/Logo3.png" alt="Citrinitas Therapies Logo" width={140} height={140} />
+              <Image src="/Logo3.png" alt="Citrinitas Therapies Logo" width={210} height={210} />
             </Link>
           </div>
 
