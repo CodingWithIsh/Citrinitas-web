@@ -6,6 +6,7 @@ import { Menu, Sun } from 'lucide-react';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -22,9 +23,13 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-background/50 backdrop-blur-sm">
-      <div className="container flex h-16 max-w-screen-2xl items-center justify-center">
-        <nav className="hidden md:flex items-center space-x-8 text-lg font-medium">
+    <header className="sticky top-0 z-50 w-full bg-background/70 backdrop-blur-sm">
+      <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
+        <Link href="/" className="flex items-center gap-2 md:hidden">
+           <Sun className="h-6 w-6 text-primary" />
+           <span className="font-bold font-headline text-lg text-primary">Citrinitas Therapies</span>
+        </Link>
+        <nav className="hidden md:flex items-center space-x-6 text-base font-medium">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -38,6 +43,9 @@ export default function Header() {
             </Link>
           ))}
         </nav>
+        <div className="hidden md:flex items-center">
+            <Image src="/Logo2.png" alt="Citrinitas Therapies Logo" width={60} height={60} />
+        </div>
         <div className="md:hidden">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
