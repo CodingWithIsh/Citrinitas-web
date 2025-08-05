@@ -60,7 +60,9 @@ export default function Home() {
             Towards Clarity, Joy, and Wisdom
           </h1>
           <p className="mt-4 text-lg md:text-xl font-body drop-shadow-sm">
-             A welcoming space for inspired growth and healing, guided by Barnabas Kinge.
+            <span className="bg-blue-500/70 text-white px-2 py-1 rounded-md">
+              A welcoming space for inspired growth and healing, guided by Barnabas Kinge.
+            </span>
           </p>
           <Button asChild size="lg" className="mt-8 bg-white hover:bg-white/90 text-blue-900">
             <a href="/resources" onClick={handleNavigate}>Begin Your Journey</a>
