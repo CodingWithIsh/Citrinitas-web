@@ -12,13 +12,13 @@ export default function Home() {
       {/* Home Section */}
       <section id="home" className="relative h-dvh flex items-center justify-center text-center px-4 -mt-16">
         <Image
-          src="/background.jpg"
+          src="/Home2.JPG"
           alt="Abstract background image"
           fill
           priority
           className="object-cover -z-10"
         />
-        <div className="relative z-10 max-w-2xl text-white p-8 bg-sky-200/30 rounded-lg">
+        <div className="relative z-10 max-w-2xl text-white p-8 bg-sky-200/0 rounded-lg">
           <h1 className="text-4xl md:text-6xl font-headline drop-shadow-md">
             Towards Clarity, Joy, and Wisdom
           </h1>
