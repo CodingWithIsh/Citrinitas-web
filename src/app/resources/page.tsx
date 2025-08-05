@@ -146,7 +146,7 @@ function ResourceCard({ icon, title, description, imageUrl }: { icon: React.Reac
                 src={imageUrl}
                 alt={title}
                 fill
-                className="object-cover"
+                className="object-contain"
             />
         </div>
         <CardHeader>
