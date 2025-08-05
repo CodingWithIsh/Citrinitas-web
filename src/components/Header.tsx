@@ -22,9 +22,9 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full">
+    <header className="sticky top-0 z-50 w-full bg-background/50 backdrop-blur-sm">
       <div className="container flex h-16 max-w-screen-2xl items-center justify-center">
-        <nav className="hidden md:flex items-center space-x-8 text-base font-medium">
+        <nav className="hidden md:flex items-center space-x-8 text-lg font-medium">
           {navLinks.map((link) => (
             <Link
               key={link.href}
