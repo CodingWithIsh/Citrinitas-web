@@ -59,9 +59,12 @@ export default function Home() {
           <h1 className="text-4xl md:text-6xl font-headline drop-shadow-md">
             Towards Clarity, Joy, and Wisdom
           </h1>
-          <p className="mt-4 text-lg md:text-xl font-body drop-shadow-sm">
+          <p className="mt-4 text-lg md:text-xl font-body drop-shadow-sm flex flex-col items-center gap-y-2">
             <span className="bg-blue-900/70 text-white border border-blue-400/80 px-3 py-1.5 rounded-md">
-              A welcoming space for inspired growth and healing, guided by Barnabas Kinge.
+              A welcoming space for inspired growth and healing,
+            </span>
+            <span className="bg-blue-900/70 text-white border border-blue-400/80 px-3 py-1.5 rounded-md">
+              guided by Barnabas Kinge.
             </span>
           </p>
           <Button asChild size="lg" className="mt-8 bg-white hover:bg-white/90 text-blue-900">
