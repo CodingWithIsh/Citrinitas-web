@@ -60,7 +60,7 @@ export default function Home() {
             Towards Clarity, Joy, and Wisdom
           </h1>
           <p className="mt-4 text-lg md:text-xl font-body drop-shadow-sm">
-            <span className="bg-blue-500/70 text-white px-2 py-1 rounded-md">
+            <span className="bg-accent/70 text-accent-foreground border border-accent/80 px-3 py-1.5 rounded-md">
               A welcoming space for inspired growth and healing, guided by Barnabas Kinge.
             </span>
           </p>
