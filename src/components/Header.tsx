@@ -28,7 +28,7 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-2">
            <Image src="/Logo2.png" alt="Citrinitas Therapies Logo" width={80} height={80} />
         </Link>
-        <nav className="hidden md:flex items-center justify-center flex-1 space-x-8 text-lg font-medium">
+        <nav className="hidden md:flex items-center justify-center flex-1 space-x-8 text-base font-normal">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -60,7 +60,7 @@ export default function Header() {
                     </Link>
                    </SheetClose>
                 </div>
-                <nav className="flex flex-col items-start gap-1 p-4 text-lg font-medium">
+                <nav className="flex flex-col items-start gap-1 p-4 text-base font-normal">
                   {navLinks.map((link) => (
                      <SheetClose asChild key={link.href}>
                         <Link
