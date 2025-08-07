@@ -18,17 +18,15 @@ export default function Home() {
 
   const handleNavigate = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    setIsNavigating(true);
+    const href = e.currentTarget.getAttribute('href');
+    if (href) {
+      setIsNavigating(true);
+      setTimeout(() => {
+        router.push(href);
+      }, 1200); // Corresponds to the animation duration
+    }
   };
 
-  useEffect(() => {
-    if (isNavigating) {
-      const timer = setTimeout(() => {
-        router.push('/resources');
-      }, 1200); // Corresponds to the animation duration
-      return () => clearTimeout(timer);
-    }
-  }, [isNavigating, router]);
 
   return (
     <>
@@ -58,13 +56,16 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="relative flex flex-col items-center justify-center text-center p-8 bg-cover bg-center" style={{ backgroundImage: "url('/Background3.png')" }}>
+        <div className={cn("relative flex flex-col items-center justify-center text-center p-8 bg-cover bg-center", isNavigating && 'animate-scene-zoom')} style={{ backgroundImage: "url('/Background3.png')" }}>
            <div className="absolute inset-0 bg-black/30" />
            <div className="relative z-10 flex flex-col items-center justify-center text-white">
               <Image src="/Logo3.png" alt="Citrinitas Therapies Logo" width={600} height={600} className="mb-6" />
               <h1 className="text-4xl md:text-5xl font-headline text-white/90">
                 Welcome to Citrinitas Therapies
               </h1>
+              <Button asChild size="lg" className="mt-8 bg-accent hover:bg-accent/90 text-accent-foreground">
+                  <a href="/resources" onClick={handleNavigate}>Begin your journey</a>
+              </Button>
            </div>
         </div>
       </section>
