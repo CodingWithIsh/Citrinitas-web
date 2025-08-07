@@ -57,14 +57,14 @@ export default function Home() {
           )}
         >
           <h1 className="text-4xl md:text-6xl font-headline text-primary">
-            A Direct Path to Psychological Well-Being
+            Towards Clarity, Joy, and Wisdom
           </h1>
           <p className="mt-4 text-lg md:text-xl font-body text-foreground/80 flex flex-col items-center gap-y-2">
             <span>
-             A confidential space where we will address your challenges and work
+              A welcoming space for inspired growth and healing,
             </span>
             <span>
-              towards lasting and meaningful change.
+              guided by Barnabas Kinge.
             </span>
           </p>
           <Button asChild size="lg" className="mt-8 bg-accent hover:bg-accent/90 text-accent-foreground">
