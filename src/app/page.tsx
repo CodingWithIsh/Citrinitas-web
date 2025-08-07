@@ -52,7 +52,7 @@ export default function Home() {
                  <Phone className="h-6 w-6" />
                  <span>+44 (0)20 1234 5678</span>
                </a>
-               <Button asChild variant="outline" className="text-primary-foreground border-primary-foreground/50 hover:bg-accent/20 hover:text-accent">
+               <Button asChild variant="secondary" className="bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20">
                  <Link href="/contact">Book via Contact Form</Link>
                </Button>
             </div>
