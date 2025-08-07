@@ -17,9 +17,9 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-secondary" data-aos="fade-up">
+      <section className="py-20 md:py-32 bg-primary text-primary-foreground" data-aos="fade-up">
         <div className="container">
-          <h2 className="text-3xl md:text-4xl font-headline text-primary mb-16 text-center">
+          <h2 className="text-3xl md:text-4xl font-headline text-primary-foreground mb-16 text-center">
             Core Modalities
           </h2>
           <div className="grid lg:grid-cols-2 gap-12">
@@ -75,8 +75,8 @@ function ServiceDetail({ icon, title, description }: { icon: React.ReactNode, ti
     <div className="flex gap-6">
       <div className="flex-shrink-0 mt-1">{icon}</div>
       <div>
-        <h3 className="text-2xl font-headline text-primary mb-2">{title}</h3>
-        <p className="text-foreground/80">{description}</p>
+        <h3 className="text-2xl font-headline text-primary-foreground mb-2">{title}</h3>
+        <p className="text-primary-foreground/80">{description}</p>
       </div>
     </div>
   )
