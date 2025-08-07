@@ -34,38 +34,16 @@ export default function Home() {
   return (
     <>
       {/* Home Section */}
-      <section id="home" className="relative h-dvh flex items-center justify-center -mt-16 overflow-hidden">
-        <Image
-          src="/Background3.png"
-          alt="Abstract background image"
-          fill
-          priority
-          className={cn('object-cover -z-10', isNavigating && 'animate-scene-zoom')}
-        />
-        <div
-          className={cn(
-            "fixed inset-0 bg-background/0 transition-all duration-500 z-20",
-            isNavigating ? "bg-background/100" : "pointer-events-none"
-          )}
-        />
-        <div className={cn("relative z-10 w-full max-w-4xl mx-auto px-4 transition-opacity duration-500", isNavigating && "opacity-0")}>
-          <div className="grid md:grid-cols-2 bg-card/10 backdrop-blur-lg rounded-lg shadow-2xl overflow-hidden">
-            <div className="relative h-64 md:h-auto">
-               <Image
-                src="https://placehold.co/800x1000.png"
-                data-ai-hint="serene clinic"
-                alt="A tranquil and professional therapy space"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="flex flex-col justify-center p-8 md:p-12" style={{ backgroundColor: 'rgba(25, 33, 44, 0.8)' }}>
-              <Image src="/Logo3.png" alt="Citrinitas Therapies Logo" width={120} height={120} className="mb-6" />
+      <section id="home" className="h-dvh -mt-16 grid grid-cols-1 md:grid-cols-2">
+        <div className="bg-primary hidden md:block" />
+        <div className="relative flex flex-col items-center justify-center text-center p-8 bg-cover bg-center" style={{ backgroundImage: "url('/Background3.png')" }}>
+           <div className="absolute inset-0 bg-black/30" />
+           <div className="relative z-10 flex flex-col items-center justify-center text-white">
+              <Image src="/Logo3.png" alt="Citrinitas Therapies Logo" width={150} height={150} className="mb-6" />
               <h1 className="text-4xl md:text-5xl font-headline text-white/90">
                 Welcome to Citrinitas Therapies
               </h1>
-            </div>
-          </div>
+           </div>
         </div>
       </section>
 
