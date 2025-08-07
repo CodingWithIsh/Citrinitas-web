@@ -8,7 +8,7 @@ import { useRouter } from 'next/navigation';
 import ContactForm from '@/components/ContactForm';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Sun, Waves, Wind, ArrowRight } from 'lucide-react';
+import { Sun, Waves, Wind, ArrowRight, Phone } from 'lucide-react';
 import Link from 'next/link';
 import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';
@@ -35,7 +35,24 @@ export default function Home() {
     <>
       {/* Home Section */}
       <section id="home" className="h-dvh -mt-16 grid grid-cols-1 md:grid-cols-2">
-        <div className="bg-primary hidden md:block" />
+        <div className="bg-primary hidden md:flex flex-col items-center justify-center p-8 text-primary-foreground">
+          <div className="text-center space-y-8">
+            <h2 className="text-3xl font-headline text-primary-foreground/90">
+              A Space for Inspired Growth and Healing
+            </h2>
+            <blockquote className="text-xl italic text-primary-foreground/70 border-l-4 border-accent pl-6">
+              "You cannot step into the same river twice."
+              <footer className="text-base not-italic mt-2">– Heraclitus</footer>
+            </blockquote>
+            <div className="pt-8">
+               <h3 className="text-lg font-bold">Book a Consultation</h3>
+               <a href="tel:+442012345678" className="flex items-center justify-center gap-2 text-2xl text-accent hover:text-accent/90 transition-colors mt-2">
+                 <Phone className="h-6 w-6" />
+                 <span>+44 (0)20 1234 5678</span>
+               </a>
+            </div>
+          </div>
+        </div>
         <div className="relative flex flex-col items-center justify-center text-center p-8 bg-cover bg-center" style={{ backgroundImage: "url('/Background3.png')" }}>
            <div className="absolute inset-0 bg-black/30" />
            <div className="relative z-10 flex flex-col items-center justify-center text-white">
