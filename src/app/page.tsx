@@ -61,7 +61,7 @@ export default function Home() {
         <div className="relative flex flex-col items-center justify-center text-center p-8 bg-cover bg-center" style={{ backgroundImage: "url('/Background3.png')" }}>
            <div className="absolute inset-0 bg-black/30" />
            <div className="relative z-10 flex flex-col items-center justify-center text-white">
-              <Image src="/Logo3.png" alt="Citrinitas Therapies Logo" width={150} height={150} className="mb-6" />
+              <Image src="/Logo3.png" alt="Citrinitas Therapies Logo" width={300} height={300} className="mb-6" />
               <h1 className="text-4xl md:text-5xl font-headline text-white/90">
                 Welcome to Citrinitas Therapies
               </h1>
