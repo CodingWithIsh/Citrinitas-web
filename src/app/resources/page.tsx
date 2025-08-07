@@ -19,9 +19,9 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-secondary" data-aos="fade-up">
+      <section className="py-20 md:py-32 bg-primary text-primary-foreground" data-aos="fade-up">
         <div className="container">
-          <h2 className="text-3xl md:text-4xl font-headline text-primary mb-16 text-center">
+          <h2 className="text-3xl md:text-4xl font-headline mb-16 text-center">
             Exploring Life's Tapestry
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
