@@ -37,34 +37,34 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-secondary" data-aos="fade-up">
+      <section className="py-20 md:py-32 bg-primary" data-aos="fade-up">
         <div className="container max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-headline text-primary mb-12">
+          <h2 className="text-3xl md:text-4xl font-headline text-primary-foreground mb-12">
             My Unique Perspective
           </h2>
           <div className="grid md:grid-cols-3 gap-8 text-left">
-            <Card className="bg-card">
+            <Card className="bg-primary-foreground/5 text-primary-foreground">
               <CardHeader>
                 <CardTitle className="font-headline text-xl flex items-center gap-2"><Globe className="text-accent" />Global Experience</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-foreground/80">My work in humanitarian intervention provides a grounded, real-world perspective on human resilience and suffering.</p>
+                <p className="text-primary-foreground/80">My work in humanitarian intervention provides a grounded, real-world perspective on human resilience and suffering.</p>
               </CardContent>
             </Card>
-            <Card className="bg-card">
+            <Card className="bg-primary-foreground/5 text-primary-foreground">
               <CardHeader>
                 <CardTitle className="font-headline text-xl flex items-center gap-2"><BookOpen className="text-accent" />Integrative Approach</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-foreground/80">I draw from Depth Psychology and Mindfulness to create a therapy that is as unique as you are.</p>
+                <p className="text-primary-foreground/80">I draw from Depth Psychology and Mindfulness to create a therapy that is as unique as you are.</p>
               </CardContent>
             </Card>
-            <Card className="bg-card">
+            <Card className="bg-primary-foreground/5 text-primary-foreground">
               <CardHeader>
                 <CardTitle className="font-headline text-xl flex items-center gap-2"><Sparkles className="text-accent" />Egalitarian Values</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-foreground/80">I welcome all adults, creating bespoke sessions tailored to your individual needs and therapeutic goals.</p>
+                <p className="text-primary-foreground/80">I welcome all adults, creating bespoke sessions tailored to your individual needs and therapeutic goals.</p>
               </CardContent>
             </Card>
           </div>
