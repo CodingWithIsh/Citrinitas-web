@@ -44,24 +44,24 @@ export default function Home() {
                 "You cannot step into the same river twice."
                 <footer className="text-lg not-italic mt-2">– Heraclitus</footer>
               </blockquote>
-               <blockquote className="text-xl italic text-primary-foreground/70 border-l-4 border-accent pl-6">
-                "Until you make the unconscious conscious, it will direct your life and you will call it fate."
-                <footer className="text-base not-italic mt-2">– C.G. Jung</footer>
-              </blockquote>
             </div>
-            <div className="pt-8">
+            <Separator className="bg-primary-foreground/20" />
+            <div className="pt-2 space-y-4">
                <h3 className="text-lg font-bold">Arrange a Free Consultation</h3>
                <a href="tel:+442012345678" className="flex items-center justify-center gap-2 text-2xl text-accent hover:text-accent/90 transition-colors mt-2">
                  <Phone className="h-6 w-6" />
                  <span>+44 (0)20 1234 5678</span>
                </a>
+               <Button asChild variant="outline" className="text-primary-foreground border-primary-foreground/50 hover:bg-accent/20 hover:text-accent">
+                 <Link href="/contact">Book via Contact Form</Link>
+               </Button>
             </div>
           </div>
         </div>
         <div className="relative flex flex-col items-center justify-center text-center p-8 bg-cover bg-center" style={{ backgroundImage: "url('/Background3.png')" }}>
            <div className="absolute inset-0 bg-black/30" />
            <div className="relative z-10 flex flex-col items-center justify-center text-white">
-              <Image src="/Logo3.png" alt="Citrinitas Therapies Logo" width={300} height={300} className="mb-6" />
+              <Image src="/Logo3.png" alt="Citrinitas Therapies Logo" width={600} height={600} className="mb-6" />
               <h1 className="text-4xl md:text-5xl font-headline text-white/90">
                 Welcome to Citrinitas Therapies
               </h1>
