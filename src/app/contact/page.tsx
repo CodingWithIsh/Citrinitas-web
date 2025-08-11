@@ -29,7 +29,7 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-lg text-foreground">Location</h3>
-                                    <p className="text-muted-foreground">Central London, UK</p>
+                                    <p className="text-muted-foreground">London, UK</p>
                                     <p className="text-sm text-muted-foreground">(Online sessions are available)</p>
                                 </div>
                             </div>
