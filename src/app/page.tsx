@@ -182,12 +182,18 @@ export default function Home() {
       {/* Contact Section */}
        <section
         id="contact"
-        className="relative bg-cover bg-center"
+        className="relative"
         data-aos="fade-up"
-        style={{ backgroundImage: "url('/contact.jpg')" }}
       >
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="container relative py-20 md:py-32">
+        <Image
+          src="/contact.jpg"
+          alt="A calm and inviting therapy room"
+          layout="fill"
+          objectFit="cover"
+          className="z-0"
+        />
+        <div className="absolute inset-0 bg-black/50 z-10" />
+        <div className="container relative py-20 md:py-32 z-20">
             <div className="flex items-center justify-center">
                 <ContactForm />
             </div>
