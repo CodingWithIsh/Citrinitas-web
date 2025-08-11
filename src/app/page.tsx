@@ -50,9 +50,9 @@ export default function Home() {
                  <Phone className="h-6 w-6" />
                  <span>+44 (0)20 1234 5678</span>
                </a>
-               <Button asChild variant="secondary" className="bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20">
-                 <Link href="/contact">Book via Contact Form</Link>
-               </Button>
+                <Button asChild variant="secondary" className="bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20" onClick={(e: any) => handleNavigate(e)}>
+                    <Link href="/contact">Begin your journey</Link>
+                </Button>
             </div>
           </div>
         </div>
@@ -155,13 +155,22 @@ export default function Home() {
       {/* Contact Section */}
       <section 
         id="contact" 
-        className="py-20 md:py-32 bg-cover bg-center relative" 
-        style={{ backgroundImage: "url('/tree.jpg')" }}
+        className="py-20 md:py-32 bg-secondary" 
         data-aos="fade-up"
       >
-        <div className="absolute inset-0 bg-black/50 z-0"></div>
-        <div className="container relative z-10">
-          <ContactForm />
+        <div className="container grid md:grid-cols-2 gap-16 items-center">
+            <div className="hidden md:block">
+              <Image
+                src="/tree.jpg"
+                alt="A tranquil tree in a field"
+                width={800}
+                height={1000}
+                className="rounded-lg shadow-2xl object-cover h-[600px]"
+              />
+            </div>
+            <div className="flex items-center justify-center">
+                <ContactForm />
+            </div>
         </div>
       </section>
     </>
