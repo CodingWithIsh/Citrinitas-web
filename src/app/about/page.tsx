@@ -15,13 +15,13 @@ export default function AboutPage() {
                 Finding Your Inner Sun
               </h1>
               <p className="text-lg text-foreground/80">
-                Hello, I'm Barnabas Kinge. I named my practice Citrinitas Therapies because it represents a beautiful idea: the dawning of your own inner sun. My purpose is to help you connect with that light within yourself—the clarity, joy, and wisdom that can guide you forward.
+                Hello, I'm Barnabas Kinge. I named my practice Citrinitas Therapies because it represents a beautiful idea from Jungian alchemy: the dawning of your own inner sun. It signifies the moment of clarity, wisdom, and self-awareness that illuminates your path forward. My purpose is to help you connect with that brilliant light within yourself—the inner resources that guide you toward healing and joy.
               </p>
               <p className="text-foreground/90">
-                My journey here has been unconventional. I've worked in humanitarian aid and studied how language shapes our world, and these experiences enrich my practice. Combined with my training as an integrative psychotherapist, they’ve taught me that every person's story is unique and deserves a culturally sensitive and profoundly human approach to healing.
+                My journey to becoming a psychotherapist has been anything but conventional. I've spent years in humanitarian aid, witnessing both immense suffering and incredible resilience. I've also studied how language and culture shape our reality. These diverse experiences are not separate from my therapeutic work; they are woven into its very fabric. Combined with my rigorous training as an integrative psychotherapist, they’ve taught me that every person's story is unique and deserves a culturally sensitive, compassionate, and profoundly human approach to healing.
               </p>
               <p className="text-foreground/90">
-                Therapy with me is a partnership. I'm here to provide a safe, welcoming space where you feel seen and heard without judgment. Our goal is twofold: to bring you relief from what's hurting now, and to empower you to access your own incredible capacity for growth and lasting change.
+                Therapy with me is a partnership built on trust and mutual respect. I'm here to provide a safe, welcoming, and non-judgmental space where you feel truly seen and heard. Our goal is twofold: to bring you relief from the immediate pain or confusion you're experiencing, and to empower you to access your own incredible capacity for growth and lasting change. Together, we will explore the landscapes of your inner world, unlocking the wisdom that already resides within you.
               </p>
             </div>
             <div>
@@ -29,8 +29,8 @@ export default function AboutPage() {
                 src="/tree.jpg"
                 alt="A strong tree symbolizing growth and resilience"
                 width={800}
-                height={1000}
-                className="rounded-lg shadow-2xl object-cover"
+                height={800}
+                className="rounded-lg shadow-2xl object-cover h-full max-h-[800px]"
               />
             </div>
           </div>
