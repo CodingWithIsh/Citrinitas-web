@@ -35,7 +35,7 @@ export default function Home() {
       <section id="home" className="h-dvh -mt-16 grid grid-cols-1 md:grid-cols-2">
         <div className="bg-primary hidden md:flex flex-col items-center justify-center p-12 text-primary-foreground">
           <div className="text-center space-y-10 max-w-md">
-            <h2 className="text-4xl font-headline text-primary-foreground/90 leading-tight whitespace-nowrap">
+            <h2 className="text-3xl font-headline text-primary-foreground/90 leading-tight">
               A Space for Inspired Growth and Healing
             </h2>
             
