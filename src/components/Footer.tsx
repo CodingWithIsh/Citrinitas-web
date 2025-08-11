@@ -21,8 +21,8 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-4">Navigate</h3>
             <ul className="space-y-2 text-primary-foreground/80">
               <li><Link href="/about" className="hover:underline">About</Link></li>
-              <li><Link href="/services" className="hover:underline">Approach</Link></li>
-              <li><Link href="/fees" className="hover:underline">Fees</Link></li>
+              <li><Link href="/services" className="hover:underline">Services</Link></li>
+              <li><Link href="/partners" className="hover:underline">Partners</Link></li>
               <li><Link href="/resources" className="hover:underline">Resources</Link></li>
               <li><Link href="/blog" className="hover:underline">Blog</Link></li>
             </ul>
@@ -56,7 +56,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-primary-foreground/20 text-center">
             <blockquote className="text-xl italic text-primary-foreground/80 mb-4">
-            "You cannot step into the same river twice." – Heraclitus
+            "Your character is your destiny." – Heraclitus
             </blockquote>
             <p className="text-sm text-primary-foreground/60">
             &copy; {currentYear} Citrinitas Therapies. All rights reserved.

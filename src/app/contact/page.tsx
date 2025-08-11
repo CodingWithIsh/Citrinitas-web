@@ -11,7 +11,7 @@ export default function ContactPage() {
                             Contact
                         </h1>
                         <p className="max-w-2xl mx-auto text-lg text-foreground/80">
-                           I welcome your inquiry. Please use the form below to reach out, and I will respond as soon as possible.
+                           Please use the form below to reach out, and we will respond as soon as possible.
                         </p>
                     </div>
 
@@ -53,8 +53,7 @@ export default function ContactPage() {
                             </div>
                             <div>
                                 <h3 className="text-xl font-headline text-primary mt-8 mb-2">Practice Hours</h3>
-                                <p className="text-muted-foreground">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                                <p className="text-muted-foreground">Weekends: Closed</p>
+                                <p className="text-muted-foreground">Monday - Friday: 11:00 am - 9:00 pm</p>
                             </div>
                         </div>
                     </div>

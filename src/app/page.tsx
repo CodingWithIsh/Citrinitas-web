@@ -39,7 +39,7 @@ export default function Home() {
             </h2>
             <div className="space-y-8">
               <blockquote className="text-3xl italic text-primary-foreground/70 border-l-4 border-accent pl-6">
-                "You cannot step into the same river twice."
+                "Your character is your destiny."
                 <footer className="text-lg not-italic mt-2">– Heraclitus</footer>
               </blockquote>
                <blockquote className="text-xl italic text-primary-foreground/70 border-l-4 border-accent pl-6">
@@ -150,7 +150,7 @@ export default function Home() {
           </Card>
           <div className="text-center mt-8">
             <Button asChild variant="link" className="text-lg text-primary">
-              <Link href="/fees">View Detailed Fee Information <ArrowRight className="ml-2" /></Link>
+              <Link href="/services">View Detailed Fee Information <ArrowRight className="ml-2" /></Link>
             </Button>
           </div>
         </div>
