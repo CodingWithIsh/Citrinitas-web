@@ -64,7 +64,7 @@ export default function ContactForm() {
   };
 
   return (
-    <Card className="w-full max-w-lg mx-auto shadow-lg bg-card border border-border">
+    <Card className="w-full max-w-lg mx-auto shadow-lg bg-card/80 backdrop-blur-sm border-border/50">
       <CardHeader className="text-center">
         <CardTitle className="text-3xl font-headline text-primary">Initial Contact</CardTitle>
         <CardDescription className="text-muted-foreground pt-2">
@@ -80,7 +80,7 @@ export default function ContactForm() {
               name="name"
               placeholder="Your Name"
               required
-              className="bg-input text-foreground placeholder:text-muted-foreground"
+              className="bg-input/80 text-foreground placeholder:text-muted-foreground"
               value={name}
               onChange={(e) => setName(e.target.value)}
               disabled={isLoading}
@@ -94,7 +94,7 @@ export default function ContactForm() {
               type="email"
               placeholder="your@email.com"
               required
-              className="bg-input text-foreground placeholder:text-muted-foreground"
+              className="bg-input/80 text-foreground placeholder:text-muted-foreground"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               disabled={isLoading}
@@ -108,7 +108,7 @@ export default function ContactForm() {
               placeholder="Your message..."
               rows={5}
               required
-              className="bg-input text-foreground placeholder:text-muted-foreground"
+              className="bg-input/80 text-foreground placeholder:text-muted-foreground"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               disabled={isLoading}

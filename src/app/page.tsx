@@ -153,8 +153,14 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 md:py-32 bg-primary/5" data-aos="fade-up">
-        <div className="container">
+      <section 
+        id="contact" 
+        className="py-20 md:py-32 bg-cover bg-center relative" 
+        style={{ backgroundImage: "url('/tree.jpg')" }}
+        data-aos="fade-up"
+      >
+        <div className="absolute inset-0 bg-black/50 z-0"></div>
+        <div className="container relative z-10">
           <ContactForm />
         </div>
       </section>
