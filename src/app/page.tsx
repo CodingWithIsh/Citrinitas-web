@@ -185,16 +185,15 @@ export default function Home() {
         className="relative"
         data-aos="fade-up"
       >
-        <Image
-          src="/contact.jpg"
-          alt="A calm and inviting therapy room"
-          layout="fill"
-          objectFit="cover"
-          className="z-0"
-        />
-        <div className="absolute inset-0 bg-black/50 z-10" />
-        <div className="container relative py-20 md:py-32 z-20">
-            <div className="flex items-center justify-center">
+        <div className="relative h-[600px] w-full">
+            <Image
+            src="/contact.jpg"
+            alt="A calm and inviting therapy room"
+            fill
+            className="object-cover"
+            />
+            <div className="absolute inset-0 bg-black/50" />
+            <div className="relative z-10 flex h-full items-center justify-center">
                 <ContactForm />
             </div>
         </div>
