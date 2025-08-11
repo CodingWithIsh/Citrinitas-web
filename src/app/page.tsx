@@ -165,7 +165,7 @@ export default function Home() {
                 alt="A tranquil tree in a field"
                 width={800}
                 height={1000}
-                className="rounded-lg shadow-2xl object-cover h-[600px]"
+                className="rounded-lg shadow-2xl object-cover h-full"
               />
             </div>
             <div className="flex items-center justify-center">
