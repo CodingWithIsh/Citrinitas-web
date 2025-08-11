@@ -180,13 +180,18 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="relative h-[600px] overflow-hidden">
-        <div
-          className="absolute inset-0 w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: "url('/contact.jpg')" }}
-        />
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 flex h-full w-full items-center justify-center p-4">
+      <section id="contact" className="relative h-[600px] bg-background">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/contact.jpg"
+            alt="A calming office interior for a therapy session"
+            layout="fill"
+            objectFit="cover"
+            className="opacity-90"
+          />
+        </div>
+        <div className="absolute inset-0 bg-black/50 z-10" />
+        <div className="relative z-20 flex h-full items-center justify-center p-4">
           <ContactForm />
         </div>
       </section>
