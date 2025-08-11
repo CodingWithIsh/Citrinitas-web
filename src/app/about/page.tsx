@@ -9,8 +9,8 @@ export default function AboutPage() {
     <div className="bg-background">
       <section className="py-12 md:py-20" data-aos="fade-up">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-            <div className="space-y-6">
+          <div className="grid md:grid-cols-1 gap-12 md:gap-16 items-center">
+            <div className="space-y-6 max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-headline text-primary">
                 A Space for Clarity and Growth
               </h1>
@@ -23,15 +23,6 @@ export default function AboutPage() {
               <p className="text-foreground/90">
                 The therapeutic relationship at Citrinitas is a partnership built on trust and mutual respect. It provides a safe, welcoming, and non-judgmental space where clients feel truly seen and heard. The goal is twofold: to bring relief from immediate psychological distress and to empower individuals to access their own incredible capacity for growth and lasting change. Together, therapist and client explore the landscapes of the inner world, unlocking the wisdom that already resides within.
               </p>
-            </div>
-            <div>
-              <Image
-                src="/tree.jpg"
-                alt="A strong tree symbolizing growth and resilience"
-                width={800}
-                height={800}
-                className="rounded-lg shadow-2xl object-cover h-full max-h-[800px]"
-              />
             </div>
           </div>
         </div>
