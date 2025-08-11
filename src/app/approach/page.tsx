@@ -53,26 +53,21 @@ export default function ApproachPage() {
                 <div className="absolute w-full border-t-2 border-dashed border-primary/30 top-1/2"></div>
             </div>
 
-            <div className="relative grid md:grid-cols-4 gap-x-8 gap-y-12">
+            <div className="relative grid md:grid-cols-3 gap-x-8 gap-y-12">
               <RoadmapStep
                 number="1"
-                title="The Initial Consultation"
-                description="The journey begins with a brief, no-obligation initial consultation. This session is a two-way conversation designed to explore what brings you to therapy and what you hope to achieve. It is also an opportunity for you to ask questions and get a feel for the therapeutic relationship, ensuring it feels like a good and safe fit before committing to further sessions."
+                title="Consultation & Connection"
+                description="The journey begins with a brief, no-obligation consultation. This is a space to discuss what brings you to therapy and to ensure the therapeutic relationship feels like a safe and supportive fit before moving forward."
               />
               <RoadmapStep
                 number="2"
-                title="The Early Phase: Building the Foundation"
-                description="The first few sessions are dedicated to building a secure and trusting therapeutic foundation. This phase involves a more detailed exploration of your personal history, your current challenges, and your strengths. Together, we establish a safe 'container' for the work ahead and collaboratively define a clear focus for our sessions, ensuring the process is aligned with your specific goals."
+                title="Exploration & Insight"
+                description="This is the core of the therapeutic process. In a confidential and collaborative space, we explore the underlying patterns and challenges you face. The goal is to gain valuable insight, develop new perspectives, and build practical tools for navigating your inner and outer worlds."
               />
               <RoadmapStep
                 number="3"
-                title="The Middle Phase: Deepening the Work"
-                description="This is the core of the therapeutic process. Drawing upon the integrative methods outlined above, this phase involves a deeper exploration of underlying patterns of thought, feeling, and behaviour. It is a space for gaining insight, making new connections, and developing practical tools and new perspectives to navigate challenges. The work is always collaborative, guided by your evolving needs and discoveries."
-              />
-              <RoadmapStep
-                number="4"
-                title="The Later Phase: Integration & Empowerment"
-                description="The aim of therapy is not endless sessions, but lasting empowerment. As you progress, the focus shifts toward integrating your new insights and skills into your daily life. This phase involves consolidating your growth, building confidence in your own abilities, and preparing to carry the work forward independently. The conclusion of therapy is a gradual and mutually agreed-upon process, ensuring you feel ready and equipped for the path ahead."
+                title="Integration & Empowerment"
+                description="As you gain clarity, the focus shifts to integrating these new insights into your daily life. This final phase is about consolidating your growth, building confidence in your own abilities, and feeling empowered to carry your progress forward independently."
               />
             </div>
           </div>
