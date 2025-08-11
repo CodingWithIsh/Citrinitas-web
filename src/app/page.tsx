@@ -42,6 +42,10 @@ export default function Home() {
                 "You cannot step into the same river twice."
                 <footer className="text-lg not-italic mt-2">– Heraclitus</footer>
               </blockquote>
+               <blockquote className="text-xl italic text-primary-foreground/70 border-l-4 border-accent pl-6">
+                "Until you make the unconscious conscious, it will direct your life and you will call it fate."
+                <footer className="text-lg not-italic mt-2">– C.G. Jung</footer>
+              </blockquote>
             </div>
             <Separator className="bg-primary-foreground/20" />
             <div className="pt-2 space-y-4">
@@ -153,16 +157,22 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section 
+       <section 
         id="contact" 
         className="py-20 md:py-32 bg-secondary" 
         data-aos="fade-up"
       >
         <div className="container grid md:grid-cols-2 gap-16 items-center">
-            <div className="hidden md:block">
-               {/* Image removed from here */}
+             <div className="hidden md:block">
+                <Image 
+                    src="/tree.jpg"
+                    alt="A tall tree with deep roots"
+                    width={800}
+                    height={600}
+                    className="rounded-lg shadow-2xl object-cover h-full"
+                />
             </div>
-            <div className="flex items-center justify-center md:col-span-2">
+            <div className="flex items-center justify-center">
                 <ContactForm />
             </div>
         </div>
