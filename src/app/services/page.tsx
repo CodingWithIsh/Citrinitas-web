@@ -19,19 +19,28 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="flex flex-col items-center gap-8 mb-16">
-            <div className="grid md:grid-cols-3 gap-8 w-full">
+          <div className="mb-16">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <ServiceCard title="Counselling" description="Dedicated, in-person sessions providing a safe space to explore personal challenges and foster growth." />
                 <ServiceCard title="Psychotherapy" description="A deep, explorative process to understand and resolve complex emotional and psychological issues." />
                 <ServiceCard title="Coaching" description="Goal-oriented support to help you identify strengths, overcome obstacles, and achieve your full potential." />
-            </div>
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl">
-                <ServiceCard title="Qi-Gong Group" description="A mindful practice combining gentle movement, breathing, and meditation to cultivate calm and vitality." />
-                <ServiceCard title="Mentoring" description="Guidance and support from an experienced practitioner to help you navigate personal or professional development." />
+                 <div className="md:col-span-2 lg:col-span-1 lg:col-start-2">
+                    <div className="grid md:grid-cols-2 gap-8">
+                        <ServiceCard title="Qi-Gong Group" description="A mindful practice combining gentle movement, breathing, and meditation to cultivate calm and vitality." />
+                        <ServiceCard title="Mentoring" description="Guidance and support from an experienced practitioner to help you navigate personal or professional development." />
+                    </div>
+                 </div>
             </div>
           </div>
-          
-           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
+        </div>
+      </section>
+      
+      <section className="py-20 md:py-24 bg-primary/5" data-aos="fade-up">
+        <div className="container max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+                <h2 className="text-3xl md:text-4xl font-headline text-primary">Get Started</h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <Card className="shadow-lg text-center flex flex-col">
                     <CardHeader>
                         <CardTitle className="font-headline text-2xl text-primary">Individual Session</CardTitle>
@@ -61,9 +70,12 @@ export default function ServicesPage() {
                     </CardFooter>
                 </Card>
             </div>
+        </div>
+      </section>
 
-
-           <div className="text-center mb-16 pt-16">
+      <section className="py-20 md:py-32" data-aos="fade-up">
+        <div className="container max-w-5xl mx-auto">
+           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-headline text-primary mb-4">
               Pricing & Accessibility
             </h2>
