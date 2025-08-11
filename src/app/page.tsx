@@ -38,7 +38,7 @@ export default function Home() {
             <h2 className="text-3xl font-headline text-primary-foreground/90 leading-tight">
               A Space for Inspired Growth and Healing
             </h2>
-            <blockquote className="text-5xl italic text-primary-foreground/80 py-2 pb-8">
+            <blockquote className="text-4xl italic text-primary-foreground/80 py-2 pb-8">
               "Your character is your destiny."
               <footer className="text-base not-italic mt-4 opacity-70">~ Heraclitus</footer>
             </blockquote>
