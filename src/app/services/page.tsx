@@ -20,7 +20,7 @@ export default function ServicesPage() {
           </div>
 
           <div className="flex justify-center">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <div className="grid md:grid-cols-2 gap-8 mb-16">
               <ServiceCard title="1-1 Face-to-Face Adult Counselling" description="Dedicated, in-person sessions providing a safe space to explore personal challenges and foster growth." />
               <ServiceCard title="Psychotherapy" description="A deep, explorative process to understand and resolve complex emotional and psychological issues." />
               <ServiceCard title="Coaching" description="Goal-oriented support to help you identify strengths, overcome obstacles, and achieve your full potential." />
