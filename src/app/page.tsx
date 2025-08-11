@@ -35,11 +35,11 @@ export default function Home() {
       <section id="home" className="h-dvh -mt-16 grid grid-cols-1 md:grid-cols-2">
         <div className="bg-primary hidden md:flex flex-col items-center justify-center p-12 text-primary-foreground">
           <div className="text-center space-y-10 max-w-md">
-            <h2 className="text-4xl font-headline text-primary-foreground/90 leading-tight">
+            <h2 className="text-4xl font-headline text-primary-foreground/90 leading-tight whitespace-nowrap">
               A Space for Inspired Growth and Healing
             </h2>
             
-            <blockquote className="text-4xl italic text-primary-foreground/80 py-2 pb-8">
+            <blockquote className="text-5xl italic text-primary-foreground/80 py-2 pb-8">
               "Your character is your destiny."
               <footer className="text-base not-italic mt-4 opacity-70">~ Heraclitus</footer>
             </blockquote>
