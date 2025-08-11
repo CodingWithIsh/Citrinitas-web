@@ -18,12 +18,14 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <ServiceCard title="1-1 Face-to-Face Adult Counselling" description="Dedicated, in-person sessions providing a safe space to explore personal challenges and foster growth." />
-            <ServiceCard title="Psychotherapy" description="A deep, explorative process to understand and resolve complex emotional and psychological issues." />
-            <ServiceCard title="Coaching" description="Goal-oriented support to help you identify strengths, overcome obstacles, and achieve your full potential." />
-            <ServiceCard title="Qi-Gong Group" description="A mindful practice combining gentle movement, breathing, and meditation to cultivate calm and vitality." />
-            <ServiceCard title="Mentoring" description="Guidance and support from an experienced practitioner to help you navigate personal or professional development." />
+          <div className="flex justify-center">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+              <ServiceCard title="1-1 Face-to-Face Adult Counselling" description="Dedicated, in-person sessions providing a safe space to explore personal challenges and foster growth." />
+              <ServiceCard title="Psychotherapy" description="A deep, explorative process to understand and resolve complex emotional and psychological issues." />
+              <ServiceCard title="Coaching" description="Goal-oriented support to help you identify strengths, overcome obstacles, and achieve your full potential." />
+              <ServiceCard title="Qi-Gong Group" description="A mindful practice combining gentle movement, breathing, and meditation to cultivate calm and vitality." />
+              <ServiceCard title="Mentoring" description="Guidance and support from an experienced practitioner to help you navigate personal or professional development." />
+            </div>
           </div>
 
            <div className="text-center mb-16 pt-16">
