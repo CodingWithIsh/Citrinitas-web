@@ -9,7 +9,7 @@ import ScrollIndicator from "@/components/ScrollIndicator";
 export default function ServicesPage() {
   return (
     <div className="bg-background">
-      <section className="pt-20 md:pt-32 relative" data-aos="fade-up">
+      <section className="py-20 md:py-32 relative" data-aos="fade-up">
         <div className="container max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-headline text-primary mb-4">
