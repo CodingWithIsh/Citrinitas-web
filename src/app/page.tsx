@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 import ContactForm from '@/components/ContactForm';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Sun, Waves, Wind, ArrowRight, Phone } from 'lucide-react';
+import { Sun, Waves, Wind, ArrowRight, Phone, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';
@@ -125,32 +125,51 @@ export default function Home() {
             />
           </div>
           <Button asChild variant="link" className="mt-12 text-lg text-primary">
-            <Link href="/services">Explore My Approach <ArrowRight className="ml-2" /></Link>
+            <Link href="/approach">Explore My Approach <ArrowRight className="ml-2" /></Link>
           </Button>
         </div>
       </section>
 
-      {/* Fees Section */}
+      {/* New Services Section */}
       <section id="fees" className="py-20 md:py-32 bg-background" data-aos="fade-up">
-        <div className="container max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-headline text-primary mb-8 text-center">Services</h2>
-          <Card className="shadow-lg">
-            <CardContent className="p-8 text-center flex flex-col md:flex-row justify-between items-center gap-6">
-              <div>
-                <p className="text-lg text-foreground/80">Individual Session (50 mins)</p>
-                <p className="text-4xl font-bold text-primary mt-1">£80</p>
-              </div>
-              <Separator orientation="vertical" className="hidden md:block h-20" />
-              <Separator className="md:hidden" />
-              <div>
-                <p className="text-lg text-foreground/80">Couples Session (60 mins)</p>
-                <p className="text-4xl font-bold text-primary mt-1">£120</p>
-              </div>
-            </CardContent>
-          </Card>
-          <div className="text-center mt-8">
-            <Button asChild variant="link" className="text-lg text-primary">
-              <Link href="/services">Explore Our Services <ArrowRight className="ml-2" /></Link>
+        <div className="container max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-headline text-primary mb-8">Our Services</h2>
+          <p className="max-w-2xl mx-auto text-lg text-foreground/80 mb-12">
+            We provide a range of tailored therapeutic services designed to foster growth, healing, and self-discovery. Our approach is collaborative and adapted to your unique journey.
+          </p>
+          <div className="grid md:grid-cols-2 gap-8 text-left max-w-2xl mx-auto">
+             <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
+                <div>
+                    <h3 className="text-xl font-headline text-primary mb-1">1-1 Counselling</h3>
+                    <p className="text-foreground/80">A confidential space to explore personal challenges and develop coping strategies.</p>
+                </div>
+            </div>
+             <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
+                <div>
+                    <h3 className="text-xl font-headline text-primary mb-1">Psychotherapy</h3>
+                    <p className="text-foreground/80">A deep, explorative process to understand and resolve complex emotional issues.</p>
+                </div>
+            </div>
+             <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
+                <div>
+                    <h3 className="text-xl font-headline text-primary mb-1">Coaching</h3>
+                    <p className="text-foreground/80">Goal-oriented support to help you unlock your full potential.</p>
+                </div>
+            </div>
+             <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
+                <div>
+                    <h3 className="text-xl font-headline text-primary mb-1">Mentoring</h3>
+                    <p className="text-foreground/80">Guidance from an experienced practitioner for personal or professional growth.</p>
+                </div>
+            </div>
+          </div>
+          <div className="text-center mt-12">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+              <Link href="/services">Explore All Services</Link>
             </Button>
           </div>
         </div>
