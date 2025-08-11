@@ -162,16 +162,7 @@ export default function Home() {
         className="py-20 md:py-32 bg-secondary" 
         data-aos="fade-up"
       >
-        <div className="container grid md:grid-cols-2 gap-16 items-center">
-             <div className="hidden md:block">
-                <Image 
-                    src="/tree.jpg"
-                    alt="A tall tree with deep roots"
-                    width={800}
-                    height={600}
-                    className="rounded-lg shadow-2xl object-cover h-full"
-                />
-            </div>
+        <div className="container">
             <div className="flex items-center justify-center">
                 <ContactForm />
             </div>
