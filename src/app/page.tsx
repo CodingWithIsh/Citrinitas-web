@@ -160,15 +160,9 @@ export default function Home() {
       >
         <div className="container grid md:grid-cols-2 gap-16 items-center">
             <div className="hidden md:block">
-              <Image
-                src="/tree.jpg"
-                alt="A tranquil tree in a field"
-                width={800}
-                height={1000}
-                className="rounded-lg shadow-2xl object-cover h-full"
-              />
+               {/* Image removed from here */}
             </div>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center md:col-span-2">
                 <ContactForm />
             </div>
         </div>

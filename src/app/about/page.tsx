@@ -26,8 +26,8 @@ export default function AboutPage() {
             </div>
             <div>
               <Image
-                src="/Potrait.png"
-                alt="A tranquil and serene Zen garden"
+                src="/tree.jpg"
+                alt="A strong tree symbolizing growth and resilience"
                 width={800}
                 height={1000}
                 className="rounded-lg shadow-2xl object-cover"
