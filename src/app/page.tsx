@@ -133,7 +133,7 @@ export default function Home() {
       {/* Fees Section */}
       <section id="fees" className="py-20 md:py-32 bg-background" data-aos="fade-up">
         <div className="container max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-headline text-primary mb-8 text-center">Session Fees</h2>
+          <h2 className="text-3xl md:text-4xl font-headline text-primary mb-8 text-center">Services</h2>
           <Card className="shadow-lg">
             <CardContent className="p-8 text-center flex flex-col md:flex-row justify-between items-center gap-6">
               <div>
@@ -150,7 +150,7 @@ export default function Home() {
           </Card>
           <div className="text-center mt-8">
             <Button asChild variant="link" className="text-lg text-primary">
-              <Link href="/services">View Detailed Fee Information <ArrowRight className="ml-2" /></Link>
+              <Link href="/services">Explore Our Services <ArrowRight className="ml-2" /></Link>
             </Button>
           </div>
         </div>

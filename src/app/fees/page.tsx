@@ -1,8 +1,9 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, HelpCircle, MessageSquare, ShieldCheck, UserCheck, Wind } from "lucide-react";
+import { Separator } from "@/components/ui/separator";
 
 export default function ServicesPage() {
   return (
@@ -27,6 +28,38 @@ export default function ServicesPage() {
               <ServiceCard title="Mentoring" description="Guidance and support from an experienced practitioner to help you navigate personal or professional development." />
             </div>
           </div>
+          
+           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
+                <Card className="shadow-lg text-center flex flex-col">
+                    <CardHeader>
+                        <CardTitle className="font-headline text-2xl text-primary">Individual Session</CardTitle>
+                        <CardDescription>(50 minutes)</CardDescription>
+                    </CardHeader>
+                    <CardContent className="flex-grow">
+                        <p className="text-foreground/80">One-to-one therapy focused on your unique needs and personal growth journey.</p>
+                    </CardContent>
+                    <CardFooter>
+                        <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+                            <Link href="/contact">Book Now</Link>
+                        </Button>
+                    </CardFooter>
+                </Card>
+                <Card className="shadow-lg text-center flex flex-col">
+                    <CardHeader>
+                        <CardTitle className="font-headline text-2xl text-primary">Couples Session</CardTitle>
+                        <CardDescription>(60 minutes)</CardDescription>
+                    </CardHeader>
+                    <CardContent className="flex-grow">
+                        <p className="text-foreground/80">A collaborative space for partners to navigate challenges and strengthen their relationship.</p>
+                    </CardContent>
+                    <CardFooter>
+                        <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+                            <Link href="/contact">Book Now</Link>
+                        </Button>
+                    </CardFooter>
+                </Card>
+            </div>
+
 
            <div className="text-center mb-16 pt-16">
             <h2 className="text-3xl md:text-4xl font-headline text-primary mb-4">
