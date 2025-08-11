@@ -22,7 +22,7 @@ export default function ContactForm() {
     setIsLoading(true);
 
     const formData = {
-        access_key: "bfb7dc03-5f60-4058-9799-6ea026d4725a",
+        access_key: "98b50168-6ea6-402a-8965-7dc2eba79b96",
         name,
         email,
         message,
@@ -64,7 +64,7 @@ export default function ContactForm() {
   };
 
   return (
-    <Card className="w-full max-w-lg mx-auto shadow-lg bg-card">
+    <Card className="w-full max-w-lg mx-auto shadow-lg bg-card/80 backdrop-blur-sm">
       <CardHeader className="text-center">
         <CardTitle className="text-3xl font-headline text-primary">Initial Contact</CardTitle>
         <CardDescription className="text-muted-foreground pt-2">
