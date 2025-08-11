@@ -4,11 +4,12 @@ import Link from "next/link";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, HelpCircle, MessageSquare, ShieldCheck, UserCheck, Wind } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import ScrollIndicator from "@/components/ScrollIndicator";
 
 export default function ServicesPage() {
   return (
     <div className="bg-background">
-      <section className="pt-20 md:pt-32" data-aos="fade-up">
+      <section className="pt-20 md:pt-32 relative" data-aos="fade-up">
         <div className="container max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-headline text-primary mb-4">
@@ -31,9 +32,10 @@ export default function ServicesPage() {
             </div>
           </div>
         </div>
+        <ScrollIndicator targetId="get-started" />
       </section>
       
-      <section className="py-20 md:py-24 bg-primary/5" data-aos="fade-up">
+      <section id="get-started" className="py-20 md:py-24 bg-primary/5" data-aos="fade-up">
         <div className="container max-w-5xl mx-auto">
             <div className="text-center mb-16">
                 <h2 className="text-3xl md:text-4xl font-headline text-primary">Get Started</h2>

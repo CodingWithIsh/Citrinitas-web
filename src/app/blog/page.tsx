@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { ArrowRight } from 'lucide-react';
+import ScrollIndicator from '@/components/ScrollIndicator';
 
 const blogPosts = [
   {
@@ -38,7 +39,7 @@ const blogPosts = [
 export default function BlogIndexPage() {
   return (
     <div className="bg-background">
-      <section className="py-20 md:py-32" data-aos="fade-up">
+      <section id="start" className="py-20 md:py-32 relative" data-aos="fade-up">
         <div className="container">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-headline text-primary mb-4">
@@ -48,7 +49,7 @@ export default function BlogIndexPage() {
               A collection of articles and musings on the path to clarity, joy, and wisdom.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div id="blog-posts" className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
               <Link href={post.link} key={post.link} className="group">
                 <Card className="h-full flex flex-col justify-between hover:border-primary transition-colors duration-300">
@@ -64,6 +65,7 @@ export default function BlogIndexPage() {
             ))}
           </div>
         </div>
+        <ScrollIndicator targetId="blog-posts" />
       </section>
     </div>
   );

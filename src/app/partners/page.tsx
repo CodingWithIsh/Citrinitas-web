@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import ScrollIndicator from "@/components/ScrollIndicator";
 
 export default function PartnersPage() {
   return (
     <div className="bg-background">
-      <section className="py-20 md:py-32" data-aos="fade-up">
+      <section id="start" className="py-20 md:py-32 relative" data-aos="fade-up">
         <div className="container text-center">
           <h1 className="text-4xl md:text-5xl font-headline text-primary mb-4">
             Partners
@@ -16,6 +17,7 @@ export default function PartnersPage() {
             <Link href="/">Return Home</Link>
           </Button>
         </div>
+        <ScrollIndicator targetId="footer-section" />
       </section>
     </div>
   );

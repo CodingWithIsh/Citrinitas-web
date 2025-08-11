@@ -3,12 +3,13 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from 'next/image';
 import { BookOpen, Briefcase, Heart, ArrowRight, Brain, Wind, Hourglass } from "lucide-react";
+import ScrollIndicator from "@/components/ScrollIndicator";
 
 
 export default function ResourcesPage() {
   return (
     <div className="bg-background">
-      <section className="py-20 md:py-32 text-center" data-aos="fade-up">
+      <section className="py-20 md:py-32 text-center relative" data-aos="fade-up">
         <div className="container">
           <h1 className="text-4xl md:text-5xl font-headline text-primary mb-4">
             The Resources Toolkit
@@ -17,9 +18,10 @@ export default function ResourcesPage() {
             Our journey through life is shaped by past experiences, which can sometimes feel like a heavy weight. This toolkit offers a curated set of articles and resources designed to support you on your path to greater clarity and well-being.
           </p>
         </div>
+        <ScrollIndicator targetId="life-tapestry" />
       </section>
 
-      <section className="py-20 md:py-32 bg-primary text-primary-foreground" data-aos="fade-up">
+      <section id="life-tapestry" className="py-20 md:py-32 bg-primary text-primary-foreground" data-aos="fade-up">
         <div className="container">
           <h2 className="text-3xl md:text-4xl font-headline mb-16 text-center">
             Exploring Life's Tapestry

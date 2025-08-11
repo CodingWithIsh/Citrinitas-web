@@ -14,8 +14,11 @@ export default function ScrollIndicator({ targetId, className }: ScrollIndicator
 
   useEffect(() => {
     const handleScroll = () => {
+      // Hide the indicator if user has scrolled more than 50px
       if (window.scrollY > 50) {
         setIsVisible(false);
+      } else {
+        setIsVisible(true);
       }
     };
 
@@ -39,7 +42,7 @@ export default function ScrollIndicator({ targetId, className }: ScrollIndicator
     >
       <button
         onClick={handleClick}
-        className="animate-bounce-slow rounded-full p-2 text-foreground/50 hover:text-primary hover:bg-black/10"
+        className="animate-bounce-slow rounded-full p-2 text-foreground/80 hover:text-primary hover:bg-black/10"
         aria-label="Scroll to next section"
       >
         <ChevronDown className="h-8 w-8" />
