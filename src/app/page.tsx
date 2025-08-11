@@ -182,13 +182,14 @@ export default function Home() {
       {/* Contact Section */}
       <section
         id="contact"
-        className="relative h-[600px] bg-cover bg-center"
-        style={{ backgroundImage: `url('/contact.jpg')` }}
+        className="h-[600px] flex items-center justify-center p-4"
+        style={{
+          backgroundImage: `url('/contact.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       >
-        <div className="absolute inset-0 bg-black/50 z-10" />
-        <div className="relative z-20 flex h-full items-center justify-center p-4">
-          <ContactForm />
-        </div>
+        <ContactForm />
       </section>
     </>
   );
