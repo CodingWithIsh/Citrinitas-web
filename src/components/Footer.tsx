@@ -57,7 +57,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-primary-foreground/20 text-center">
             <blockquote className="text-xl italic text-primary-foreground/80 mb-4">
-            "Your character is your destiny." – Heraclitus
+            "No man ever steps in the same river twice, for it's not the same river and he's not the same man." – Heraclitus
             </blockquote>
             <p className="text-sm text-primary-foreground/60">
             &copy; {currentYear} Citrinitas Therapies. All rights reserved.
