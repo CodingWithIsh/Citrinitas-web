@@ -2,7 +2,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Milestone, Check, GitCommit, ShieldCheck, Search, Lightbulb, Users, Flag, Bot } from "lucide-react";
+import { Search, Lightbulb, Flag } from "lucide-react";
 import ScrollIndicator from "@/components/ScrollIndicator";
 
 export default function ApproachPage() {
@@ -47,29 +47,22 @@ export default function ApproachPage() {
             </p>
           </div>
 
-          <div className="relative">
-            {/* Dotted line for desktop */}
-            <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 mt-[-1rem]">
-                <div className="absolute w-full border-t-2 border-dashed border-primary/30 top-1/2"></div>
-            </div>
-
-            <div className="relative grid md:grid-cols-3 gap-x-8 gap-y-12">
-              <RoadmapStep
-                number="1"
-                title="Consultation & Connection"
-                description="The journey begins with a brief, no-obligation consultation. This is a space to discuss what brings you to therapy and to ensure the therapeutic relationship feels like a safe and supportive fit before moving forward."
-              />
-              <RoadmapStep
-                number="2"
-                title="Exploration & Insight"
-                description="This is the core of the therapeutic process. In a confidential and collaborative space, we explore the underlying patterns and challenges you face. The goal is to gain valuable insight, develop new perspectives, and build practical tools for navigating your inner and outer worlds."
-              />
-              <RoadmapStep
-                number="3"
-                title="Integration & Empowerment"
-                description="As you gain clarity, the focus shifts to integrating these new insights into your daily life. This final phase is about consolidating your growth, building confidence in your own abilities, and feeling empowered to carry your progress forward independently."
-              />
-            </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <RoadmapCard
+              icon={<Search className="w-10 h-10 text-accent" />}
+              title="Consultation & Connection"
+              description="The journey begins with a brief, no-obligation consultation. This is a space to discuss what brings you to therapy and to ensure the therapeutic relationship feels like a safe and supportive fit before moving forward."
+            />
+            <RoadmapCard
+              icon={<Lightbulb className="w-10 h-10 text-accent" />}
+              title="Exploration & Insight"
+              description="In a confidential and collaborative space, we explore the underlying patterns and challenges you face. The goal is to gain valuable insight, develop new perspectives, and build practical tools for navigating your inner and outer worlds."
+            />
+            <RoadmapCard
+              icon={<Flag className="w-10 h-10 text-accent" />}
+              title="Integration & Empowerment"
+              description="As you gain clarity, the focus shifts to integrating these new insights into your daily life. This final phase is about consolidating your growth, building confidence in your own abilities, and feeling empowered to carry your progress forward independently."
+            />
           </div>
         </div>
       </section>
@@ -98,14 +91,18 @@ function ApproachDetail({ title, description }: { title: string, description: st
   );
 }
 
-function RoadmapStep({ number, title, description }: { number: string; title: string; description: string }) {
+function RoadmapCard({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
   return (
-    <div className="flex flex-col items-center text-center md:items-start md:text-left">
-      <div className="relative flex items-center justify-center w-16 h-16 bg-background rounded-full border-2 border-primary mb-4 z-10">
-        <span className="text-2xl font-headline text-primary">{number}</span>
-      </div>
-      <h3 className="text-xl font-headline text-primary mb-2">{title}</h3>
-      <p className="text-foreground/80 text-sm">{description}</p>
-    </div>
+    <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 bg-card h-full flex flex-col p-6">
+      <CardHeader className="items-center">
+        <div className="bg-accent/10 rounded-full p-4 w-fit mb-4">
+          {icon}
+        </div>
+        <CardTitle className="font-headline text-2xl text-primary">{title}</CardTitle>
+      </CardHeader>
+      <CardContent className="flex-grow">
+        <p className="text-foreground/80">{description}</p>
+      </CardContent>
+    </Card>
   );
 }
