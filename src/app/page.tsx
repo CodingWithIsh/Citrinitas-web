@@ -180,14 +180,14 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section
-        id="contact"
-        className="relative bg-cover bg-center"
-        style={{ backgroundImage: "url('/contact.jpg')" }}
-      >
+      <section id="contact" className="relative h-[600px] overflow-hidden">
+        <div
+          className="absolute inset-0 w-full h-full bg-cover bg-center"
+          style={{ backgroundImage: "url('/contact.jpg')" }}
+        />
         <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 flex h-[600px] w-full items-center justify-center">
-            <ContactForm />
+        <div className="relative z-10 flex h-full w-full items-center justify-center p-4">
+          <ContactForm />
         </div>
       </section>
     </>
