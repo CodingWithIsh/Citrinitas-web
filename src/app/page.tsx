@@ -180,16 +180,14 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="relative h-[600px] bg-background">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/contact.jpg"
-            alt="A calming office interior for a therapy session"
-            layout="fill"
-            objectFit="cover"
-            className="opacity-90"
-          />
-        </div>
+      <section id="contact" className="relative h-[600px]">
+        <Image
+          src="/contact.jpg"
+          alt="A calming office interior for a therapy session"
+          layout="fill"
+          objectFit="cover"
+          className="z-0"
+        />
         <div className="absolute inset-0 bg-black/50 z-10" />
         <div className="relative z-20 flex h-full items-center justify-center p-4">
           <ContactForm />
