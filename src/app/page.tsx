@@ -33,18 +33,19 @@ export default function Home() {
     <>
       {/* Home Section */}
       <section id="home" className="h-dvh -mt-16 grid grid-cols-1 md:grid-cols-2">
-        <div className="bg-primary hidden md:flex flex-col items-center justify-center p-12 text-primary-foreground">
-          <div className="text-center space-y-10 max-w-md">
-            <h2 className="text-3xl font-headline text-primary-foreground/90 leading-tight">
-              A Space for Inspired Growth and Healing
-            </h2>
-            
-            <blockquote className="text-5xl italic text-primary-foreground/80 py-2 pb-8">
-              "Your character is your destiny."
-              <footer className="text-base not-italic mt-4 opacity-70">~ Heraclitus</footer>
-            </blockquote>
+        <div className="bg-primary hidden md:flex flex-col items-center justify-center p-8 text-primary-foreground">
+          <div className="flex flex-col h-full justify-between text-center max-w-md py-8">
+            <div className="space-y-8">
+                <h2 className="text-3xl font-headline text-primary-foreground/90 leading-tight">
+                A Space for Inspired Growth and Healing
+                </h2>
+                <blockquote className="text-5xl italic text-primary-foreground/80">
+                "Your character is your destiny."
+                <footer className="text-base not-italic mt-4 opacity-70">~ Heraclitus</footer>
+                </blockquote>
+            </div>
 
-            <div className="pt-2 space-y-4">
+            <div className="space-y-4">
                <h3 className="text-lg font-bold tracking-wide">Arrange a Free Consultation</h3>
                <a href="tel:+447384407792" className="flex items-center justify-center gap-3 text-2xl text-accent hover:text-accent/90 transition-colors mt-2">
                  <Phone className="h-6 w-6" />
