@@ -182,13 +182,11 @@ export default function Home() {
       {/* Contact Section */}
       <section
         id="contact"
-        className="bg-cover bg-center relative"
-        style={{
-          backgroundImage: `url('/contact.jpg')`,
-        }}
+        className="py-20 md:py-32 bg-cover bg-center relative"
+        style={{ backgroundImage: "url('/Contact.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/50" />
-        <div className="container relative flex items-center justify-center min-h-[600px] py-16">
+        <div className="container relative flex items-center justify-center">
           <ContactForm />
         </div>
       </section>
