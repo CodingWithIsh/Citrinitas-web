@@ -3,11 +3,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Waves, Wind, Sun } from "lucide-react";
+import ScrollIndicator from "@/components/ScrollIndicator";
 
 export default function ApproachPage() {
   return (
     <div className="bg-background">
-      <section className="py-20 md:py-32" data-aos="fade-up">
+      <section id="start" className="py-20 md:py-32 relative" data-aos="fade-up">
         <div className="container mx-auto text-center">
             <div className="text-center mb-16">
                 <h1 className="text-4xl md:text-5xl font-headline text-primary mb-4">
@@ -35,9 +36,10 @@ export default function ApproachPage() {
             />
           </div>
         </div>
+        <ScrollIndicator targetId="next-step" />
       </section>
 
-      <section className="py-20 md:py-24 text-center bg-primary/5" data-aos="fade-up">
+      <section id="next-step" className="py-20 md:py-24 text-center bg-primary/5" data-aos="fade-up">
         <div className="container">
           <h2 className="text-3xl font-headline text-primary mb-4">Ready to Begin Your Journey?</h2>
           <p className="max-w-2xl mx-auto text-lg text-foreground/80 mb-8">

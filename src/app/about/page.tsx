@@ -3,11 +3,12 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ShieldCheck, Handshake, MessageCircle, GitCommit, Heart, CheckSquare } from 'lucide-react';
+import ScrollIndicator from '@/components/ScrollIndicator';
 
 export default function AboutPage() {
   return (
     <div className="bg-background">
-      <section className="py-12 md:py-20" data-aos="fade-up">
+      <section id="start" className="py-12 md:py-20 relative" data-aos="fade-up">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-1 gap-12 md:gap-16 items-center">
             <div className="space-y-6 max-w-4xl mx-auto text-center">
@@ -26,9 +27,10 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+        <ScrollIndicator targetId="ethos" />
       </section>
 
-      <section className="py-20 md:py-32 bg-primary" data-aos="fade-up">
+      <section id="ethos" className="py-20 md:py-32 bg-primary" data-aos="fade-up">
         <div className="container max-w-5xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-headline text-primary-foreground mb-12">
             Our Ethos

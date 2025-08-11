@@ -12,6 +12,7 @@ import { Sun, Waves, Wind, ArrowRight, Phone, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';
+import ScrollIndicator from '@/components/ScrollIndicator';
 
 export default function Home() {
   const [isNavigating, setIsNavigating] = useState(false);
@@ -66,6 +67,7 @@ export default function Home() {
                   <a href="/resources" onClick={handleNavigate}>Begin your journey</a>
               </Button>
            </div>
+           <ScrollIndicator targetId="about" />
         </div>
       </section>
 
@@ -180,14 +182,15 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section
+       <section
         id="contact"
         className="py-20 md:py-32 bg-cover bg-center relative"
+        data-aos="fade-up"
         style={{ backgroundImage: "url('/Contact.jpg')" }}
       >
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="container relative flex items-center justify-center">
-          <ContactForm />
+        <div className="absolute inset-0 bg-primary/80" />
+        <div className="container mx-auto text-center relative flex justify-center items-center">
+            <ContactForm />
         </div>
       </section>
     </>
