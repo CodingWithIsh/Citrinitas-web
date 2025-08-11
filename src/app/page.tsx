@@ -32,30 +32,27 @@ export default function Home() {
     <>
       {/* Home Section */}
       <section id="home" className="h-dvh -mt-16 grid grid-cols-1 md:grid-cols-2">
-        <div className="bg-primary hidden md:flex flex-col items-center justify-center p-8 text-primary-foreground">
-          <div className="text-center space-y-12">
-            <h2 className="text-3xl font-headline text-primary-foreground/90">
+        <div className="bg-primary hidden md:flex flex-col items-center justify-center p-12 text-primary-foreground">
+          <div className="text-center space-y-10 max-w-md">
+            <h2 className="text-4xl font-headline text-primary-foreground/90 leading-tight">
               A Space for Inspired Growth and Healing
             </h2>
-            <div className="space-y-8">
-              <blockquote className="text-3xl italic text-primary-foreground/70 border-l-4 border-accent pl-6">
-                "Your character is your destiny."
-                <footer className="text-lg not-italic mt-2">– Heraclitus</footer>
-              </blockquote>
-               <blockquote className="text-xl italic text-primary-foreground/70 border-l-4 border-accent pl-6">
-                "Until you make the unconscious conscious, it will direct your life and you will call it fate."
-                <footer className="text-lg not-italic mt-2">– C.G. Jung</footer>
-              </blockquote>
-            </div>
+            
+            <blockquote className="text-2xl italic text-primary-foreground/80 border-l-4 border-accent pl-6 py-2">
+              "Your character is your destiny."
+              <footer className="text-base not-italic mt-4 opacity-70">– Heraclitus</footer>
+            </blockquote>
+            
             <Separator className="bg-primary-foreground/20" />
+
             <div className="pt-2 space-y-4">
-               <h3 className="text-lg font-bold">Arrange a Free Consultation</h3>
-               <a href="tel:+442012345678" className="flex items-center justify-center gap-2 text-2xl text-accent hover:text-accent/90 transition-colors mt-2">
+               <h3 className="text-lg font-bold tracking-wide">Arrange a Free Consultation</h3>
+               <a href="tel:+442012345678" className="flex items-center justify-center gap-3 text-2xl text-accent hover:text-accent/90 transition-colors mt-2">
                  <Phone className="h-6 w-6" />
                  <span>+44 (0)20 1234 5678</span>
                </a>
-                <Button asChild variant="secondary" className="bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20" onClick={(e: any) => handleNavigate(e)}>
-                    <Link href="/contact">Begin your journey</Link>
+                <Button asChild variant="secondary" className="mt-4 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20" onClick={(e: any) => handleNavigate(e)}>
+                    <Link href="/contact">Or Book Online</Link>
                 </Button>
             </div>
           </div>
