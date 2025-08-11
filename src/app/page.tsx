@@ -182,10 +182,12 @@ export default function Home() {
       {/* Contact Section */}
        <section 
         id="contact" 
-        className="py-20 md:py-32 bg-secondary" 
+        className="py-20 md:py-32 bg-cover bg-center relative" 
         data-aos="fade-up"
+        style={{ backgroundImage: "url('/contact.jpg')" }}
       >
-        <div className="container">
+        <div className="absolute inset-0 bg-black/30" />
+        <div className="container relative">
             <div className="flex items-center justify-center">
                 <ContactForm />
             </div>
