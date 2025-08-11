@@ -48,11 +48,11 @@ export default function Home() {
 
             <div className="pt-2 space-y-4">
                <h3 className="text-lg font-bold tracking-wide">Arrange a Free Consultation</h3>
-               <a href="tel:+442012345678" className="flex items-center justify-center gap-3 text-2xl text-accent hover:text-accent/90 transition-colors mt-2">
+               <a href="tel:+447384407792" className="flex items-center justify-center gap-3 text-2xl text-accent hover:text-accent/90 transition-colors mt-2">
                  <Phone className="h-6 w-6" />
-                 <span>+44 (0)20 1234 5678</span>
+                 <span>+44 7384 407792</span>
                </a>
-                <Button asChild variant="secondary" className="mt-4 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20" onClick={(e: any) => handleNavigate(e)}>
+                <Button asChild variant="secondary" className="mt-4 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20">
                     <Link href="/contact">Or Book Online</Link>
                 </Button>
             </div>

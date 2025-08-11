@@ -39,7 +39,7 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-lg text-foreground">Phone</h3>
-                                    <p className="text-muted-foreground">A phone number will be provided upon booking.</p>
+                                    <p className="text-muted-foreground">+44 7384 407792</p>
                                 </div>
                             </div>
                              <div className="flex items-center gap-4">
@@ -48,7 +48,7 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-lg text-foreground">Email</h3>
-                                    <p className="text-muted-foreground">Please use the contact form for our initial correspondence.</p>
+                                    <p className="text-muted-foreground">BarnabasKinge2@gmail.com</p>
                                 </div>
                             </div>
                             <div>
