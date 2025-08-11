@@ -5,7 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Check, HelpCircle, MessageSquare, ShieldCheck, UserCheck, Wind } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
-export default function ServicesPage() {
+export default function ServicesPage({ params }: { params?: any }) {
   return (
     <div className="bg-background">
       <section className="py-20 md:py-32" data-aos="fade-up">
