@@ -1,4 +1,5 @@
 
+
 'use client';
 
 import Image from 'next/image';
@@ -101,27 +102,36 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 md:py-32 bg-secondary" data-aos="fade-up">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-headline text-primary mb-12">Therapeutic Approach</h2>
+      <section 
+        id="services" 
+        className="py-20 md:py-32 bg-cover bg-center relative" 
+        data-aos="fade-up"
+        style={{ backgroundImage: "url('/river.jpg')" }}
+      >
+        <div className="absolute inset-0 bg-primary/80" />
+        <div className="container mx-auto text-center relative">
+          <h2 className="text-3xl md:text-4xl font-headline text-primary-foreground mb-12">Therapeutic Approach</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ServiceCard
               icon={<Waves className="h-10 w-10 text-accent" />}
               title="Depth Psychology"
               description="Explore the unconscious aspects of the self to bring about profound and lasting change."
+              className="bg-background/90"
             />
             <ServiceCard
               icon={<Wind className="h-10 w-10 text-accent" />}
               title="Mindfulness-Based"
               description="Cultivate present-moment awareness to reduce stress and relate to your experiences with greater compassion."
+              className="bg-background/90"
             />
             <ServiceCard
               icon={<Sun className="h-10 w-10 text-accent" />}
               title="Integrative Method"
               description="A bespoke blend of therapeutic techniques tailored to your unique individual needs and goals."
+              className="bg-background/90"
             />
           </div>
-          <Button asChild variant="link" className="mt-12 text-lg text-primary">
+          <Button asChild variant="link" className="mt-12 text-lg text-primary-foreground hover:text-primary-foreground/80">
             <Link href="/approach">Explore My Approach <ArrowRight className="ml-2" /></Link>
           </Button>
         </div>
@@ -188,9 +198,9 @@ export default function Home() {
   );
 }
 
-function ServiceCard({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) {
+function ServiceCard({ icon, title, description, className }: { icon: React.ReactNode, title: string, description: string, className?: string }) {
   return (
-    <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 bg-card h-full flex flex-col">
+    <Card className={cn("text-center shadow-md hover:shadow-xl transition-shadow duration-300 bg-card h-full flex flex-col", className)}>
       <CardHeader className="items-center">
         {icon}
         <CardTitle className="font-headline text-2xl text-primary pt-4">{title}</CardTitle>
