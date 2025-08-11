@@ -184,7 +184,6 @@ export default function Home() {
         id="contact"
         className="relative bg-cover bg-center"
         style={{ backgroundImage: "url('/contact.jpg')" }}
-        data-aos="fade-up"
       >
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 flex h-[600px] w-full items-center justify-center">
