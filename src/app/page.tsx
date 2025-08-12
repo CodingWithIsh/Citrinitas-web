@@ -14,6 +14,14 @@ import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';
 import ScrollIndicator from '@/components/ScrollIndicator';
 
+// --- (FIX 1) ---
+// Import all your images at the top of the file
+import backgroundImage3 from '../public/Background3.png';
+import logoImage from '../public/Logo3.png';
+import portraitImage from '../public/Potrait.png';
+import riverImage from '../public/river.jpg';
+import contactImage from '../public/Contact.jpg';
+
 export default function Home() {
   const [isNavigating, setIsNavigating] = useState(false);
   const router = useRouter();
