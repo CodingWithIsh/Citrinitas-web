@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 // --- FIX ---
 // Import the logo image with the correct relative path
-import logoImage from '../../public/Logo3.png';
+import logoImage from '../public/Logo3.png';
 
 const navLinks = [
   { href: '/', label: 'Home' },
