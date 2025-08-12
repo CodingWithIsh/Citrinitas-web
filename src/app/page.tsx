@@ -1,9 +1,7 @@
-
-
 'use client';
 
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import ContactForm from '@/components/ContactForm';
 import { Button } from '@/components/ui/button';
@@ -21,6 +19,7 @@ import logoImage from '../public/Logo3.png';
 import portraitImage from '../public/Potrait.png';
 import riverImage from '../public/river.jpg';
 import contactImage from '../public/Contact.jpg';
+
 
 export default function Home() {
   const [isNavigating, setIsNavigating] = useState(false);
@@ -53,29 +52,40 @@ export default function Home() {
             </blockquote>
 
             <div className="pt-2 space-y-4">
-               <h3 className="text-lg font-bold tracking-wide">Arrange a Free Consultation</h3>
-               <a href="tel:+447384407792" className="flex items-center justify-center gap-3 text-2xl text-accent hover:text-accent/90 transition-colors mt-2">
-                 <Phone className="h-6 w-6" />
-                 <span>+44 7384 407792</span>
-               </a>
-                <Button asChild variant="secondary" className="mt-4 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20">
-                    <Link href="/contact">Or Book Online</Link>
-                </Button>
+              <h3 className="text-lg font-bold tracking-wide">Arrange a Free Consultation</h3>
+              <a href="tel:+447384407792" className="flex items-center justify-center gap-3 text-2xl text-accent hover:text-accent/90 transition-colors mt-2">
+                <Phone className="h-6 w-6" />
+                <span>+44 7384 407792</span>
+              </a>
+              <Button asChild variant="secondary" className="mt-4 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20">
+                <Link href="/contact">Or Book Online</Link>
+              </Button>
             </div>
           </div>
         </div>
-        <div className={cn("relative flex flex-col items-center justify-center text-center p-8 bg-cover bg-center", isNavigating && 'animate-scene-zoom')} style={{ backgroundImage: "url('/Background3.png')" }}>
-           <div className="absolute inset-0 bg-black/30" />
-           <div className="relative z-10 flex flex-col items-center justify-center text-white">
-              <Image src="/Logo3.png" alt="Citrinitas Therapies Logo" width={600} height={600} className="mb-6" />
-              <h1 className="text-4xl md:text-5xl font-headline text-white/90">
-                Welcome to Citrinitas Therapies
-              </h1>
-              <Button asChild size="lg" className="mt-8 bg-accent hover:bg-accent/90 text-accent-foreground">
-                  <a href="/resources" onClick={handleNavigate}>Begin your journey</a>
-              </Button>
-           </div>
-           <ScrollIndicator targetId="about" />
+
+        {/* --- (FIX 2) --- Replaced inline style with Next.js Image as background */}
+        <div className={cn("relative flex flex-col items-center justify-center text-center p-8", isNavigating && 'animate-scene-zoom')}>
+            <Image
+                src={backgroundImage3}
+                alt="Abstract background texture"
+                layout="fill"
+                objectFit="cover"
+                quality={100}
+                placeholder="blur"
+            />
+          <div className="absolute inset-0 bg-black/30" />
+          <div className="relative z-10 flex flex-col items-center justify-center text-white">
+            {/* --- (FIX 3) --- Used imported image variable */}
+            <Image src={logoImage} alt="Citrinitas Therapies Logo" width={600} height={600} className="mb-6" />
+            <h1 className="text-4xl md:text-5xl font-headline text-white/90">
+              Welcome to Citrinitas Therapies
+            </h1>
+            <Button asChild size="lg" className="mt-8 bg-accent hover:bg-accent/90 text-accent-foreground">
+              <a href="/resources" onClick={handleNavigate}>Begin your journey</a>
+            </Button>
+          </div>
+          <ScrollIndicator targetId="about" />
         </div>
       </section>
 
@@ -85,8 +95,9 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-headline text-primary mb-12">About Barnabas Kinge</h2>
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div className="w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden shadow-lg flex-shrink-0 border-4 border-white">
+              {/* --- (FIX 4) --- Used imported image variable */}
               <Image
-                src="/Potrait.png"
+                src={portraitImage}
                 alt="Portrait of Barnabas Kinge, psychotherapist"
                 width={400}
                 height={400}
@@ -111,10 +122,17 @@ export default function Home() {
       {/* Services Section */}
       <section
         id="services"
-        className="py-20 md:py-32 bg-cover bg-center relative"
+        className="py-20 md:py-32 relative"
         data-aos="fade-up"
-        style={{ backgroundImage: "url('/river.jpg')" }}
       >
+        {/* --- (FIX 5) --- Replaced inline style with Next.js Image as background */}
+        <Image 
+            src={riverImage}
+            alt="Flowing river"
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+        />
         <div className="absolute inset-0 bg-primary/80" />
         <div className="container mx-auto text-center relative">
           <h2 className="text-3xl md:text-4xl font-headline text-primary-foreground mb-12">Therapeutic Approach</h2>
@@ -152,28 +170,28 @@ export default function Home() {
             We provide a range of tailored therapeutic services designed to foster growth, healing, and self-discovery. Our approach is collaborative and adapted to your unique journey.
           </p>
           <div className="grid md:grid-cols-2 gap-8 text-left max-w-2xl mx-auto">
-             <div className="flex items-start gap-3">
+              <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
                 <div>
                     <h3 className="text-xl font-headline text-primary mb-1">1-1 Counselling</h3>
                     <p className="text-foreground/80">A confidential space to explore personal challenges and develop coping strategies.</p>
                 </div>
             </div>
-             <div className="flex items-start gap-3">
+              <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
                 <div>
                     <h3 className="text-xl font-headline text-primary mb-1">Psychotherapy</h3>
                     <p className="text-foreground/80">A deep, explorative process to understand and resolve complex emotional issues.</p>
                 </div>
             </div>
-             <div className="flex items-start gap-3">
+              <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
                 <div>
                     <h3 className="text-xl font-headline text-primary mb-1">Coaching</h3>
                     <p className="text-foreground/80">Goal-oriented support to help you unlock your full potential.</p>
                 </div>
             </div>
-             <div className="flex items-start gap-3">
+              <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
                 <div>
                     <h3 className="text-xl font-headline text-primary mb-1">Mentoring</h3>
@@ -190,12 +208,19 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-       <section
+      <section
         id="contact"
-        className="py-20 md:py-32 bg-cover bg-center relative"
+        className="py-20 md:py-32 relative"
         data-aos="fade-up"
-        style={{ backgroundImage: "url('/Contact.jpg')" }}
       >
+        {/* --- (FIX 6) --- Replaced inline style with Next.js Image as background */}
+        <Image
+            src={contactImage}
+            alt="Calm natural setting"
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+        />
         <div className="absolute inset-0 bg-primary/80" />
         <div className="container mx-auto text-center relative flex justify-center items-center">
             <ContactForm />
