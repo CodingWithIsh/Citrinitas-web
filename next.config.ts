@@ -3,8 +3,8 @@ import type { NextConfig } from 'next';
 const nextConfig: NextConfig = {
 // Settings for static export on GitHub Pages
   output: 'export',
-  basePath: '/Citrinitas',
-  assetPrefix: '/Citrinitas',
+  basePath: '/Citrinitas-web',
+  assetPrefix: '/Citrinitas-web',
   images: {
     unoptimized: true,
   },
