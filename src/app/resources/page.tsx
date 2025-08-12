@@ -6,9 +6,9 @@ import { BookOpen, Briefcase, Heart, ArrowRight, Brain, Wind, Hourglass } from "
 import ScrollIndicator from "@/components/ScrollIndicator";
 
 // --- FIX 1: Import all images ---
-import workImage from '../../public/Work.png';
+import workImage from '../../../public/Work.png';
 import relationshipsImage from '../../public/Relationships.png';
-import growthImage from '../../public/Growth.png';
+import growthImage from '../../../public/Growth.png';
 
 
 export default function ResourcesPage() {
