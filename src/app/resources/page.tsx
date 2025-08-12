@@ -7,7 +7,7 @@ import ScrollIndicator from "@/components/ScrollIndicator";
 
 // --- FIX 1: Import all images ---
 import workImage from '../../../public/Work.png';
-import relationshipsImage from '../../public/Relationships.png';
+import relationshipsImage from '../../../public/Relationships.png';
 import growthImage from '../../../public/Growth.png';
 
 
