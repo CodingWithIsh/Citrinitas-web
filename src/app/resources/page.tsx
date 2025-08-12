@@ -5,6 +5,11 @@ import Image from 'next/image';
 import { BookOpen, Briefcase, Heart, ArrowRight, Brain, Wind, Hourglass } from "lucide-react";
 import ScrollIndicator from "@/components/ScrollIndicator";
 
+// --- FIX 1: Import all images ---
+import workImage from '../../public/Work.png';
+import relationshipsImage from '../../public/Relationships.png';
+import growthImage from '../../public/Growth.png';
+
 
 export default function ResourcesPage() {
   return (
