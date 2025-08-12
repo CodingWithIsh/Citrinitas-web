@@ -1,7 +1,9 @@
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
+  /*Github pages code for static hosting*/
   output: 'export',
+  basePath: '/Citrinitas', 
   /* config options here */
   typescript: {
     ignoreBuildErrors: true,
