@@ -14,11 +14,11 @@ import ScrollIndicator from '@/components/ScrollIndicator';
 
 // --- (FIX 1) ---
 // Import all your images at the top of the file
-import backgroundImage3 from '../public/Background3.png';
-import logoImage from '../public/Logo3.png';
-import portraitImage from '../public/Potrait.png';
-import riverImage from '../public/river.jpg';
-import contactImage from '../public/Contact.jpg';
+import backgroundImage3 from '../../public/Background3.png';
+import logoImage from '../../public/Logo3.png';
+import portraitImage from '../../public/Potrait.png';
+import riverImage from '../../public/river.jpg';
+import contactImage from '../../public/Contact.jpg';
 
 
 export default function Home() {
