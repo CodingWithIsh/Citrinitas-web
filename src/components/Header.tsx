@@ -8,6 +8,10 @@ import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 
+// --- FIX ---
+// Import the logo image with the correct relative path
+import logoImage from '../../public/Logo3.png';
+
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
