@@ -4,7 +4,7 @@ import { Mail, MapPin } from 'lucide-react';
 
 // --- FIX ---
 // Import the logo image with the correct relative path
-import logoImage from '../../public/Logo3.png';
+import logoImage from '../public/Logo3.png';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
