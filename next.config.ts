@@ -1,7 +1,6 @@
-import type { NextConfig } from 'next';
-
-const nextConfig: NextConfig = {
-// Settings for static export on GitHub Pages
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // Settings for static export on GitHub Pages
   output: 'export',
   basePath: '/Citrinitas-web',
   assetPrefix: '/Citrinitas-web',
@@ -9,7 +8,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
 
-// Your other project settings
+  // Your other project settings
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -18,4 +17,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
