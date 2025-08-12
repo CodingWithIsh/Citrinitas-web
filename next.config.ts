@@ -1,16 +1,21 @@
-import type { NextConfig } from 'next';
+import type { NextConfig } from &#39;next&#39;;
 
 const nextConfig: NextConfig = {
-  // This is the only deployment-related setting you need.
-  output: 'export',
+// Settings for static export on GitHub Pages
+output: 'export',
+basePath: '/Citrinitas',
+assetPrefix: '/Citrinitas',
+images: {
+unoptimized: true,
+},
 
-  // Your other project settings can remain.
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+// Your other project settings
+typescript: {
+ignoreBuildErrors: true,
+},
+eslint: {
+ignoreDuringBuilds: true,
+},
 };
 
 export default nextConfig;
