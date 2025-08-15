@@ -18,7 +18,8 @@ export default function ScrollIndicator({ targetId, className }: ScrollIndicator
       if (window.scrollY > 50) {
         setIsVisible(false);
       } else {
-        setIsVisible(true);
+        // Only show if it wasn't manually hidden by a click
+        // This logic is now handled by the click handler directly
       }
     };
 
@@ -27,6 +28,7 @@ export default function ScrollIndicator({ targetId, className }: ScrollIndicator
   }, []);
 
   const handleClick = () => {
+    setIsVisible(false); // Hide button on click
     document.getElementById(targetId)?.scrollIntoView({
       behavior: 'smooth',
     });
@@ -42,7 +44,7 @@ export default function ScrollIndicator({ targetId, className }: ScrollIndicator
     >
       <button
         onClick={handleClick}
-        className="animate-bounce-slow rounded-full p-2 text-foreground/80 hover:text-primary hover:bg-black/10 border-2 border-foreground/30 shadow-lg"
+        className="animate-bounce-slow rounded-full p-2 bg-white/50 border-2 border-foreground/30 shadow-lg"
         aria-label="Scroll to next section"
       >
         <ChevronDown className="h-8 w-8 text-foreground" />
