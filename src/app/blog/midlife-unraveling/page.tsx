@@ -21,8 +21,7 @@ export default function AnxietyDepressionPage() {
           </header>
 
           <Image
-            src="https://placehold.co/1200x600.png"
-            data-ai-hint="light shadow"
+            src="/Blog/The Midlife Unraveling.png"
             alt="Light breaking through shadows"
             width={1200}
             height={600}

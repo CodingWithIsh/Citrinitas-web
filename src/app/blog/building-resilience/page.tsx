@@ -21,8 +21,7 @@ export default function BereavementPage() {
           </header>
 
           <Image
-            src="https://placehold.co/1200x600.png"
-            data-ai-hint="solitary path"
+            src="/Blog/The Art of Bouncing Forward.png"
             alt="A path winding through a quiet forest"
             width={1200}
             height={600}

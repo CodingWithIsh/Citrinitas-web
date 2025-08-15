@@ -21,8 +21,7 @@ export default function PerfectionismPage() {
           </header>
 
           <Image
-            src="https://placehold.co/1200x600.png"
-            data-ai-hint="perfect landscape"
+            src="/Blog/The Friendship Recession.png"
             alt="A perfectly symmetrical image"
             width={1200}
             height={600}

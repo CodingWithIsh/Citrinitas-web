@@ -21,8 +21,7 @@ export default function WorkStressPage() {
           </header>
 
           <Image
-            src="https://placehold.co/1200x600.png"
-            data-ai-hint="stress workplace"
+            src="/Blog/Beyond Burnout.png"
             alt="An office worker looking stressed."
             width={1200}
             height={600}

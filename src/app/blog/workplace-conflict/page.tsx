@@ -21,8 +21,7 @@ export default function ProcrastinationPage() {
           </header>
 
           <Image
-            src="https://placehold.co/1200x600.png"
-            data-ai-hint="procrastination desk"
+            src="/Blog/The Unspoken Rules of Engagement.png"
             alt="A messy desk representing procrastination"
             width={1200}
             height={600}

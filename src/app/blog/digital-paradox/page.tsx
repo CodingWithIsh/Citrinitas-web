@@ -21,8 +21,7 @@ export default function ImposterSyndromePage() {
           </header>
 
           <Image
-            src="https://placehold.co/1200x600.png"
-            data-ai-hint="person mask"
+            src="/Blog/The Digital Paradox.png"
             alt="A person holding a mask"
             width={1200}
             height={600}
