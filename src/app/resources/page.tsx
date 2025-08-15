@@ -86,40 +86,40 @@ export default function ResourcesPage() {
           </h2>
           <div className="space-y-16">
             <TopicSection
-              title="Navigating the Pressures of Modern Work"
+              title="Beyond Burnout: Understanding 'Quiet Quitting' and Reclaiming Your Work-Life Harmony"
               link="/blog/work-stress"
             >
-              According to the UK Labour Force Survey (2017-18), some 57% of days lost through ill health were due to stress or anxiety. Work stress is everywhere. Learning to manage it is key to a healthy work-life balance.
+              A staggering number of employees are mentally checking out from work, a phenomenon known as 'quiet quitting.' This isn't laziness, but a profound psychological response to burnout and a culture of overwork. We explore what drives this trend and how to shift from silent withdrawal to intentional engagement, reclaiming a healthier relationship with your professional life.
             </TopicSection>
             <TopicSection
-              title="The Gentle Art of Getting Things Done"
+              title="The Unspoken Rules of Engagement: Navigating Workplace Conflict with Psychological Insight"
               link="/blog/procrastination"
             >
-              Putting things off is fairly harmless most of the time. But when it becomes a form of paralysis, it can prevent us from achieving our goals and lead to feelings of guilt and inadequacy.
+              Workplace conflict is inevitable, but it doesn't have to be destructive. By understanding its four primary sources—task, process, status, and relationship—and applying skills like emotional intelligence, we can transform disputes from sources of stress into opportunities for stronger collaboration and growth.
             </TopicSection>
             <TopicSection
-              title="Breaking Free From the Perfection Trap"
+              title="The Friendship Recession: Why Our Connections Feel Drained and How to Build Healthier Bonds"
               link="/blog/perfectionism"
             >
-              As the old saying goes, "Don't let the perfect be the enemy of the good." But what happens when 'the best' feels like the only option? This mindset can lead to burnout and dissatisfaction.
+              In an age of digital connection, many feel a profound sense of disconnection, leading to a "friendship recession." We examine the psychology behind friendship burnout and imbalanced emotional labor, offering a guide to cultivating the reciprocal, supportive bonds that are essential for our mental and emotional well-being.
             </TopicSection>
             <TopicSection
-              title="Embracing Your True Self: Overcoming Imposter Syndrome"
+              title="The Digital Paradox: Managing Loneliness and Anxiety in an Age of Hyper-Connectivity"
               link="/blog/imposter-syndrome"
             >
-              A whole network of negative beliefs about your ability can make you feel like a fake. The answer is to treat those beliefs as the real imposters.
+             Technology designed to bring us together can often make us feel more isolated. We delve into the research that shows a clear link between heavy social media use and a decline in mental well-being, exploring the psychological traps of comparison and FOMO, and offering evidence-based strategies to build healthier digital habits.
             </TopicSection>
              <TopicSection
-              title="Finding Light in the Shadows of Anxiety & Depression"
+              title="The Midlife Unraveling: Embracing the Messy, Beautiful Journey to Your True Self"
               link="/blog/anxiety-depression"
             >
-              These are the most common mental health issues of our times, and talking therapies are clinically proven to be effective. We explore the symptoms and pathways to support.
+              Midlife is often mislabeled a 'crisis' when it's more of an 'unraveling'—a slow, messy, and profound process of shedding the armor we've built over a lifetime. We explore this developmental journey as an invitation to question our path, deconstruct our old selves, and align with a more authentic way of being.
             </TopicSection>
             <TopicSection
-                title="The Sacred Path of Grief"
+                title="The Art of Bouncing Forward: Evidence-Based Strategies for Building Psychological Resilience"
                 link="/blog/bereavement"
             >
-                Losing someone close is overwhelming, and the effects do not always diminish with time. Grief is a complex process that deserves space and understanding.
+                Resilience is not a fixed trait but a set of learnable skills that allow us to navigate life's storms. This article breaks down the five pillars of a resilient life—from social connection to cognitive flexibility—and offers practical, everyday strategies to not just bounce back from adversity, but to bounce forward with greater strength and wisdom.
             </TopicSection>
           </div>
         </div>

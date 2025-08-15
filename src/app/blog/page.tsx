@@ -5,33 +5,33 @@ import ScrollIndicator from '@/components/ScrollIndicator';
 
 const blogPosts = [
   {
-    title: "Navigating the Pressures of Modern Work",
-    description: "Work stress is everywhere. Learning to manage it is key to a healthy work-life balance.",
+    title: "Beyond Burnout: Understanding 'Quiet Quitting' and Reclaiming Your Work-Life Harmony",
+    description: "A staggering number of employees are mentally checking out from work, a phenomenon known as 'quiet quitting.' This isn't laziness, but a profound psychological response to burnout and a culture of overwork.",
     link: "/blog/work-stress"
   },
   {
-    title: "The Gentle Art of Getting Things Done",
-    description: "Putting things off is fairly harmless most of the time. But when it becomes a form of paralysis, it can prevent us from achieving our goals.",
+    title: "The Unspoken Rules of Engagement: Navigating Workplace Conflict with Psychological Insight",
+    description: "Workplace conflict is inevitable, but it doesn't have to be destructive. By understanding its four primary sources—task, process, status, and relationship—we can transform disputes.",
     link: "/blog/procrastination"
   },
   {
-    title: "Breaking Free From the Perfection Trap",
-    description: "What happens when 'the best' feels like the only option? This mindset can lead to burnout and dissatisfaction.",
+    title: "The Friendship Recession: Why Our Connections Feel Drained and How to Build Healthier Bonds",
+    description: "In an age of digital connection, many feel a profound sense of disconnection, leading to a 'friendship recession.' We examine the psychology behind friendship burnout and imbalanced emotional labor.",
     link: "/blog/perfectionism"
   },
   {
-    title: "Embracing Your True Self: Overcoming Imposter Syndrome",
-    description: "A whole network of negative beliefs about your ability can make you feel like a fake. The answer is to treat those beliefs as the real imposters.",
+    title: "The Digital Paradox: Managing Loneliness and Anxiety in an Age of Hyper-Connectivity",
+    description: "Technology designed to bring us together can often make us feel more isolated. We delve into the research that shows a clear link between heavy social media use and a decline in mental well-being.",
     link: "/blog/imposter-syndrome"
   },
   {
-    title: "Finding Light in the Shadows of Anxiety & Depression",
-    description: "These are the most common mental health issues of our times, and talking therapies are clinically proven to be effective.",
+    title: "The Midlife Unraveling: Embracing the Messy, Beautiful Journey to Your True Self",
+    description: "Midlife is often mislabeled a 'crisis' when it's more of an 'unraveling'—a slow, messy, and profound process of shedding the armor we've built over a lifetime.",
     link: "/blog/anxiety-depression"
   },
   {
-    title: "The Sacred Path of Grief",
-    description: "Losing someone close is overwhelming, and the effects do not always diminish with time. Grief is a complex process that deserves space and understanding.",
+    title: "The Art of Bouncing Forward: Evidence-Based Strategies for Building Psychological Resilience",
+    description: "Resilience is not a fixed trait but a set of learnable skills that allow us to navigate life's storms. This article breaks down the five pillars of a resilient life.",
     link: "/blog/bereavement"
   },
 ];
