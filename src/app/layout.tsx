@@ -8,6 +8,11 @@ import AOSInit from '@/components/AOSInit';
 export const metadata: Metadata = {
   title: 'Citrinitas Therapies | Barnabas Kinge - Psychotherapist',
   description: 'A welcoming, inspired, and hopeful environment for clients to find clarity, joy, and wisdom.',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({
@@ -31,7 +36,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <Toaster />
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https.unpkg.com/aos@next/dist/aos.js"></script>
       </body>
     </html>
   );
