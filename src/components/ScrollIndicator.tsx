@@ -17,21 +17,26 @@ export default function ScrollIndicator({ targetId, className }: ScrollIndicator
       // Hide the indicator if user has scrolled more than 50px
       if (window.scrollY > 50) {
         setIsVisible(false);
-      } else {
-        // Only show if it wasn't manually hidden by a click
-        // This logic is now handled by the click handler directly
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const handleClick = () => {
     setIsVisible(false); // Hide button on click
-    document.getElementById(targetId)?.scrollIntoView({
-      behavior: 'smooth',
-    });
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      const headerOffset = 64; // h-16 = 4rem = 64px
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
   };
 
   return (
