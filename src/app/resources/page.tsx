@@ -9,7 +9,7 @@ import ScrollIndicator from "@/components/ScrollIndicator";
 export default function ResourcesPage() {
   return (
     <div className="bg-background">
-      <section className="py-20 md:py-32 text-center relative" data-aos="fade-up">
+      <section id="start" className="relative min-h-dvh flex items-center justify-center py-20 md:py-32 text-center" data-aos="fade-up">
         <div className="container">
           <h1 className="text-4xl md:text-5xl font-headline text-primary mb-4">
             The Resources Toolkit

@@ -45,7 +45,7 @@ export default function ScrollIndicator({ targetId, className }: ScrollIndicator
         className="animate-bounce-slow rounded-full p-2 text-foreground/80 hover:text-primary hover:bg-black/10"
         aria-label="Scroll to next section"
       >
-        <ChevronDown className="h-8 w-8" />
+        <ChevronDown className="h-8 w-8 text-foreground" />
       </button>
     </div>
   );
