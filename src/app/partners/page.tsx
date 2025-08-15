@@ -5,7 +5,7 @@ import ScrollIndicator from "@/components/ScrollIndicator";
 export default function PartnersPage() {
   return (
     <div className="bg-background">
-      <section id="start" className="relative min-h-dvh flex items-center justify-center py-20 md:py-32" data-aos="fade-up">
+      <section id="start" className="py-20 md:py-32" data-aos="fade-up">
         <div className="container text-center">
           <h1 className="text-4xl md:text-5xl font-headline text-primary mb-4">
             Partners

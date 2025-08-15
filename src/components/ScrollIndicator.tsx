@@ -42,7 +42,7 @@ export default function ScrollIndicator({ targetId, className }: ScrollIndicator
     >
       <button
         onClick={handleClick}
-        className="animate-bounce-slow rounded-full p-2 text-foreground/80 hover:text-primary hover:bg-black/10"
+        className="animate-bounce-slow rounded-full p-2 text-foreground/80 hover:text-primary hover:bg-black/10 border-2 border-foreground/30 shadow-lg"
         aria-label="Scroll to next section"
       >
         <ChevronDown className="h-8 w-8 text-foreground" />

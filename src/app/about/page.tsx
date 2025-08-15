@@ -8,7 +8,7 @@ import ScrollIndicator from '@/components/ScrollIndicator';
 export default function AboutPage() {
   return (
     <div className="bg-background">
-      <section id="start" className="relative min-h-dvh flex items-center justify-center py-12 md:py-20" data-aos="fade-up">
+      <section id="start" className="py-12 md:py-20" data-aos="fade-up">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-1 gap-12 md:gap-16 items-center">
             <div className="space-y-6 max-w-4xl mx-auto text-center">
