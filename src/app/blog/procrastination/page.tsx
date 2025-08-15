@@ -48,12 +48,13 @@ export default function ProcrastinationPage() {
             </ul>
             <h2 className="text-2xl font-headline text-primary">A Strategic Toolkit: The Five Styles of Conflict Resolution</h2>
             <p>Psychologists Kenneth Thomas and Ralph Kilmann developed a widely recognized model that outlines five distinct strategies for resolving conflict. Understanding these styles provides a flexible toolkit, allowing one to choose the most appropriate approach based on the specific situation, the importance of the goal, and the nature of the relationship.</p>
-            {/* The user provided a table here, which is hard to replicate in prose. I will format it as a list. */}
-            <p><strong>Style: Avoiding</strong><br/>Description: Withdrawing from or sidestepping the conflict.<br/>When to Use: The issue is minor; emotions are high; more information is needed.<br/>Potential Pitfall: Unresolved issues can fester and escalate over time.</p>
-            <p><strong>Style: Competing</strong><br/>Description: Asserting one's own interests at the expense of others.<br/>When to Use: In a crisis; when quick, decisive action is needed; standing up for your rights.<br/>Potential Pitfall: Can damage relationships, impede trust, and reduce collaboration.</p>
-            <p><strong>Style: Accommodating</strong><br/>Description: Giving in to the other party's needs to preserve harmony.<br/>When to Use: The relationship matters more than the goal; to de-escalate and maintain goodwill.<br/>Potential Pitfall: Can lead to resentment, unresolved tension, and an imbalance of power.</p>
-            <p><strong>Style: Compromising</strong><br/>Description: Both parties forfeit some needs to find a middle ground ("lose-lose").<br/>When to Use: When the goal and relationship are moderately important; as a temporary solution.<br/>Potential Pitfall: Neither party is fully satisfied; may not address the root cause of the conflict.</p>
-            <p><strong>Style: Collaborating</strong><br/>Description: Working together to find a solution that fully satisfies all parties ("win-win").<br/>When to Use: The issue is complex; commitment from all parties is crucial; to build relationships.<br/>Potential Pitfall: Is time-consuming and requires high levels of trust and open communication.</p>
+            <div className="space-y-4">
+              <p><strong>Style: Avoiding</strong><br/>Description: Withdrawing from or sidestepping the conflict.<br/>When to Use: The issue is minor; emotions are high; more information is needed.<br/>Potential Pitfall: Unresolved issues can fester and escalate over time.</p>
+              <p><strong>Style: Competing</strong><br/>Description: Asserting one's own interests at the expense of others.<br/>When to Use: In a crisis; when quick, decisive action is needed; standing up for your rights.<br/>Potential Pitfall: Can damage relationships, impede trust, and reduce collaboration.</p>
+              <p><strong>Style: Accommodating</strong><br/>Description: Giving in to the other party's needs to preserve harmony.<br/>When to Use: The relationship matters more than the goal; to de-escalate and maintain goodwill.<br/>Potential Pitfall: Can lead to resentment, unresolved tension, and an imbalance of power.</p>
+              <p><strong>Style: Compromising</strong><br/>Description: Both parties forfeit some needs to find a middle ground ("lose-lose").<br/>When to Use: When the goal and relationship are moderately important; as a temporary solution.<br/>Potential Pitfall: Neither party is fully satisfied; may not address the root cause of the conflict.</p>
+              <p><strong>Style: Collaborating</strong><br/>Description: Working together to find a solution that fully satisfies all parties ("win-win").<br/>When to Use: The issue is complex; commitment from all parties is crucial; to build relationships.<br/>Potential Pitfall: Is time-consuming and requires high levels of trust and open communication.</p>
+            </div>
             <h2 className="text-2xl font-headline text-primary">Putting It Into Practice: A Path to Resolution</h2>
             <p>Applying these psychological insights involves a structured and conscious approach to conflict. A practical path to resolution includes the following steps:</p>
             <ol className="list-decimal list-inside space-y-2">
@@ -64,6 +65,13 @@ export default function ProcrastinationPage() {
               <li><strong>Collaborate on Solutions:</strong> Frame the discussion around shared interests and common goals. Encourage all parties to participate in brainstorming solutions that can meet everyone's core needs.</li>
             </ol>
             <p>Beyond individual disputes, the patterns of conflict within an organization serve as a valuable diagnostic tool for its overall health. Persistent process conflicts, for example, may indicate a lack of clarity in roles and responsibilities. Constant status conflicts can signal a toxic, overly competitive culture or a failure in leadership. When relationship conflicts become the norm, it often points to a severe lack of psychological safety. Therefore, while individuals must learn to manage disagreements, leaders have a responsibility to read these patterns to diagnose and address the deeper systemic dysfunctions that fuel chronic friction. By developing both individual skills and organizational awareness, conflict can be transformed from a destructive force into a powerful engine for growth and resilience.</p>
+            
+            <h2 className="text-2xl font-headline text-primary pt-8">Reference</h2>
+            <p>
+                <a href="https://hr.umn.edu/supervising/news/Navigating-Workplace-Conflict" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline break-words">
+                https://hr.umn.edu/supervising/news/Navigating-Workplace-Conflict
+                </a>
+            </p>
           </div>
         </article>
       </div>

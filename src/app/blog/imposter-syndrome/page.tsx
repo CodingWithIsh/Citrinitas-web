@@ -54,6 +54,13 @@ export default function ImposterSyndromePage() {
               <li><strong>Prioritize Offline Connection:</strong> Deliberately schedule time with friends and family that is device-free. Join a club, volunteer, or find other ways to engage with your local community to build the genuine, in-person connections that are vital for mental health.</li>
             </ul>
             <p>By understanding the psychological impact of these platforms and taking conscious steps to manage our engagement, it is possible to break free from the digital paradox. We can shift from using technology as a poor substitute for connection to using it as a tool that supports and enhances our real-world relationships.</p>
+
+            <h2 className="text-2xl font-headline text-primary pt-8">Reference</h2>
+            <p>
+                <a href="https://penntoday.upenn.edu/news/social-media-use-increases-depression-and-loneliness" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline break-words">
+                https://penntoday.upenn.edu/news/social-media-use-increases-depression-and-loneliness
+                </a>
+            </p>
           </div>
         </article>
       </div>

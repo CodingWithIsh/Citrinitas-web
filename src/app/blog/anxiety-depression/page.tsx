@@ -49,6 +49,13 @@ export default function AnxietyDepressionPage() {
             <p>It is crucial to remember that this is not a problem to be "fixed" and then dismissed. The search for self-love and authenticity is a chronic condition, a lifelong journey that begins in earnest during the midlife years.</p>
             <h2 className="text-2xl font-headline text-primary">Conclusion: The Rebirth</h2>
             <p>After the painful "death" of the old, constructed self, two choices remain: staying down in the rubble or enduring a rebirth. The goal of this journey is not to find a pre-existing map for the rest of life, but to develop the wisdom and courage to create the map as you go. The midlife unraveling, though one of the most challenging periods of life, is ultimately an invitation to a deeper, more meaningful, and more wholehearted existence. It is the chance to finally come home to yourself.</p>
+            
+            <h2 className="text-2xl font-headline text-primary pt-8">Reference</h2>
+            <p>
+                <a href="https://brenebrown.com/articles/2018/05/24/the-midlife-unraveling/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline break-words">
+                https://brenebrown.com/articles/2018/05/24/the-midlife-unraveling/
+                </a>
+            </p>
           </div>
         </article>
       </div>

@@ -53,6 +53,13 @@ export default function PerfectionismPage() {
             </ul>
             <h2 className="text-2xl font-headline text-primary">Conclusion: Investing in Your "Emotional Bank Account"</h2>
             <p>Ultimately, friendships are a vital investment in our overall health and happiness. They can be thought of as an "emotional bank account" that requires consistent deposits of kindness, trust, vulnerability, and effort. By learning to recognize unhealthy, draining patterns and intentionally cultivating supportive, boundaried, and reciprocal relationships, it is possible to combat the friendship recession and build the life-sustaining connections that allow us to truly thrive.</p>
+
+            <h2 className="text-2xl font-headline text-primary pt-8">Reference</h2>
+            <p>
+                <a href="https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/friendships/art-20044860" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline break-words">
+                https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/friendships/art-20044860
+                </a>
+            </p>
           </div>
         </article>
       </div>

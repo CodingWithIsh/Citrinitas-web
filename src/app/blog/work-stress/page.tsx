@@ -50,6 +50,13 @@ export default function WorkStressPage() {
               <li>Prioritize Well-being: Make a conscious effort to focus on foundational self-care, including quality sleep, proper nutrition, and making time for activities outside of work that bring joy and relaxation.</li>
             </ul>
             <p>Ultimately, quiet quitting is a powerful signal that something needs to change. By understanding its psychological roots, it is possible to move from a place of silent protest to one of conscious choice, building a professional life that is sustainable, purposeful, and truly in balance.</p>
+            
+            <h2 className="text-2xl font-headline text-primary pt-8">Reference</h2>
+            <p>
+                <a href="https://www.jamspathways.com/insights/how-work-life-imbalance-can-lead-to-quiet-quitting" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline break-words">
+                https://www.jamspathways.com/insights/how-work-life-imbalance-can-lead-to-quiet-quitting
+                </a>
+            </p>
           </div>
         </article>
       </div>
