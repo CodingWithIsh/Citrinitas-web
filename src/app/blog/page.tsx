@@ -7,32 +7,32 @@ const blogPosts = [
   {
     title: "Beyond Burnout: Understanding 'Quiet Quitting' and Reclaiming Your Work-Life Harmony",
     description: "A staggering number of employees are mentally checking out from work, a phenomenon known as 'quiet quitting.' This isn't laziness, but a profound psychological response to burnout and a culture of overwork.",
-    link: "/blog/work-stress"
+    link: "/blog/beyond-burnout"
   },
   {
     title: "The Unspoken Rules of Engagement: Navigating Workplace Conflict with Psychological Insight",
     description: "Workplace conflict is inevitable, but it doesn't have to be destructive. By understanding its four primary sources—task, process, status, and relationship—we can transform disputes.",
-    link: "/blog/procrastination"
+    link: "/blog/workplace-conflict"
   },
   {
     title: "The Friendship Recession: Why Our Connections Feel Drained and How to Build Healthier Bonds",
     description: "In an age of digital connection, many feel a profound sense of disconnection, leading to a 'friendship recession.' We examine the psychology behind friendship burnout and imbalanced emotional labor.",
-    link: "/blog/perfectionism"
+    link: "/blog/friendship-recession"
   },
   {
     title: "The Digital Paradox: Managing Loneliness and Anxiety in an Age of Hyper-Connectivity",
     description: "Technology designed to bring us together can often make us feel more isolated. We delve into the research that shows a clear link between heavy social media use and a decline in mental well-being.",
-    link: "/blog/imposter-syndrome"
+    link: "/blog/digital-paradox"
   },
   {
     title: "The Midlife Unraveling: Embracing the Messy, Beautiful Journey to Your True Self",
     description: "Midlife is often mislabeled a 'crisis' when it's more of an 'unraveling'—a slow, messy, and profound process of shedding the armor we've built over a lifetime.",
-    link: "/blog/anxiety-depression"
+    link: "/blog/midlife-unraveling"
   },
   {
     title: "The Art of Bouncing Forward: Evidence-Based Strategies for Building Psychological Resilience",
     description: "Resilience is not a fixed trait but a set of learnable skills that allow us to navigate life's storms. This article breaks down the five pillars of a resilient life.",
-    link: "/blog/bereavement"
+    link: "/blog/building-resilience"
   },
 ];
 

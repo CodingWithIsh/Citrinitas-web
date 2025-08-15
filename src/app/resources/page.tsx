@@ -87,37 +87,37 @@ export default function ResourcesPage() {
           <div className="space-y-16">
             <TopicSection
               title="Beyond Burnout: Understanding 'Quiet Quitting' and Reclaiming Your Work-Life Harmony"
-              link="/blog/work-stress"
+              link="/blog/beyond-burnout"
             >
               A staggering number of employees are mentally checking out from work, a phenomenon known as 'quiet quitting.' This isn't laziness, but a profound psychological response to burnout and a culture of overwork. We explore what drives this trend and how to shift from silent withdrawal to intentional engagement, reclaiming a healthier relationship with your professional life.
             </TopicSection>
             <TopicSection
               title="The Unspoken Rules of Engagement: Navigating Workplace Conflict with Psychological Insight"
-              link="/blog/procrastination"
+              link="/blog/workplace-conflict"
             >
               Workplace conflict is inevitable, but it doesn't have to be destructive. By understanding its four primary sources—task, process, status, and relationship—and applying skills like emotional intelligence, we can transform disputes from sources of stress into opportunities for stronger collaboration and growth.
             </TopicSection>
             <TopicSection
               title="The Friendship Recession: Why Our Connections Feel Drained and How to Build Healthier Bonds"
-              link="/blog/perfectionism"
+              link="/blog/friendship-recession"
             >
               In an age of digital connection, many feel a profound sense of disconnection, leading to a "friendship recession." We examine the psychology behind friendship burnout and imbalanced emotional labor, offering a guide to cultivating the reciprocal, supportive bonds that are essential for our mental and emotional well-being.
             </TopicSection>
             <TopicSection
               title="The Digital Paradox: Managing Loneliness and Anxiety in an Age of Hyper-Connectivity"
-              link="/blog/imposter-syndrome"
+              link="/blog/digital-paradox"
             >
              Technology designed to bring us together can often make us feel more isolated. We delve into the research that shows a clear link between heavy social media use and a decline in mental well-being, exploring the psychological traps of comparison and FOMO, and offering evidence-based strategies to build healthier digital habits.
             </TopicSection>
              <TopicSection
               title="The Midlife Unraveling: Embracing the Messy, Beautiful Journey to Your True Self"
-              link="/blog/anxiety-depression"
+              link="/blog/midlife-unraveling"
             >
               Midlife is often mislabeled a 'crisis' when it's more of an 'unraveling'—a slow, messy, and profound process of shedding the armor we've built over a lifetime. We explore this developmental journey as an invitation to question our path, deconstruct our old selves, and align with a more authentic way of being.
             </TopicSection>
             <TopicSection
                 title="The Art of Bouncing Forward: Evidence-Based Strategies for Building Psychological Resilience"
-                link="/blog/bereavement"
+                link="/blog/building-resilience"
             >
                 Resilience is not a fixed trait but a set of learnable skills that allow us to navigate life's storms. This article breaks down the five pillars of a resilient life—from social connection to cognitive flexibility—and offers practical, everyday strategies to not just bounce back from adversity, but to bounce forward with greater strength and wisdom.
             </TopicSection>
