@@ -78,7 +78,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div className="w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden shadow-lg flex-shrink-0 border-4 border-white">
               <Image
-                src="/Potrait.png"
+                src="/barnabas.jpg"
                 alt="Portrait of Barnabas Kinge, psychotherapist"
                 width={400}
                 height={400}
