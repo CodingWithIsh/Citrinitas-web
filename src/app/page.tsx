@@ -87,10 +87,13 @@ export default function Home() {
             </div>
             <div className="text-left space-y-4 text-foreground/90">
               <p>
-                I'm Barnabas, and my practice is dedicated to providing acute relief from psychological distress while empowering you to access your own meaning-making capacities.
+                My name is Barnabas, I’m an Integrative Psychotherapist and founder of Citrinitas Therapies, a clinical practice, philosophy and network born from my background in International Development, Humanitarian Intervention, and Psychotherapy.
               </p>
               <p>
-                With a background in International Development and a deep understanding of integrative therapeutic methods, I offer a holistic and culturally sensitive approach to healing.
+                My therapeutic style includes a combination of Compassionate Inquiry and Mindfulness Based Stress Reduction, providing psychological assistance both in the moment and long term. I actively support clients in accessing therapeutic space, untying emotional knots and moving towards the most authentic versions of themselves.
+              </p>
+               <p>
+                Our network of holistic practitioners support every aspect of health and wellbeing based on traditional healing arts.
               </p>
             </div>
           </div>
@@ -113,14 +116,14 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ServiceCard
               icon={<Waves className="h-10 w-10 text-accent" />}
-              title="Depth Psychology"
-              description="Explore the unconscious aspects of the self to bring about profound and lasting change."
+              title="Compassionate Inquiry"
+              description="A psychotherapeutic approach to gently uncover and release the layers of childhood trauma, pain, and beliefs that underlie illness and addiction."
               className="bg-background/90"
             />
             <ServiceCard
               icon={<Wind className="h-10 w-10 text-accent" />}
-              title="Mindfulness-Based"
-              description="Cultivate present-moment awareness to reduce stress and relate to your experiences with greater compassion."
+              title="Mindfulness-Based Stress Reduction"
+              description="Cultivate present-moment awareness to reduce stress and build a more compassionate relationship with your experiences."
               className="bg-background/90"
             />
             <ServiceCard
