@@ -16,7 +16,7 @@ export default function ApproachPage() {
                     Therapeutic Approach
                     </h1>
                     <p className="text-lg text-foreground/80">
-                    Our practice is founded on a thoughtful and integrative framework that draws from multiple evidence-based therapeutic modalities. We believe that no single approach fits everyone. This allows us to create a deeply personalized and flexible process, one that is tailored to the unique needs, goals, and circumstances of each client.
+                    Our practice is founded on a thoughtful and integrative framework that draws from multiple evidence-based therapeutic modalities. We believe that no single approach fits everyone, because every individual's story is unique. This philosophy allows us to create a deeply personalized and flexible therapeutic process, one that is collaboratively tailored to your specific needs, goals, and circumstances. The aim is to move beyond a one-size-fits-all model and instead build a therapeutic relationship where your experience is the central guide, ensuring the path we take is both resonant and effective for you.
                     </p>
                 </div>
                 <div className="flex justify-center">
@@ -33,7 +33,7 @@ export default function ApproachPage() {
             
             <div className="grid md:grid-cols-3 gap-8 text-center">
                 <ApproachCard
-                    title="Depth Psychology"
+                    title="Compassionate Inquiry"
                     description="We explore the deeper, unconscious aspects of the self to understand recurring patterns and move toward lasting change and a more authentic life."
                 />
                 <ApproachCard
