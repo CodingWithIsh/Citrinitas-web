@@ -1,8 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Search, Lightbulb, Flag } from "lucide-react";
-import ScrollIndicator from "@/components/ScrollIndicator";
+import { Search, Lightbulb, Flag, Compass, Waves, Users } from "lucide-react";
 import Image from "next/image";
 
 export default function ApproachPage() {
@@ -13,11 +12,16 @@ export default function ApproachPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
                 <div className="space-y-6">
                     <h1 className="text-4xl md:text-5xl font-headline text-primary mb-4">
-                    Therapeutic Approach
+                      Our Approach: Healing That Honours Your Unique Story
                     </h1>
-                    <p className="text-lg text-foreground/80">
-                    Our practice is founded on a thoughtful and integrative framework that draws from multiple evidence-based therapeutic modalities. We believe that no single approach fits everyone, because every individual's story is unique. This philosophy allows us to create a deeply personalized and flexible therapeutic process, one that is collaboratively tailored to your specific needs, goals, and circumstances. The aim is to move beyond a one-size-fits-all model and instead build a therapeutic relationship where your experience is the central guide, ensuring the path we take is both resonant and effective for you.
-                    </p>
+                    <div className="space-y-4 text-lg text-foreground/80">
+                      <p>
+                        You are unique, and your therapy should be too. We don't believe in a "one-size-fits-all" solution because your life, your challenges, and your strengths are unlike anyone else's.
+                      </p>
+                      <p>
+                        Our approach is integrative and collaborative, meaning we draw from powerful, evidence-based methods to create a therapeutic path that is tailored specifically to you. We'll work together in a safe, non-judgmental partnership to explore the challenges you're facing. Our goal is to move beyond simply managing symptoms and instead uncover the roots of your difficulties, paving the way for deep, lasting change.
+                      </p>
+                    </div>
                 </div>
                 <div className="flex justify-center">
                     <Image 
@@ -30,51 +34,66 @@ export default function ApproachPage() {
                     />
                 </div>
             </div>
-            
-            <div className="grid md:grid-cols-3 gap-8 text-center">
-                <ApproachCard
-                    title="Compassionate Inquiry"
-                    description="We explore the deeper, unconscious aspects of the self to understand recurring patterns and move toward lasting change and a more authentic life."
-                />
-                <ApproachCard
-                    title="Mindfulness Practices"
-                    description="Through systematic training in present-moment awareness, clients learn to observe thoughts and feelings without being controlled by them, building inner calm."
-                />
-                <ApproachCard
-                    title="Integrative Method"
-                    description="A collaborative and client-centered journey, drawing from a flexible toolkit of therapies within a secure, trusting, and non-judgmental partnership."
-                />
-            </div>
         </div>
-        <ScrollIndicator targetId="journey" />
       </section>
       
-      <section id="journey" className="py-20 md:py-32 bg-secondary" data-aos="fade-up">
+      <section id="tools" className="py-20 md:py-32 bg-secondary" data-aos="fade-up">
         <div className="container max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-headline text-primary mb-4">
-              The Therapeutic Journey: What to Expect
+              Our Core Therapeutic Tools
             </h2>
             <p className="max-w-3xl mx-auto text-lg text-foreground/80">
-              Embarking on therapy is a significant and personal step. To provide clarity and transparency, this section outlines the typical phases of the therapeutic process at our practice. The journey is always paced to the individual's comfort and needs.
+              We blend several key modalities to support your journey. Think of these as the tools in our toolkit, which we'll use flexibly based on your needs.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+              <ApproachCard
+                  icon={<Compass className="w-10 h-10 text-accent" />}
+                  title="Compassionate Inquiry"
+                  description="This approach gently guides us beyond the surface-level story of 'what's wrong' to a deeper understanding of 'what happened.' We explore how past experiences and unconscious beliefs shape your present-day reality. The goal isn't to re-live pain, but to release its hold on you, fostering profound self-compassion and freedom."
+              />
+              <ApproachCard
+                  icon={<Waves className="w-10 h-10 text-accent" />}
+                  title="Mindfulness & Somatic Practices"
+                  description="Often, our bodies hold the score. Through mindfulness, you'll learn to anchor yourself in the present moment, observing thoughts and feelings without being swept away by them. We also incorporate somatic (body-centered) awareness to gently listen to the wisdom of your body, helping to release stored tension and trauma that words alone cannot reach. This builds resilience and a true sense of inner calm."
+              />
+              <ApproachCard
+                  icon={<Users className="w-10 h-10 text-accent" />}
+                  title="An Integrative & Relational Foundation"
+                  description="Everything we do is built on the foundation of a secure and trusting therapeutic relationship. This is the most important part of our work. We will combine different approaches in a way that feels right for you, always guided by your experience and our collaboration. It’s a creative and flexible process dedicated to your growth."
+              />
+          </div>
+        </div>
+      </section>
+      
+      <section id="journey" className="py-20 md:py-32 bg-background" data-aos="fade-up">
+        <div className="container max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-headline text-primary mb-4">
+              Your Therapeutic Journey: What to Expect
+            </h2>
+            <p className="max-w-3xl mx-auto text-lg text-foreground/80">
+              Embarking on therapy is a courageous step. Here’s a simple outline of our journey together, which we will always move through at a pace that feels comfortable for you.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <RoadmapCard
               icon={<Search className="w-10 h-10 text-accent" />}
-              title="Consultation & Connection"
-              description="The journey begins with a brief, no-obligation consultation. This is a space to discuss what brings you to therapy and to ensure the therapeutic relationship feels like a safe and supportive fit before moving forward."
+              title="Step 1: Connection & Clarity"
+              subtitle="(Initial Consultation)"
+              description="Our journey begins with a free, informal chat. This is a chance for you to share what’s bringing you to therapy and for us to see if we're a good fit. The most important thing is that you feel safe, heard, and understood from the very start."
             />
             <RoadmapCard
               icon={<Lightbulb className="w-10 h-10 text-accent" />}
-              title="Exploration & Insight"
-              description="In a confidential and collaborative space, we explore the underlying patterns and challenges you face. The goal is to gain valuable insight, develop new perspectives, and build practical tools for navigating your inner and outer worlds."
+              title="Step 2: Exploration & Insight"
+              description="In our confidential sessions, we'll gently explore the patterns and challenges getting in your way. This is a collaborative space to gain powerful insights, see things from a new perspective, and start building practical tools to navigate your inner and outer worlds with greater ease."
             />
             <RoadmapCard
               icon={<Flag className="w-10 h-10 text-accent" />}
-              title="Integration & Empowerment"
-              description="As you gain clarity, the focus shifts to integrating these new insights into your daily life. This final phase is about consolidating your growth, building confidence in your own abilities, and feeling empowered to carry your progress forward independently."
+              title="Step 3: Integration & Empowerment"
+              description="As you gain clarity, our focus shifts to weaving these new insights into your daily life. This phase is about building confidence in your own ability to navigate challenges and empowering you to carry your growth forward independently, long after our sessions have ended."
             />
           </div>
         </div>
@@ -95,10 +114,13 @@ export default function ApproachPage() {
   );
 }
 
-function ApproachCard({ title, description }: { title: string, description: string }) {
+function ApproachCard({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) {
     return (
-        <Card className="shadow-md hover:shadow-xl transition-shadow duration-300 bg-card h-full flex flex-col p-6">
-            <CardHeader>
+        <Card className="shadow-md hover:shadow-xl transition-shadow duration-300 bg-card h-full flex flex-col p-6 text-center">
+            <CardHeader className="items-center">
+                <div className="bg-accent/10 rounded-full p-4 w-fit mb-4">
+                  {icon}
+                </div>
                 <CardTitle className="font-headline text-2xl text-primary">{title}</CardTitle>
             </CardHeader>
             <CardContent className="flex-grow">
@@ -108,7 +130,7 @@ function ApproachCard({ title, description }: { title: string, description: stri
     );
 }
 
-function RoadmapCard({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
+function RoadmapCard({ icon, title, subtitle, description }: { icon: React.ReactNode; title: string; subtitle?: string; description: string }) {
   return (
     <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 bg-card h-full flex flex-col p-6">
       <CardHeader className="items-center">
@@ -116,6 +138,7 @@ function RoadmapCard({ icon, title, description }: { icon: React.ReactNode; titl
           {icon}
         </div>
         <CardTitle className="font-headline text-2xl text-primary">{title}</CardTitle>
+        {subtitle && <p className="text-sm text-muted-foreground -mt-1">{subtitle}</p>}
       </CardHeader>
       <CardContent className="flex-grow">
         <p className="text-foreground/80">{description}</p>
