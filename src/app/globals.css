@@ -3,37 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: 'CrosstenSoft';
-    src: url('/CrosstenSoft-Font-Family/CrosstenSoft-Thin.otf') format('opentype');
-    font-weight: 100; /* Thin weight */
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'CrosstenSoft';
-    src: url('/CrosstenSoft-Font-Family/CrosstenSoft-Light.otf') format('opentype');
-    font-weight: 300;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'CrosstenSoft';
-    src: url('/CrosstenSoft-Font-Family/CrosstenSoft-Book.otf') format('opentype');
-    font-weight: 400; /* Normal/Regular weight */
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'CrosstenSoft';
-    src: url('/CrosstenSoft-Font-Family/CrosstenSoft-Medium.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'CrosstenSoft';
-    src: url('/CrosstenSoft-Font-Family/CrosstenSoft-Bold.otf') format('opentype');
-    font-weight: 700;
-    font-style: normal;
-  }
-
   :root {
     --background: 220 7% 95%; /* Light Grey / Off-White */
     --foreground: 25 67% 25%; /* Deep Brown */
