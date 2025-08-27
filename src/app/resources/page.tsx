@@ -5,11 +5,6 @@ import Image from 'next/image';
 import { BookOpen, Briefcase, Heart, ArrowRight, Brain, Wind, Hourglass } from "lucide-react";
 import ScrollIndicator from "@/components/ScrollIndicator";
 
-import workImage from '../../../public/Work.png';
-import relationshipsImage from '../../../public/Relationships.png';
-import growthImage from '../../../public/Growth.png';
-
-
 export default function ResourcesPage() {
   return (
     <div className="bg-background">
@@ -35,19 +30,19 @@ export default function ResourcesPage() {
               icon={<Briefcase className="h-10 w-10 text-accent" />}
               title="Our Work"
               description="Stress, anxiety, procrastination, fear of failure... We look at how patterns of thinking can pervade our working life."
-              imageUrl={workImage}
+              imageUrl="/Work.png"
             />
             <ResourceCard
               icon={<Heart className="h-10 w-10 text-accent" />}
               title="Our Relationships"
               description="We take a look at the most common reasons why people seek counselling, including for depression, anxiety, and bereavement."
-              imageUrl={relationshipsImage}
+              imageUrl="/Relationships.png"
             />
             <ResourceCard
               icon={<BookOpen className="h-10 w-10 text-accent" />}
               title="Our Growth"
               description="Our lives are punctuated by a series of milestones that throw up serious challenges to our mental wellbeing."
-              imageUrl={growthImage}
+              imageUrl="/Growth.png"
             />
           </div>
         </div>

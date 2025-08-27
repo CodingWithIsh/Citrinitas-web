@@ -2,7 +2,6 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import midlifeImage from '../../../../public/Blog/The Midlife Unraveling.png';
 
 export default function AnxietyDepressionPage() {
   return (
@@ -22,7 +21,7 @@ export default function AnxietyDepressionPage() {
           </header>
 
           <Image
-            src={midlifeImage}
+            src="/images/Blog/The Midlife Unraveling.png"
             alt="Light breaking through shadows"
             width={1200}
             height={600}

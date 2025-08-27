@@ -2,7 +2,6 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import beyondBurnoutImage from '../../../../public/Blog/Beyond Burnout.png';
 
 export default function WorkStressPage() {
   return (
@@ -22,7 +21,7 @@ export default function WorkStressPage() {
           </header>
 
           <Image
-            src={beyondBurnoutImage}
+            src="/images/Blog/Beyond Burnout.png"
             alt="An office worker looking stressed."
             width={1200}
             height={600}

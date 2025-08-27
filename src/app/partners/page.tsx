@@ -3,7 +3,6 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import Fire from '../../../public/Fire.jpg';
 
 const partners = [
   {
@@ -34,7 +33,7 @@ export default function PartnersPage() {
        <section 
         className="relative py-20 md:py-32 bg-cover bg-center" 
         data-aos="fade-up"
-        style={{ backgroundImage: `url(${Fire.src})` }}
+        style={{ backgroundImage: `url('/Fire.jpg')` }}
       >
         <div className="absolute inset-0 bg-black/50" />
         <div className="container relative z-10">

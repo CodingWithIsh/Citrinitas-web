@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Search, Lightbulb, Flag, Compass, Waves, Users } from "lucide-react";
 import Image from "next/image";
-import Waterfall from '../../../public/Waterfall.jpg';
 
 export default function ApproachPage() {
   return (
@@ -11,7 +10,7 @@ export default function ApproachPage() {
       <section id="start" className="grid grid-cols-1 md:grid-cols-5 min-h-[70vh]" data-aos="fade-up">
         <div className="relative h-full min-h-[50vh] md:min-h-0 md:col-span-2">
           <Image 
-              src={Waterfall}
+              src="/Waterfall.jpg"
               alt="A serene waterfall cascading down rocks"
               fill
               className="object-cover"

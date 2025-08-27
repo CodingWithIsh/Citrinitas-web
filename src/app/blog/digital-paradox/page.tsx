@@ -2,7 +2,6 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import digitalParadoxImage from '../../../../public/Blog/The Digital Paradox.png';
 
 export default function ImposterSyndromePage() {
   return (
@@ -22,7 +21,7 @@ export default function ImposterSyndromePage() {
           </header>
 
           <Image
-            src={digitalParadoxImage}
+            src="/images/Blog/The Digital Paradox.png"
             alt="A person holding a mask"
             width={1200}
             height={600}

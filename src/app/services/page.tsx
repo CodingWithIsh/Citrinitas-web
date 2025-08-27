@@ -6,7 +6,6 @@ import { Check, HelpCircle, MessageSquare, ShieldCheck, UserCheck, Wind } from "
 import { Separator } from "@/components/ui/separator";
 import ScrollIndicator from "@/components/ScrollIndicator";
 import Image from 'next/image';
-import Butterfly from '../../../public/Butterfly.jpg';
 
 export default function ServicesPage() {
   return (
@@ -15,7 +14,7 @@ export default function ServicesPage() {
         id="start" 
         className="py-20 md:py-32 relative bg-cover bg-center" 
         data-aos="fade-up"
-        style={{ backgroundImage: `url(${Butterfly.src})` }}
+        style={{ backgroundImage: `url('/Butterfly.jpg')` }}
       >
         <div className="absolute inset-0 bg-black/50" />
         <div className="container max-w-5xl mx-auto relative">

@@ -2,7 +2,6 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import friendshipImage from '../../../../public/Blog/The Friendship Recession.png';
 
 export default function PerfectionismPage() {
   return (
@@ -22,7 +21,7 @@ export default function PerfectionismPage() {
           </header>
 
           <Image
-            src={friendshipImage}
+            src="/images/Blog/The Friendship Recession.png"
             alt="A perfectly symmetrical image"
             width={1200}
             height={600}
@@ -50,7 +49,7 @@ export default function PerfectionismPage() {
               <li><strong>Set Healthy Boundaries:</strong> Learning to express your needs directly and assertively is crucial. Setting boundaries—such as stating you don't have the emotional capacity for a heavy conversation at a particular moment—is not an act of rejection but an act of realism that protects both you and the friendship in the long run.</li>
               <li><strong>Prioritize Self-Care:</strong> You cannot pour from an empty cup. Tending to your own well-being by engaging in joyful activities and seeking your own support network is essential for having the energy to be a good friend to others.</li>
               <li><strong>Make a Conscious Effort:</strong> Close friendships require time and shared experiences. Make a deliberate effort to see friends regularly and to check in with them between meetings to maintain the connection.</li>
-              <li><strong>Acknowledge Personality:</strong> It is also helpful to recognize that different personality traits can influence how people build and maintain friendships. For example, individuals high in agreeableness may naturally gravitate toward supportive behaviors, while others may need to be more intentional about them.</li>
+              <li><strong>Acknowledge Personality:</strong> It is also helpful to recognize that different personality traits can influence how people build and maintain friendships. For example, a person high in agreeableness may naturally gravitate toward supportive behaviors, while others may need to be more intentional about them.</li>
             </ul>
             <h2 className="text-2xl font-headline text-primary">Conclusion: Investing in Your "Emotional Bank Account"</h2>
             <p>Ultimately, friendships are a vital investment in our overall health and happiness. They can be thought of as an "emotional bank account" that requires consistent deposits of kindness, trust, vulnerability, and effort. By learning to recognize unhealthy, draining patterns and intentionally cultivating supportive, boundaried, and reciprocal relationships, it is possible to combat the friendship recession and build the life-sustaining connections that allow us to truly thrive.</p>

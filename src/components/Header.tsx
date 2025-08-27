@@ -8,14 +8,12 @@ import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 
-import logoImage from '../../public/Logo3.png';
-
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/approach', label: 'Approach' },
   { href: '/services', label: 'Services' },
-  { href: '/partners', label: 'Community' },
+  { href: '/community', label: 'Community' },
   { href: '/resources', label: 'Resources' },
   { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact' },
@@ -29,7 +27,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full bg-background/70 backdrop-blur-sm">
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-           <Image src={logoImage} alt="Citrinitas Therapies Logo" width={80} height={80} />
+           <Image src="/Logo3.png" alt="Citrinitas Therapies Logo" width={80} height={80} />
         </Link>
         <nav className="hidden md:flex items-center justify-center flex-1 space-x-8 text-base font-normal">
           {navLinks.map((link) => (
@@ -59,7 +57,7 @@ export default function Header() {
                 <div className="flex justify-start p-4 border-b">
                    <SheetClose asChild>
                     <Link href="/" className="flex items-center gap-2">
-                       <Image src={logoImage} alt="Citrinitas Therapies Logo" width={80} height={80} />
+                       <Image src="/Logo3.png" alt="Citrinitas Therapies Logo" width={80} height={80} />
                     </Link>
                    </SheetClose>
                 </div>

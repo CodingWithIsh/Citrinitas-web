@@ -2,8 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Mail, MapPin } from 'lucide-react';
 
-import logoImage from '../../public/Logo3.png';
-
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -14,7 +12,7 @@ export default function Footer() {
           {/* Logo */}
           <div className="flex items-start">
             <Link href="/" className="flex items-center gap-2">
-              <Image src={logoImage} alt="Citrinitas Therapies Logo" width={210} height={210} />
+              <Image src="/Logo3.png" alt="Citrinitas Therapies Logo" width={210} height={210} />
             </Link>
           </div>
 
@@ -25,7 +23,7 @@ export default function Footer() {
               <li><Link href="/about" className="hover:underline">About</Link></li>
               <li><Link href="/approach" className="hover:underline">Approach</Link></li>
               <li><Link href="/services" className="hover:underline">Services</Link></li>
-              <li><Link href="/partners" className="hover:underline">Community</Link></li>
+              <li><Link href="/community" className="hover:underline">Community</Link></li>
               <li><Link href="/resources" className="hover:underline">Resources</Link></li>
               <li><Link href="/blog" className="hover:underline">Blog</Link></li>
             </ul>
