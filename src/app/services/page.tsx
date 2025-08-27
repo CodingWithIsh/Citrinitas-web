@@ -9,13 +9,19 @@ import ScrollIndicator from "@/components/ScrollIndicator";
 export default function ServicesPage() {
   return (
     <div className="bg-background">
-      <section id="start" className="py-20 md:py-32" data-aos="fade-up">
-        <div className="container max-w-5xl mx-auto">
+      <section 
+        id="start" 
+        className="py-20 md:py-32 relative bg-cover bg-center" 
+        data-aos="fade-up"
+        style={{ backgroundImage: "url('/Butterfly.jpg')" }}
+      >
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="container max-w-5xl mx-auto relative">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-headline text-primary mb-4">
+            <h1 className="text-4xl md:text-5xl font-headline text-white mb-4">
               Services
             </h1>
-            <p className="max-w-3xl mx-auto text-lg text-foreground/80">
+            <p className="max-w-3xl mx-auto text-lg text-white/90">
               We offer a range of therapeutic services designed to support your journey toward mental and emotional wellbeing. Each service is tailored to the unique needs of the individual.
             </p>
           </div>
@@ -75,17 +81,15 @@ export default function ServicesPage() {
 
       <section 
         id="pricing" 
-        className="py-20 md:py-32 bg-cover bg-center relative" 
+        className="py-20 md:py-32" 
         data-aos="fade-up"
-        style={{ backgroundImage: "url('/Butterfly.jpg')" }}
       >
-        <div className="absolute inset-0 bg-background/40 backdrop-blur-sm" />
-        <div className="container max-w-5xl mx-auto relative">
+        <div className="container max-w-5xl mx-auto">
            <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-headline text-primary mb-4">
               Pricing & Accessibility
             </h2>
-            <p className="max-w-3xl mx-auto text-lg text-foreground/90 bg-white/70 p-6 rounded-lg shadow-md">
+            <p className="max-w-3xl mx-auto text-lg text-foreground/80 bg-white/70 p-6 rounded-lg shadow-md">
               We are committed to making our services accessible. Our fees are based on a sliding scale, which takes into account each client's individual financial circumstances. This approach allows us to provide equitable access to quality care. For a specific fee arrangement, please get in touch for an initial consultation.
             </p>
           </div>
@@ -172,7 +176,7 @@ export default function ServicesPage() {
 
 function ServiceCard({ title, description }: { title: string, description: string }) {
   return (
-    <Card className="shadow-lg text-center h-full">
+    <Card className="shadow-lg text-center h-full bg-card/90">
       <CardHeader>
         <CardTitle className="font-headline text-2xl text-primary">{title}</CardTitle>
       </CardHeader>
