@@ -85,7 +85,7 @@ export default function ServicesPage() {
             <h2 className="text-3xl md:text-4xl font-headline text-primary mb-4">
               Pricing & Accessibility
             </h2>
-            <p className="max-w-3xl mx-auto text-lg text-foreground/80">
+            <p className="max-w-3xl mx-auto text-lg text-foreground/90 bg-white/70 p-6 rounded-lg shadow-md">
               We are committed to making our services accessible. Our fees are based on a sliding scale, which takes into account each client's individual financial circumstances. This approach allows us to provide equitable access to quality care. For a specific fee arrangement, please get in touch for an initial consultation.
             </p>
           </div>
