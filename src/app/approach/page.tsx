@@ -7,35 +7,28 @@ import Image from "next/image";
 export default function ApproachPage() {
   return (
     <div className="bg-background">
-      <section id="start" className="relative" data-aos="fade-up">
-        <div className="absolute inset-0 opacity-40">
-            <Image 
-                src="/Waterfall.jpg"
-                alt="A serene waterfall cascading down rocks"
-                fill
-                className="object-cover"
-                data-ai-hint="waterfall nature"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-background/50 to-background"></div>
+      <section id="start" className="grid grid-cols-1 md:grid-cols-2 min-h-[70vh]" data-aos="fade-up">
+        <div className="relative h-full min-h-[50vh] md:min-h-0">
+          <Image 
+              src="/Waterfall.jpg"
+              alt="A serene waterfall cascading down rocks"
+              fill
+              className="object-cover"
+              data-ai-hint="waterfall nature"
+          />
         </div>
-        <div className="container mx-auto relative z-10">
-            <div className="grid md:grid-cols-2 min-h-[70vh] items-center">
-                <div className="md:col-start-2">
-                    <div className="bg-background/80 backdrop-blur-sm p-8 rounded-lg shadow-xl">
-                        <div className="space-y-6">
-                            <h1 className="text-4xl md:text-5xl font-headline text-primary mb-4">
-                              Our Approach: Healing That Honours Your Unique Story
-                            </h1>
-                            <div className="space-y-4 text-lg text-foreground/90">
-                              <p>
-                                You are unique, and your therapy should be too. We don't believe in a "one-size-fits-all" solution because your life, your challenges, and your strengths are unlike anyone else's.
-                              </p>
-                              <p>
-                                Our approach is integrative and collaborative, meaning we draw from powerful, evidence-based methods to create a therapeutic path that is tailored specifically to you. We'll work together in a safe, non-judgmental partnership to explore the challenges you're facing. Our goal is to move beyond simply managing symptoms and instead uncover the roots of your difficulties, paving the way for deep, lasting change.
-                              </p>
-                            </div>
-                        </div>
-                    </div>
+        <div className="flex items-center justify-center p-8 md:p-12">
+            <div className="space-y-6 max-w-lg">
+                <h1 className="text-4xl md:text-5xl font-headline text-primary mb-4">
+                  Our Approach: Healing That Honours Your Unique Story
+                </h1>
+                <div className="space-y-4 text-lg text-foreground/90">
+                  <p>
+                    You are unique, and your therapy should be too. We don't believe in a "one-size-fits-all" solution because your life, your challenges, and your strengths are unlike anyone else's.
+                  </p>
+                  <p>
+                    Our approach is integrative and collaborative, meaning we draw from powerful, evidence-based methods to create a therapeutic path that is tailored specifically to you. We'll work together in a safe, non-judgmental partnership to explore the challenges you're facing. Our goal is to move beyond simply managing symptoms and instead uncover the roots of your difficulties, paving the way for deep, lasting change.
+                  </p>
                 </div>
             </div>
         </div>
