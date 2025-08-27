@@ -12,6 +12,11 @@ import Link from 'next/link';
 import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';
 import ScrollIndicator from '@/components/ScrollIndicator';
+import Background3 from '@/assets/images/Background3.png';
+import Logo3 from '@/assets/images/Logo3.png';
+import barnabasImage from '@/assets/images/barnabas.jpg';
+import riverImage from '@/assets/images/river.jpg';
+import contactImage from '@/assets/images/Contact.jpg';
 
 export default function Home() {
   const [isNavigating, setIsNavigating] = useState(false);
@@ -55,10 +60,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className={cn("relative flex flex-col items-center justify-center text-center p-8 bg-cover bg-center", isNavigating && 'animate-scene-zoom')} style={{ backgroundImage: `url('/Background3.png')` }}>
+        <div className={cn("relative flex flex-col items-center justify-center text-center p-8 bg-cover bg-center", isNavigating && 'animate-scene-zoom')} style={{ backgroundImage: `url(${Background3.src})` }}>
            <div className="absolute inset-0 bg-black/30" />
            <div className="relative z-10 flex flex-col items-center justify-center text-white">
-              <Image src="/Logo3.png" alt="Citrinitas Therapies Logo" width={600} height={600} className="mb-6" />
+              <Image src={Logo3} alt="Citrinitas Therapies Logo" width={600} height={600} className="mb-6" />
               <h1 className="text-4xl md:text-5xl font-headline text-white/90">
                 Welcome to Citrinitas Therapies
               </h1>
@@ -77,7 +82,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div className="w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden shadow-lg flex-shrink-0 border-4 border-white">
               <Image
-                src="/barnabas.jpg"
+                src={barnabasImage}
                 alt="Portrait of Barnabas Kinge, psychotherapist"
                 width={400}
                 height={400}
@@ -107,7 +112,7 @@ export default function Home() {
         id="services"
         className="py-20 md:py-32 bg-cover bg-center relative"
         data-aos="fade-up"
-        style={{ backgroundImage: `url('/river.jpg')` }}
+        style={{ backgroundImage: `url(${riverImage.src})` }}
       >
         <div className="absolute inset-0 bg-primary/80" />
         <div className="container mx-auto text-center relative">
@@ -188,7 +193,7 @@ export default function Home() {
         id="contact"
         className="py-20 md:py-32 bg-cover bg-center relative"
         data-aos="fade-up"
-        style={{ backgroundImage: `url('/Contact.jpg')` }}
+        style={{ backgroundImage: `url(${contactImage.src})` }}
       >
         <div className="absolute inset-0 bg-primary/80" />
         <div className="container mx-auto text-center relative flex justify-center items-center">
