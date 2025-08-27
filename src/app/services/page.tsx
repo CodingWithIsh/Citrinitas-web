@@ -73,8 +73,14 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32" data-aos="fade-up">
-        <div className="container max-w-5xl mx-auto">
+      <section 
+        id="pricing" 
+        className="py-20 md:py-32 bg-cover bg-center relative" 
+        data-aos="fade-up"
+        style={{ backgroundImage: "url('/Butterfly.jpg')" }}
+      >
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
+        <div className="container max-w-5xl mx-auto relative">
            <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-headline text-primary mb-4">
               Pricing & Accessibility
@@ -84,7 +90,7 @@ export default function ServicesPage() {
             </p>
           </div>
           
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto bg-background/80 p-8 rounded-lg shadow-xl">
             <h2 className="text-2xl md:text-3xl font-headline text-primary mb-8 text-center">
               Frequently Asked Questions
             </h2>

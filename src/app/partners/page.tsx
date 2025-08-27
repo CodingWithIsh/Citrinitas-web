@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const partners = [
   {
@@ -29,17 +30,26 @@ const partners = [
 export default function PartnersPage() {
   return (
     <div className="bg-background">
-      <section id="start" className="py-20 md:py-32" data-aos="fade-up">
-        <div className="container">
+       <section 
+        className="relative py-20 md:py-32 bg-cover bg-center" 
+        data-aos="fade-up"
+        style={{ backgroundImage: "url('/Fire.jpg')" }}
+      >
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="container relative z-10">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-headline text-primary mb-4">
+            <h1 className="text-4xl md:text-5xl font-headline text-white mb-4">
               Our Network of Practitioners
             </h1>
-            <p className="max-w-3xl mx-auto text-lg text-foreground/80">
+            <p className="max-w-3xl mx-auto text-lg text-white/90">
               We are proud to collaborate with a network of trusted practitioners who share our commitment to holistic health and wellbeing. Each professional brings a unique set of skills and expertise to support your journey.
             </p>
           </div>
+        </div>
+      </section>
 
+      <section id="partners-list" className="py-20 md:py-24" data-aos="fade-up">
+        <div className="container">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {partners.map((partner) => (
               <Card key={partner.name} className="flex flex-col text-center shadow-md hover:shadow-xl transition-shadow duration-300">
