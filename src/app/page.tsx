@@ -46,7 +46,7 @@ export default function Home() {
 
             <div className="pt-2 space-y-4">
                <h3 className="text-lg font-bold tracking-wide">Arrange a Free Consultation</h3>
-               <a href="tel:+447384407792" className="flex items-center justify-center gap-3 text-2xl text-accent hover:text-accent/90 transition-colors mt-2">
+               <a href="tel:+447384407792" className="flex items-center justify-center gap-3 text-2xl text-primary-foreground hover:text-primary-foreground/90 transition-colors mt-2">
                  <Phone className="h-6 w-6" />
                  <span>+44 7384 407792</span>
                </a>
