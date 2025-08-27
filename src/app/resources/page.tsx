@@ -4,6 +4,9 @@ import Link from "next/link";
 import Image from 'next/image';
 import { BookOpen, Briefcase, Heart, ArrowRight, Brain, Wind, Hourglass } from "lucide-react";
 import ScrollIndicator from "@/components/ScrollIndicator";
+import WorkImage from '@/assets/images/Work.png';
+import RelationshipsImage from '@/assets/images/Relationships.png';
+import GrowthImage from '@/assets/images/Growth.png';
 
 export default function ResourcesPage() {
   return (
@@ -30,19 +33,19 @@ export default function ResourcesPage() {
               icon={<Briefcase className="h-10 w-10 text-accent" />}
               title="Our Work"
               description="Stress, anxiety, procrastination, fear of failure... We look at how patterns of thinking can pervade our working life."
-              imageUrl="/Work.png"
+              imageUrl={WorkImage}
             />
             <ResourceCard
               icon={<Heart className="h-10 w-10 text-accent" />}
               title="Our Relationships"
               description="We take a look at the most common reasons why people seek counselling, including for depression, anxiety, and bereavement."
-              imageUrl="/Relationships.png"
+              imageUrl={RelationshipsImage}
             />
             <ResourceCard
               icon={<BookOpen className="h-10 w-10 text-accent" />}
               title="Our Growth"
               description="Our lives are punctuated by a series of milestones that throw up serious challenges to our mental wellbeing."
-              imageUrl="/Growth.png"
+              imageUrl={GrowthImage}
             />
           </div>
         </div>
@@ -139,7 +142,7 @@ export default function ResourcesPage() {
   );
 }
 
-function ResourceCard({ icon, title, description, imageUrl }: { icon: React.ReactNode, title: string, description: string, imageUrl: string }) {
+function ResourceCard({ icon, title, description, imageUrl }: { icon: React.ReactNode, title: string, description: string, imageUrl: any }) {
   return (
     <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 bg-card h-full flex flex-col overflow-hidden">
         <div className="relative w-full h-48">

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import blogImage from '@/assets/images/Blog/The-Friendship-Recession.png';
 
 export default function PerfectionismPage() {
   return (
@@ -21,7 +22,7 @@ export default function PerfectionismPage() {
           </header>
 
           <Image
-            src="/images/Blog/The Friendship Recession.png"
+            src={blogImage}
             alt="A perfectly symmetrical image"
             width={1200}
             height={600}

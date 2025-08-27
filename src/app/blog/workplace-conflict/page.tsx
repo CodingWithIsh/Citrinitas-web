@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import blogImage from '@/assets/images/Blog/The-Unspoken-Rules-of-Engagement.png';
 
 export default function ProcrastinationPage() {
   return (
@@ -21,7 +22,7 @@ export default function ProcrastinationPage() {
           </header>
 
           <Image
-            src="/images/Blog/The Unspoken Rules of Engagement.png"
+            src={blogImage}
             alt="A messy desk representing procrastination"
             width={1200}
             height={600}
