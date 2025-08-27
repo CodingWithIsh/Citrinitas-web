@@ -21,6 +21,9 @@ export default function AboutPage() {
               <p className="text-foreground/90">
                 The practice is founded on the principle that every individual possesses the inner resources for healing and joy. The therapeutic process is designed to help clients connect with this brilliant light within themselves.
               </p>
+              <p className="text-foreground/90">
+                The therapeutic relationship at Citrinitas is a partnership built on trust and mutual respect. It provides a safe, welcoming, and non-judgmental space where clients feel truly seen and heard. The goal is twofold: to bring relief from immediate psychological distress and to empower individuals to access their own incredible capacity for growth and lasting change. Together, therapist and client explore the landscapes of the inner world, unlocking the wisdom that already resides within.
+              </p>
             </div>
             <div className="flex justify-center">
               <Image 
@@ -33,11 +36,6 @@ export default function AboutPage() {
               />
             </div>
           </div>
-           <div className="mt-12 text-center text-foreground/90 max-w-4xl mx-auto space-y-4">
-               <p>
-                The therapeutic relationship at Citrinitas is a partnership built on trust and mutual respect. It provides a safe, welcoming, and non-judgmental space where clients feel truly seen and heard. The goal is twofold: to bring relief from immediate psychological distress and to empower individuals to access their own incredible capacity for growth and lasting change. Together, therapist and client explore the landscapes of the inner world, unlocking the wisdom that already resides within.
-              </p>
-            </div>
         </div>
       </section>
 
