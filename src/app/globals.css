@@ -5,6 +5,12 @@
 @layer base {
   @font-face {
     font-family: 'CrosstenSoft';
+    src: url('/CrosstenSoft-Font-Family/CrosstenSoft-Thin.otf') format('opentype');
+    font-weight: 100; /* Thin weight */
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'CrosstenSoft';
     src: url('/CrosstenSoft-Font-Family/CrosstenSoft-Light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
