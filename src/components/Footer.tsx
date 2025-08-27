@@ -50,7 +50,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="h-5 w-5 mt-1 flex-shrink-0" />
-                <a href="mailto:BarnabasKinge2@gmail.com" className="hover:underline">BarnabasKinge2@gmail.com</a>
+                <a href="mailto:Contact@Citrinitastherapies.com" className="hover:underline">Contact@Citrinitastherapies.com</a>
               </li>
             </ul>
           </div>
