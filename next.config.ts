@@ -4,16 +4,17 @@
 const isGithubPages = process.env.GITHUB_PAGES === 'true';
 
 const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
-
-  // These lines conditionally add the prefixes ONLY for the GitHub Pages build
+  // These lines conditionally add settings ONLY for the GitHub Pages build
   ...(isGithubPages && {
+    output: 'export',
     basePath: '/Citrinitas-web',
     assetPrefix: '/Citrinitas-web',
   }),
+
+  // Conditionally disable image optimization ONLY for the static GitHub Pages build
+  images: {
+    unoptimized: isGithubPages,
+  },
 
   // Your other project settings
   typescript: {
