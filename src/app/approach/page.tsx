@@ -1,23 +1,36 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Search, Lightbulb, Flag } from "lucide-react";
 import ScrollIndicator from "@/components/ScrollIndicator";
+import Image from "next/image";
 
 export default function ApproachPage() {
   return (
     <div className="bg-background">
       <section id="start" className="py-20 md:py-32" data-aos="fade-up">
         <div className="container mx-auto">
-            <div className="text-center mb-16">
-                <h1 className="text-4xl md:text-5xl font-headline text-primary mb-4">
-                Therapeutic Approach
-                </h1>
-                <p className="max-w-3xl mx-auto text-lg text-foreground/80">
-                  Our practice is founded on a thoughtful and integrative framework that draws from multiple evidence-based therapeutic modalities. We believe that no single approach fits everyone. This allows us to create a deeply personalized and flexible process, one that is tailored to the unique needs, goals, and circumstances of each client. The foundation of our work rests on the following core principles.
-                </p>
+            <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
+                <div className="space-y-6">
+                    <h1 className="text-4xl md:text-5xl font-headline text-primary mb-4">
+                    Therapeutic Approach
+                    </h1>
+                    <p className="text-lg text-foreground/80">
+                    Our practice is founded on a thoughtful and integrative framework that draws from multiple evidence-based therapeutic modalities. We believe that no single approach fits everyone. This allows us to create a deeply personalized and flexible process, one that is tailored to the unique needs, goals, and circumstances of each client. The foundation of our work rests on the following core principles.
+                    </p>
+                </div>
+                <div className="flex justify-center">
+                    <Image 
+                        src="/Waterfall.jpg"
+                        alt="A serene waterfall cascading down rocks"
+                        width={400}
+                        height={600}
+                        className="rounded-lg shadow-2xl object-cover"
+                        data-ai-hint="waterfall nature"
+                    />
+                </div>
             </div>
+            
           <div className="max-w-4xl mx-auto space-y-12">
             <ApproachDetail
               title="Depth Psychology"
