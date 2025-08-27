@@ -79,7 +79,7 @@ export default function ServicesPage() {
         data-aos="fade-up"
         style={{ backgroundImage: "url('/Butterfly.jpg')" }}
       >
-        <div className="absolute inset-0 bg-background/60 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-background/40 backdrop-blur-sm" />
         <div className="container max-w-5xl mx-auto relative">
            <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-headline text-primary mb-4">
