@@ -67,7 +67,7 @@ export default function Header() {
                         <Link
                           href={link.href}
                           className={cn(
-                            "text-foreground/80 transition-colors hover:text-primary w-full py-2 px-2 rounded-md",
+                            "text-foreground/80 transition-colors hover:text-primary w-full py-2 rounded-md",
                             (pathname === link.href || (link.href !== "/" && pathname.startsWith(link.href))) && "bg-secondary text-primary font-bold"
                           )}
                         >

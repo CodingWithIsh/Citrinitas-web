@@ -92,7 +92,7 @@ export default function Home() {
                 My therapeutic style includes a combination of Compassionate Inquiry and Mindfulness Based Stress Reduction, providing psychological assistance both in the moment and long term. I actively support clients in accessing therapeutic space, untying emotional knots and moving towards the most authentic versions of themselves.
               </p>
                <p>
-                Our network of holistic practitioners support every aspect of health and wellbeing based on traditional healing arts.
+                Our network of holistic practitioners support every aspect of health and wellbeing based on a traditional healing arts.
               </p>
             </div>
           </div>

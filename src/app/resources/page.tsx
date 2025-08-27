@@ -139,7 +139,7 @@ export default function ResourcesPage() {
   );
 }
 
-function ResourceCard({ icon, title, description, imageUrl }: { icon: React.ReactNode, title: string, description: string, imageUrl: any }) {
+function ResourceCard({ icon, title, description, imageUrl }: { icon: React.ReactNode, title: string, description: string, imageUrl: string }) {
   return (
     <Card className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 bg-card h-full flex flex-col overflow-hidden">
         <div className="relative w-full h-48">
