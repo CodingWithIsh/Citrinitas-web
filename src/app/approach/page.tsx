@@ -7,8 +7,8 @@ import Image from "next/image";
 export default function ApproachPage() {
   return (
     <div className="bg-background">
-      <section id="start" className="grid grid-cols-1 md:grid-cols-2 min-h-[70vh]" data-aos="fade-up">
-        <div className="relative h-full min-h-[50vh] md:min-h-0">
+      <section id="start" className="grid grid-cols-1 md:grid-cols-5 min-h-[70vh]" data-aos="fade-up">
+        <div className="relative h-full min-h-[50vh] md:min-h-0 md:col-span-2">
           <Image 
               src="/Waterfall.jpg"
               alt="A serene waterfall cascading down rocks"
@@ -17,7 +17,7 @@ export default function ApproachPage() {
               data-ai-hint="waterfall nature"
           />
         </div>
-        <div className="flex items-center justify-center p-8 md:p-12">
+        <div className="flex items-center justify-center p-8 md:p-12 md:col-span-3">
             <div className="space-y-6 max-w-lg">
                 <h1 className="text-4xl md:text-5xl font-headline text-primary mb-4">
                   Our Approach: Healing That Honours Your Unique Story
