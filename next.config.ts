@@ -1,23 +1,20 @@
-import type {NextConfig} from 'next';
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // Settings for static export on GitHub Pages
+  output: 'export',
+  basePath: '/Citrinitas-web',
+  assetPrefix: '/Citrinitas-web',
+  images: {
+    unoptimized: true,
+  },
 
-const nextConfig: NextConfig = {
-  /* config options here */
+  // Your other project settings
   typescript: {
     ignoreBuildErrors: true,
   },
   eslint: {
     ignoreDuringBuilds: true,
   },
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'placehold.co',
-        port: '',
-        pathname: '/**',
-      },
-    ],
-  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
