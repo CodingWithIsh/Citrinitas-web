@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ShieldCheck, Handshake, MessageCircle, GitCommit, Heart, CheckSquare } from 'lucide-react';
 import ScrollIndicator from '@/components/ScrollIndicator';
+import Zenbuddha from '../../../public/Zenbuddha.jpg';
 
 export default function AboutPage() {
   return (
@@ -27,12 +28,13 @@ export default function AboutPage() {
             </div>
             <div className="flex justify-center">
               <Image 
-                src="/Zenbuddha.jpg"
+                src={Zenbuddha}
                 alt="Zen Buddha statue in a serene setting"
                 width={500}
                 height={500}
                 className="rounded-lg shadow-2xl object-cover"
                 data-ai-hint="zen buddha"
+                priority
               />
             </div>
           </div>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import conflictImage from '../../../../public/Blog/The Unspoken Rules of Engagement.png';
 
 export default function ProcrastinationPage() {
   return (
@@ -21,11 +22,12 @@ export default function ProcrastinationPage() {
           </header>
 
           <Image
-            src="/Blog/The Unspoken Rules of Engagement.png"
+            src={conflictImage}
             alt="A messy desk representing procrastination"
             width={1200}
             height={600}
             className="rounded-lg mb-8"
+            priority
           />
 
           <div className="space-y-6 text-foreground/90 text-lg">

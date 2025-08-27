@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import resilienceImage from '../../../../public/Blog/The Art of Bouncing Forward.png';
 
 export default function BereavementPage() {
   return (
@@ -21,11 +22,12 @@ export default function BereavementPage() {
           </header>
 
           <Image
-            src="/Blog/The Art of Bouncing Forward.png"
+            src={resilienceImage}
             alt="A path winding through a quiet forest"
             width={1200}
             height={600}
             className="rounded-lg mb-8"
+            priority
           />
 
           <div className="space-y-6 text-foreground/90 text-lg">
