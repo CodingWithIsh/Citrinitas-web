@@ -11,8 +11,8 @@
   }
   @font-face {
     font-family: 'CrosstenSoft';
-    src: url('/CrosstenSoft-Font-Family/CrosstenSoft-Regular.otf') format('opentype');
-    font-weight: 400;
+    src: url('/CrosstenSoft-Font-Family/CrosstenSoft-Book.otf') format('opentype');
+    font-weight: 400; /* Normal/Regular weight */
     font-style: normal;
   }
   @font-face {
