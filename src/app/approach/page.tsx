@@ -16,7 +16,7 @@ export default function ApproachPage() {
                     Therapeutic Approach
                     </h1>
                     <p className="text-lg text-foreground/80">
-                    Our practice is founded on a thoughtful and integrative framework that draws from multiple evidence-based therapeutic modalities. We believe that no single approach fits everyone. This allows us to create a deeply personalized and flexible process, one that is tailored to the unique needs, goals, and circumstances of each client. The foundation of our work rests on the following core principles.
+                    Our practice is founded on a thoughtful and integrative framework that draws from multiple evidence-based therapeutic modalities. We believe that no single approach fits everyone. This allows us to create a deeply personalized and flexible process, one that is tailored to the unique needs, goals, and circumstances of each client.
                     </p>
                 </div>
                 <div className="flex justify-center">
@@ -31,20 +31,20 @@ export default function ApproachPage() {
                 </div>
             </div>
             
-          <div className="max-w-4xl mx-auto space-y-12">
-            <ApproachDetail
-              title="Depth Psychology"
-              description="This approach is centered on the belief that our present-day challenges, recurring patterns, and feelings of being 'stuck' are often connected to deeper, unconscious aspects of ourselves. The therapeutic process involves gently exploring these underlying dynamics—the parts of our life story and inner world that we may not be fully aware of. By bringing these aspects to light in a safe and supportive environment, we can move beyond simply managing symptoms and toward profound and lasting change, fostering a more authentic and integrated sense of self."
-            />
-            <ApproachDetail
-              title="Mindfulness-Based Practices"
-              description="In our fast-paced world, many of us live in a state of chronic stress, disconnected from the present moment. Mindfulness-based practices are a powerful, evidence-based way to counteract this. In therapy, this involves more than just relaxation; it's about systematically training the mind to cultivate present-moment awareness with an attitude of non-judgment and compassion. Through simple but profound techniques, clients learn to observe their thoughts and feelings without being controlled by them. This creates inner space, reduces reactivity, and builds a foundation of inner calm and resilience."
-            />
-            <ApproachDetail
-              title="The Integrative Method in Practice"
-              description="An integrative approach means that the therapeutic journey is always collaborative and client-centered. Rather than adhering to a single rigid model, the practice draws upon a flexible toolkit from various respected schools of thought, including psychodynamic, humanistic, and cognitive-behavioral therapies. The most crucial element, however, is the therapeutic relationship itself. It is within this secure, trusting, and non-judgmental partnership that healing and growth can truly flourish. The specific techniques used are always chosen in service of the client's unique path and personal goals."
-            />
-          </div>
+            <div className="grid md:grid-cols-3 gap-8 text-center">
+                <ApproachCard
+                    title="Depth Psychology"
+                    description="We explore the deeper, unconscious aspects of the self to understand recurring patterns and move toward lasting change and a more authentic life."
+                />
+                <ApproachCard
+                    title="Mindfulness Practices"
+                    description="Through systematic training in present-moment awareness, clients learn to observe thoughts and feelings without being controlled by them, building inner calm."
+                />
+                <ApproachCard
+                    title="Integrative Method"
+                    description="A collaborative and client-centered journey, drawing from a flexible toolkit of therapies within a secure, trusting, and non-judgmental partnership."
+                />
+            </div>
         </div>
         <ScrollIndicator targetId="journey" />
       </section>
@@ -95,13 +95,17 @@ export default function ApproachPage() {
   );
 }
 
-function ApproachDetail({ title, description }: { title: string, description: string }) {
-  return (
-    <div className="text-left">
-      <h3 className="text-2xl font-headline text-primary mb-4">{title}</h3>
-      <p className="text-foreground/80 leading-relaxed">{description}</p>
-    </div>
-  );
+function ApproachCard({ title, description }: { title: string, description: string }) {
+    return (
+        <Card className="shadow-md hover:shadow-xl transition-shadow duration-300 bg-card h-full flex flex-col p-6">
+            <CardHeader>
+                <CardTitle className="font-headline text-2xl text-primary">{title}</CardTitle>
+            </CardHeader>
+            <CardContent className="flex-grow">
+                <p className="text-foreground/80">{description}</p>
+            </CardContent>
+        </Card>
+    );
 }
 
 function RoadmapCard({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
