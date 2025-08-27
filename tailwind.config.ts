@@ -18,7 +18,7 @@ export default {
     extend: {
       fontFamily: {
         body: ['Quicksand', 'sans-serif'],
-        headline: ['Playfair Display', 'serif'],
+        headline: ['CrosstenSoft', 'serif'],
         code: ['monospace'],
       },
       colors: {
